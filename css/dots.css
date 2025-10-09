@@ -1,0 +1,163 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+   
+}
+p
+{
+    margin: 0;
+    padding: 0;
+}
+a
+{
+    text-decoration: none; 
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+.headerdiv
+{
+    padding-top: 3rem;
+    display: flex;
+    gap: 1rem;
+    margin-right: 5rem;
+    justify-content: end;
+}
+.maindiv
+{
+    
+    background-image: url(../images/blackarrowwithdotsup.png);
+    background-size: 100% 100%;  
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 0.2fr 2fr 2fr 0.2fr;
+}
+hr
+{
+    width: 100%;
+    grid-column: 2/4;
+}
+.dotsmaintext
+{
+    grid-column: 2/3;
+    display: flex;
+}
+.bigtextcircle
+{
+    font-weight: bold;
+    font-size: 128pt;
+    color: #000000;
+}
+.bigtextdots
+{
+    font-weight: bold;
+    color: #799DAB;
+    font-size: 128pt;
+}
+.headertext
+{
+    margin-top: 3rem;
+    line-height: 1.6; 
+    grid-column: 2/4;
+    width: 58%;
+    font-weight: 500;
+    font-size: 32px;
+}
+.buttonsdiv
+{
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 1fr 0.2fr 1fr;
+}
+.buttondark
+{
+    background-color: #799DAB;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    margin-top: 5rem;
+    border-radius: 12px;
+}
+.buttondarktext
+{
+    color: #000000;
+    font-size: 32px;
+    font-weight: 500;
+    display: grid;
+    place-items: center;
+}
+.buttonlighttext
+{
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 500;
+    display: grid;
+    place-items: center;
+}
+.buttonsecondposition
+{
+    grid-column: 3/4;
+}
+.buttonthirdposition
+{
+    grid-column: 5/6;
+}
+.lastdiv
+{
+    border-radius: 12px;
+    background-color: #C7EAF8;
+    opacity: 0.8;
+    display: flex;
+}
+.lasttext
+{
+    color: #000000;
+    font-weight: 500;
+    font-size: 24px;
+    display: grid;
+    place-items: center;
+}
+.lastimg
+{
+    width: 50%;
+}
+.lastdivgrid
+{
+    margin-top: 10rem;
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 1fr;
+    grid-template-rows: 0.5fr 0.2fr 0.5fr 0.2fr 0.5fr;
+}
+.lastfirstdivposition
+{
+    grid-column: 3/4;
+}
+.lastseconddivposition
+{
+    grid-row: 3/4;
+}
+.lastthirddivposition
+{
+    grid-row: 5/6;
+    grid-column: 3/4;
+}
+.copyright
+{
+    grid-column: 3/4;
+    display: flex;
+    justify-content: end;
+}
+.copyrighttext
+{
+    display: grid;
+    place-items: center;
+    color: #799DAB;
+    font-weight: 500;
+    font-size: 12px;
+}
