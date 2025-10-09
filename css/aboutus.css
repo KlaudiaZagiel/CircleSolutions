@@ -1,0 +1,176 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+   
+}
+p
+{
+    margin: 0;
+    padding: 0;
+}
+a
+{
+    text-decoration: none; 
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+.headerdiv
+{
+    padding-top: 3rem;
+    display: flex;
+    gap: 1rem;
+    margin-right: 5rem;
+    justify-content: end;
+}
+.headertext
+{
+    margin-top: 10rem;
+    color: #799DAB;
+    font-size: 96px;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+}
+.headerhr
+{
+    width: 91%;
+    color: #D9D9D9;
+}
+.maindiv
+{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr;
+}
+.centraldiv
+{
+    background-image: url(../images/backimageaboutus.png);
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    height: 580px;
+    grid-column: 2/5;
+    z-index: 2;
+    
+    
+}
+.centralblock
+{
+    width: 200%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+  
+  width: 113%;
+  height: 70%;
+    transform: translateX(-7%);
+}
+
+.centralblockmargin
+{
+    margin-left:2rem ;
+}
+.centralblockdiv
+{
+    margin-top: 3rem;
+    border-radius: 12px;
+    background-color: rgba(121, 157, 171, 0.7);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+    padding: 2rem;
+    
+}
+.centralblocktext
+{
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    display: grid;
+    place-items: center;
+}
+.centralblockimg1
+{
+    width: 40%;
+}
+.centralblockimg2
+{
+    width: 30%;
+}
+.centralblockimg3
+{
+    width: 45%;
+}
+.centralblocktexthighermargin{
+    margin-top: 1rem;
+}
+.centralblocktextlowermargin
+{
+    margin-top: 2rem;
+}
+.centralblockbottomtext
+{
+    font-weight: 500;
+    font-size: 32px;
+    color: #FFFFFF;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+    margin-top: 2rem;
+}
+.bottomdivone
+{
+    margin-top: 5rem;
+    grid-column:2/3 ;
+}
+.bottomblocksdivtwo
+{
+    margin-top: 5rem;
+    grid-column:4/5 ;
+}
+.bottomhr
+{
+    margin-top: 4rem;
+    grid-column: 3/4;
+    width: 1;
+    color: #D9D9D9;
+    height: 100%;
+}
+.bottombluetext
+{
+    color: #799DAB;
+    font-weight: bold;
+    font-size: 36px;
+    display: grid;
+    place-items: center;
+}
+.bottomtext
+{
+    margin-top: 3rem;
+    line-height: 1.8;  
+    text-indent: 2em;
+    display: grid;
+    place-items: center;
+    color: #000000;
+    font-weight: 500;
+    font-size: 28px;
+}
+.copyright
+{
+    grid-column: 4/5;
+    display: flex;
+    justify-content: end;
+}
+.copyrighttext
+{
+    display: grid;
+    place-items: center;
+    color: #799DAB;
+    font-weight: 500;
+    font-size: 12px;
+}
