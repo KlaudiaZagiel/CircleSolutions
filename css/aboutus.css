@@ -55,8 +55,6 @@ a
     height: 580px;
     grid-column: 2/5;
     z-index: 2;
-    
-    
 }
 .centralblock
 {
@@ -64,9 +62,8 @@ a
     z-index: 1;
     display: flex;
     justify-content: space-between;
-  
-  width: 113%;
-  height: 70%;
+    width: 113%;
+    height: 70%;
     transform: translateX(-7%);
 }
 
