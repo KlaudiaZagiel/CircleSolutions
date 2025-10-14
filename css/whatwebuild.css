@@ -4,8 +4,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('../fonts/Calibre-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('../fonts/Calibre-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('../fonts/Calibre-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'calibre';
   background-color: #f4f7fa;
   color: #333;
   line-height: 1.6;
@@ -99,7 +120,7 @@ h1 {
   transform: translateY(-5px);
 }
 .service-box img {
-  height: 40px;
+  height: 50px;
   margin-bottom: 15px;
 }
 .service-box h3 {
