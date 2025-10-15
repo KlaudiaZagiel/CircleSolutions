@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('../fonts/Calibre-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('../fonts/Calibre-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('../fonts/Calibre-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    max-height: 100vh;
+}
+
+.square1{
+    height: 176px;
+    width: 265px;
+    background-color: #799DAB;
+    border-radius: 12px;
+    grid-column: 3;
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px black;
+}
+
+.square2{
+    height: 176px;
+    width: 265px;
+    background-color: #799DAB;
+    border-radius: 12px;
+    grid-column: 5;
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px black;
+}
+
+.img1{
+    max-width: 81px;
+    max-height: 81px; 
+}
+
+.img2{
+    max-width: 80px;
+    max-height: 80px;
+}

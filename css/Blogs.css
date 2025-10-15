@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'CalibreR';
+  src: url('../fonts/Calibre-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CalibreB';
+  src: url('../fonts/Calibre-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CalibreL';
+  src: url('../fonts/Calibre-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-height: 100vh;
+    
+}
+
+header{
+    font-family: 'CalibreB';
+    font-size: 40px;
+    grid-column: 2;
+    text-align: center;
+
+hr{
+    border: 1px solid black;
+    max-width: 80px;
+    
+}
+}
+
+.Column1{
+    grid-column: 1;
+    grid-row: 2;
+    
+.img1{
+    max-height: 360px;
+    max-width: 360px;
+    
+}
+}
