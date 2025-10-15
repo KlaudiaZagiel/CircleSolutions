@@ -100,8 +100,8 @@ h1 {
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  padding: 60px 40px;
+  gap: 100px;
+  padding: 80px 60px;
  
 }
 .service-box {
@@ -136,9 +136,9 @@ h1 {
 /* Call-to-Action Section */
 .cta {
   background-color: rgba(255,255,255,0.96);
-  text-align: center;
-  padding: 20px 10px;
   position: fixed;
+  text-align: center;
+  padding: 20px 10px;;
   left: 0;
   bottom: 0;
   width: 100%;
