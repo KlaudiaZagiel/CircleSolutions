@@ -90,9 +90,9 @@ body {
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
-    color: #ffffff;
+    color: hsla(0, 0%, 59%, 0.5);
     text-align: center;
-    text-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 4px 25px rgba(255, 255, 255, 0.507);
     font-family: Calibre;
     font-size: 175px;
     font-style: normal;
@@ -109,7 +109,7 @@ body {
     width: 650px;
     height: 120px;
     flex-shrink: 0;
-    color: #ffffff;
+    color: hsla(0, 0%, 59%, 0.5);
     text-align: center;
     font-family: Calibre;
     font-size: 64px;
