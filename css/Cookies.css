@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Calibre';
+  src: url('../fonts/Calibre-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('../fonts/Calibre-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('../fonts/Calibre-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Calibre';
+    background-color: lightblue;
+    
+}
+
+.Main{
+    background-color: white;
+    width: 1920px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    
+}
+
+.Second{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.cookie{
+height: 150px;
+margin: 50px;
+margin-left: 100px;
+}
+
+.text{
+font-size: 30px;
+max-width: 420px;
+margin-left: 60px;
+}
+
+.Buttons{   
+    display: flex;
+    justify-content:space-around;
+    width: 1100px;
+    align-items: center;
+    
+}
+
+.But{
+    font-size: 30px;
+    background-color: #D9D9D9;
+    padding: 16px 18px;
+    padding-bottom: 12px;
+    border-radius: 12px;
+    transition: background-color 0.8s, opacity 0.5s;
+    
+}
+
+.But:hover{
+    background-color: #C7EAF8;
+    cursor: pointer;
+
+}
+
+
+.But:active{
+    opacity: 0.5;
+
+}
+@media(max-width:800px)
+{
+    .text{
+        font-size: 12px;
+    }
+    
+}
+
+@media(max-width:1609px)
+{
+    .text{
+        font-size: 20px;
+    }
+    
+}
