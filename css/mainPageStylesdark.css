@@ -5,6 +5,7 @@
 }
 body
 {
+    background-color: black;
     font-family: 'Inter', sans-serif;
    
 }
@@ -194,7 +195,6 @@ hr
     font-weight: 500;
     font-size: 12px;
 }
-
 .headerdivmain {
   position: fixed;
   top: 0;
@@ -209,6 +209,13 @@ hr
   min-height: 70px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
+/* Base Reset */
+
+
+/* Header Section */
+
+
+
 
 .logomain 
 {

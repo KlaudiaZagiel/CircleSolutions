@@ -6,6 +6,7 @@
 body
 {
     font-family: 'Inter', sans-serif;
+    background-color: black;
    
 }
 p
@@ -177,14 +178,6 @@ hr
   min-height: 70px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
-.buttondarLight
-{
-color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1em;
-  transition: color 0.3s ease;
-}
 /* Base Reset */
 
 
@@ -227,7 +220,10 @@ color: #ffffff;
   padding: 0;
 }
 
-
+.buttonflag img
+{
+  height: 24px;
+}
 
 
 
@@ -247,8 +243,16 @@ color: #ffffff;
   margin-left: auto;
 }
 
-.headerbuttons a {
+.headerbuttons a  {
   color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+.buttondarLight
+{
+color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   font-size: 1em;

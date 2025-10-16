@@ -1,10 +1,33 @@
+<?php
+session_start();
+
+
+if (isset($_POST['toggle'])) {
+    
+    if (isset($_SESSION['light']) && $_SESSION['light'] === true)
+        {
+            $_SESSION['light'] = false;
+        } else {
+            $_SESSION['light'] = true;
+    }
+    header("Location: " . $_SERVER['PHP_SELF']);
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/dots.css">
+    
+    <?php
+    if (!empty($_SESSION['light'])) {
+        echo "<link rel='stylesheet' href='../css/dotsdark.css'>";
+    } else {
+        echo "<link rel='stylesheet' href='../css/dots.css'>";
+    }
+    ?>
     <title>Document</title>
 </head>
 <body>
@@ -12,13 +35,17 @@
     <header>
     <div class="backroundimagemaindiv">
         <div class="headerdivmain">
-            <a  href="../html/mainPage.html"><img class="q"  src="../images/circleSolutionsLogo.png" alt="logo"></a>
+            <a  href="../html/mainPage.php"><img class="q"  src="../images/circleSolutionsLogo.png" alt="logo"></a>
             <div class="headerbuttons">
                 <a href="../html/dots.html">D.O.T.S</a>
                 <a href="">Contact</a>
                 <a href="../html/aboutus.html">About</a>
                 <a href="../html/whatwebuild.html">Solution</a>
-                <button class="buttonflag"><img src="../images/flag.png" alt="flag"></button>
+                <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
+                    <button name="toggle" class="buttonflag buttondarLight">Dark/light</button>
+                </form>
+                    <button name="toggle" class="buttonflag"><img src="../images/flag.png" alt="flag"></button>
+
             </div>
         </div>
     </div>
