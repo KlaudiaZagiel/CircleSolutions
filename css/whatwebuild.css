@@ -1,9 +1,10 @@
-/* Base Reset */
+/* whatwebuild.css */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 @font-face {
   font-family: 'Calibre';
@@ -98,12 +99,17 @@ h1 {
   background: url('../images/Technology.png') center/cover no-repeat;
   min-height: max-content;
 
+
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 100px;
-  padding: 80px 60px;
- 
+  grid-template-columns: repeat(1, 1fr 1fr, auto);
+  gap: 30px;
+  padding: 60px 40px;
+  max-width: 500px;
+  margin: 100px auto 150px auto;
+
 }
+ 
+
 .service-box {
   background-color: #799DAB;
   color: #1a1a1a;
