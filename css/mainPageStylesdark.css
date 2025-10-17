@@ -5,9 +5,8 @@
 }
 body
 {
-    background-color: black;
     font-family: 'Inter', sans-serif;
-   
+   background-color: black;
 }
 p
 {
@@ -30,16 +29,14 @@ a
 }
 .buttonflag
 {
-    padding: 0;             
-    border: none;           
-    background: none;       
-    cursor: pointer;       
-    width: 40px;            
-    height: 34px;           
-    overflow: hidden; 
+   background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0; 
 }
 .backroundimagemaindiv
 {
+    margin-top: 3px;
     background-image: url(../images/backimagemain.png);
     background-size: 100% 100%;  
     background-repeat: no-repeat;
@@ -51,12 +48,6 @@ a
     grid-column: 2/3;
     display: grid;
     grid-template-columns: 1.6fr 1fr;
-}
-.headerbuttons
-{
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-between;
 }
 .headertextposition
 {
@@ -120,7 +111,7 @@ a
     font-size: 24px;
     padding-left: 2rem;
     padding-right: 2rem;
-    color:#000000;
+    color:white;
 }
 .bottomdiv
 {
@@ -134,14 +125,14 @@ a
     grid-column: 2/3;
     display: grid;
     place-items: center;
-    color: #000000;
+    color: white;
     font-weight: bold;
     font-size: 64px;
     align-items: center;
 }
 hr
 {
-    background-color: #D9D9D9;
+    background-color: white;
     width: 100%;    
     height: 2px;
     grid-column: 2/3;
@@ -158,7 +149,7 @@ hr
 {
     width: 20%;
     padding: 3rem;
-    background-color: #799DAB;
+    background-color: #C7EAF8;
     display: grid;
     place-items: center;
     border-radius: 12px;
@@ -167,6 +158,7 @@ hr
 {
     font-weight: 500;
     font-size: 24px;
+    color: white;
 }
 .bottomtext
 {
@@ -175,6 +167,7 @@ hr
     display: grid;
     place-items: center;
     grid-column: 2/3;
+    color: white;
 }
 .bottomtextmargin
 {
@@ -195,13 +188,14 @@ hr
     font-weight: 500;
     font-size: 12px;
 }
+
 .headerdivmain {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
-  background: rgba(34, 49, 63, 0.85); /* Optional: semi-transparent background rgba*/
+  background: rgba(34, 49, 63); /* Optional: semi-transparent background rgba*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -209,14 +203,10 @@ hr
   min-height: 70px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
-/* Base Reset */
-
-
-/* Header Section */
-
-
-
-
+header
+{
+    grid-column: 1/4;
+}
 .logomain 
 {
   height: 50px;
@@ -228,7 +218,14 @@ hr
   gap: 30px; /* Adds consistent spacing between items */
   margin-left: auto;
 }
-
+.buttondarLight
+{
+    color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
 .headerbuttons a 
 {
   color: #ffffff;

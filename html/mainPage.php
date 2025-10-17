@@ -35,7 +35,7 @@ if (isset($_POST['toggle'])) {
         <div class="headerdivmain">
             <a  href="../html/mainPage.php"><img class="q"  src="../images/circleSolutionsLogo.png" alt="logo"></a>
             <div class="headerbuttons">
-                <a href="../html/dots.html">D.O.T.S</a>
+                <a href="../html/dots.php">D.O.T.S</a>
                 <a href="">Contact</a>
                 <a href="../html/aboutus.html">About</a>
                 <a href="../html/whatwebuild.html">Solution</a>
@@ -48,28 +48,15 @@ if (isset($_POST['toggle'])) {
         </div>
     </div>
   </header>
-  
+
     <div class="backroundimagemaindiv">
+        
         
         <p class="solutiontext headertextposition">Software Solutions</p>
         <p class="headertextposition headerlowertextposition">Connect. Collaborate. Simplify</p>
         <div class="headerceanterbuttons">
-            <a href="">
-                <div class="solutiondiv ">
-                <p class="solutionstext">Get Started</p>
-            </div>
-            </a>
-            <a href="../html/dots.php">
-                <div class="dotsdiv headerbuttonsleftmargin">
-                <p class="dotstext">Discover D.O.T.S</p>
-            </div>
-            </a>
-            <a href="../html/whatwebuild.html">
-                <div class="solutiondiv headerbuttonsleftmargin">
-                <p class="solutionstext">Solutions</p>
-            </div>
             <a href="../pdfFiles/CircleSolutionsBrochure.pdf" download="CircleSolutionsBrochure.pdf" style="text-decoration: none;" type="application/pdf">
-                <div class="dotsdiv headerbuttonsleftmargin">
+                <div class="dotsdiv ">
                     <p class="dotstext">Download our brochure</p>
                 </div>
             </a>
@@ -83,17 +70,35 @@ if (isset($_POST['toggle'])) {
         <hr>
         <div class="bottomblocksdiv">
             <div class="bottomblock">
-                <img class="bottomimg" src="../images/chat.png" alt="chat">
+                <img class="bottomimg" src="<?php
+    if (!empty($_SESSION['light'])) {
+        echo "../images/chat_white.png";
+    } else {
+        echo "../images/chat.png";
+    }
+    ?>" alt="chat">
                 <p class="bottomblocktext">Simplify Communication</p>
             </div>
                 
             <div class="bottomblock">
-                <img class="bottomimg" src="../images/pazzle.png" alt="puzzle">
+                <img class="bottomimg" src="<?php
+    if (!empty($_SESSION['light'])) {
+        echo "../images/pazzle_white.png";
+    } else {
+        echo "../images/pazzle.png";
+    }
+    ?>" alt="puzzle">
                 <p class="bottomblocktext">Optimize teamwork</p>
             </div>
 
             <div class="bottomblock">
-                <img class="bottomimg" src="../images/search.png" alt="search">
+                <img class="bottomimg" src="<?php
+    if (!empty($_SESSION['light'])) {
+        echo "../images/search_white.png";
+    } else {
+        echo "../images/search.png";
+    }
+    ?>" alt="search">
                 <p class="bottomblocktext">Smart Insights</p>
             </div>
         </div>

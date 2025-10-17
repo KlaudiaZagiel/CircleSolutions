@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +17,7 @@ p
 a
 {
     text-decoration: none; 
-    color: #FFFFFF;
+    color: black;
     margin: 0;
     padding: 0;
     font-size: 24px;
@@ -29,17 +30,15 @@ a
 }
 .buttonflag
 {
-    padding: 0;             
-    border: none;           
-    background: none;       
-    cursor: pointer;       
-    width: 40px;            
-    height: 34px;           
-    overflow: hidden; 
+   background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0; 
 }
 .backroundimagemaindiv
 {
-    background-image: url(../images/backimagemain.png);
+    margin-top: 35px;
+    background-image: url(../images/backimagemain_light.png);
     background-size: 100% 100%;  
     background-repeat: no-repeat;
     display: grid;
@@ -51,18 +50,12 @@ a
     display: grid;
     grid-template-columns: 1.6fr 1fr;
 }
-.headerbuttons
-{
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-between;
-}
 .headertextposition
 {
     grid-column: 2/3;
     display: flex;
     justify-content: center;
-    color: #FFFFFF;
+    color: #C7EAF8;
 }
 .solutiontext
 {
@@ -80,7 +73,7 @@ a
 .dotsdiv
 {
     border-radius: 12px;
-    background-color: #799DAB;
+    background-color: #C7EAF8;
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -105,7 +98,7 @@ a
 }
 .dotstext
 {
-    color: #FFFFFF;
+    color: #799dab;
     padding-left: 2rem;
     padding-right: 2rem;
     font-size: 24px;
@@ -201,7 +194,7 @@ hr
   left: 0;
   width: 100%;
   z-index: 100;
-  background: rgba(34, 49, 63, 0.85); /* Optional: semi-transparent background rgba*/
+  background:#B7D0E3; /* Optional: semi-transparent background rgba*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -209,7 +202,10 @@ hr
   min-height: 70px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
-
+header
+{
+    grid-column: 1/4;
+}
 .logomain 
 {
   height: 50px;
@@ -221,7 +217,14 @@ hr
   gap: 30px; /* Adds consistent spacing between items */
   margin-left: auto;
 }
-
+.buttondarLight
+{
+    color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
 .headerbuttons a 
 {
   color: #ffffff;

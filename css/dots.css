@@ -240,31 +240,9 @@ color: #ffffff;
 .logomain {
   height: 50px;
 }
-.headerbuttons {
-  display: flex;
-  align-items: center;
-  gap: 30px; /* Adds consistent spacing between items */
-  margin-left: auto;
-}
 
-.headerbuttons a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1em;
-  transition: color 0.3s ease;
-}
 
-.headerbuttons a:hover {
-  color: #d0e6f7; /* Optional hover effect */
-}
 
-.buttonflag {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
 .buttonflag img {
   height: 24px;
 }
