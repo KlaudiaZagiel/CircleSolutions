@@ -28,25 +28,27 @@ if (isset($_POST['toggle'])) {
         echo "<link rel='stylesheet' href='../css/dots.css'>";
     }
     ?>
-    <title>Document</title>
+    <title>D.O.T.S</title>
 </head>
 <body>
     
     <header>
     <div class="backroundimagemaindiv">
         <div class="headerdivmain">
-            <a  href="../html/mainPage.php"><img class="q"  src="../images/circleSolutionsLogo.png" alt="logo"></a>
-            <div class="headerbuttons">
-                <a href="../html/dots.html">D.O.T.S</a>
-                <a href="">Contact</a>
-                <a href="../html/aboutus.html">About</a>
-                <a href="../html/whatwebuild.html">Solution</a>
-                <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
-                    <button name="toggle" class="buttonflag buttondarLight">Dark/light</button>
+            <a  href="../html/mainPage.php"><img class="headerImagedots"  src="../images/circleSolutionsLogo.png" alt="logo"></a>
+            <ul class="headerbuttons">
+                <li><a href="../html/dots.php">D.O.T.S</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="../html/aboutus.html">About</a></li>
+                <li><a href="../html/whatwebuild.html">Solution</a></li>
+                <li>
+                    <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
+                    <button name="toggle" class="buttonflag buttondarLight"><p class="darklightbuttontext">Dark/light</p></button>
                 </form>
-                    <button name="toggle" class="buttonflag"><img src="../images/flag.png" alt="flag"></button>
-
-            </div>
+                </li>
+                    <li><button name="toggle" class="buttonflag"><img src="../images/flag.png" alt="flag"></button>
+                </li>
+            </ul>
         </div>
     </div>
   </header>
@@ -60,27 +62,45 @@ if (isset($_POST['toggle'])) {
         <p class="headertext">Circle D.O.T.S is an integrated software platform designed
 to help companies steamline and manage their internal
 processes.</p>
-        <div class="buttonsdiv">
-            <a href="../html/aboutus.html"><div class="buttondark"><p class="buttondarktext">Learn more about us</p></div></a>
-            <a class="buttonsecondposition" href=""><div class="buttondark "><p class="buttonlighttext">Let’s get to work</p></div></a>
-            <a class="buttonthirdposition" href="../html/whatwebuild.html"><div class="buttondark "><p class="buttondarktext">Check other solutions</p></div></a>
-        </div>
+        <ul class="buttonsdiv">
+            <li><a href="../html/aboutus.html"><div class="buttondark"><p class="buttondarktext">Learn more about us</p></div></a></li>
+            <li class="buttonsecondposition"><a  href=""><div class="buttondark "><p class="buttonlighttext">Let’s get to work</p></div></a></li>
+            <li class="buttonthirdposition"><a  href="../html/whatwebuild.html"><div class="buttondark "><p class="buttondarktext">Check other solutions</p></div></a></li>
+        </ul>
 
         <div class="lastdivgrid">
             <div class="lastdiv lastfirstdivposition">
-            <img class="lastimg" src="../images/intranet_icon.png" alt="intranet_icon">
+            <img class="lastimg" src=" <?php
+    if (!empty($_SESSION['light'])) {
+        echo "../images/intranet_icon_white.png";
+    } else {
+        echo "../images/intranet_icon.png";
+    }
+    ?>" alt="intranet_icon">
             <p class="lasttext">A secure hub for updates, announcements, 
 and resources—keeping all communication
  in one place.</p>
         </div>
         <div class="lastdiv lastseconddivposition">
-            <img class="lastimg" src="../images/dash-removebg-preview.png" alt="dash-removebg-preview">
+            <img class="lastimg" src=" <?php
+    if (!empty($_SESSION['light'])) {
+        echo "../images/dash_white.png";
+    } else {
+        echo "../images/dash-removebg-preview.png";
+    }
+    ?>" alt="dash-removebg-preview">
             <p class="lasttext">Turn data into clear visuals 
 with customizable dashboards
  for faster, smarter decisions.</p>
         </div>
         <div class="lastdiv lastthirddivposition">
-            <img class="lastimg" src="../images/documents.png" alt="documents">
+            <img class="lastimg" src=" <?php
+    if (!empty($_SESSION['light'])) {
+        echo "../images/../images/documents_white.png";
+    } else {
+        echo "../images/../images/documents.png";
+    }
+    ?>" alt="documents">
             <p class="lasttext">Upload, organize, and co-edit files 
 with built-in version control 
 and smooth collaboration.</p>

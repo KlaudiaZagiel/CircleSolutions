@@ -3,190 +3,190 @@
   padding: 0;
   box-sizing: border-box;
 }
-body
-{
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: black;
+}
+
+p {
     font-family: 'Inter', sans-serif;
-   background-color: black;
+  margin: 0;
+  padding: 0;
 }
-p
-{
-    margin: 0;
-    padding: 0;
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: bold;
 }
-a
-{
-    text-decoration: none; 
-    color: #FFFFFF;
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
-    font-weight: bold;
+
+.logomain {
+  width: 180px;
+  height: 60px;
 }
-.logomain
-{
-    width: 180px;
-    height: 60px;
-}
-.buttonflag
-{
-   background: none;
+
+.buttonflag {
+  background: none;
   border: none;
   cursor: pointer;
   padding: 0; 
 }
-.backroundimagemaindiv
-{
-    margin-top: 3px;
-    background-image: url(../images/backimagemain.png);
-    background-size: 100% 100%;  
-    background-repeat: no-repeat;
-    display: grid;
-    grid-template-columns: 0.5fr 5fr 0.5fr;
+
+.backroundimagemaindiv {
+  margin-top: 35px;
+  background-image: url(../images/backimagemain.png);
+  background-size: 100% 100%;  
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 0.5fr 5fr 0.5fr;
 }
-.headerdivmain
-{
-    grid-column: 2/3;
-    display: grid;
-    grid-template-columns: 1.6fr 1fr;
+
+.headertextposition {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
 }
-.headertextposition
-{
-    grid-column: 2/3;
-    display: flex;
-    justify-content: center;
-    color: #FFFFFF;
+
+.solutiontext {
+  font-weight: 600;
+  margin-top: 7rem;
+  font-size: 75px;
 }
-.solutiontext
-{
-    font-weight: 600;
-    margin-top: 7rem;
-    font-size: 75px;
-    
+
+.headerlowertextposition {
+  font-weight: 600;
+  margin-top: 3rem;
+  font-size: 40px;
 }
-.headerlowertextposition
-{
-    font-weight: 600;
-    margin-top: 3rem;
-    font-size: 40px;
+
+.dotsdiv {
+  border-radius: 12px;
+  background-color: #799DAB;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 60px;
 }
-.dotsdiv
-{
-    border-radius: 12px;
-    background-color: #799DAB;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 60px;
+
+.solutiondiv {
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  background-color: #C7EAF8;
 }
-.solutiondiv
-{
-    height: 60px;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    background-color: #C7EAF8;
+
+.headerceanterbuttons {
+  margin-top: 10rem;
+  padding-bottom: 20rem;
+  display: flex;
+  justify-content: center;
+  grid-column: 2/3;
 }
-.headerceanterbuttons
-{
-    margin-top: 10rem;
-    padding-bottom: 20rem;
-    display: flex;
-    justify-content: center;
-    grid-column: 2/3;
+
+.dotstext {
+  color: #FFFFFF;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 24px;
 }
-.dotstext
-{
-    color: #FFFFFF;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-size: 24px;
+
+.headerbuttonsleftmargin {
+  margin-left: 2rem;
 }
-.headerbuttonsleftmargin
-{
-    margin-left: 2rem;
+
+.solutionstext {
+  font-size: 24px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: white;
 }
-.solutionstext
-{
-    font-size: 24px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    color:white;
+
+.bottomdiv {
+  display: grid;
+  grid-template-columns: 0.5fr 5fr 0.5fr;
 }
-.bottomdiv
-{
-    display: grid;
-    grid-template-columns: 0.5fr 5fr 0.5fr;
+
+.introducingtext {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  grid-column: 2/3;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 64px;
+  align-items: center;
 }
-.introducingtext
-{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    grid-column: 2/3;
-    display: grid;
-    place-items: center;
-    color: white;
-    font-weight: bold;
-    font-size: 64px;
-    align-items: center;
+
+hr {
+  background-color: white;
+  width: 100%;    
+  height: 2px;
+  grid-column: 2/3;
 }
-hr
-{
-    background-color: white;
-    width: 100%;    
-    height: 2px;
-    grid-column: 2/3;
+
+.bottomblocksdiv {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: space-between;
 }
-.bottomblocksdiv
-{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    grid-column: 2/3;
-    display: flex;
-    justify-content: space-between;
+
+.bottomblock {
+  width: 20%;
+  padding: 3rem;
+  background-color: #C7EAF8;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
 }
-.bottomblock
-{
-    width: 20%;
-    padding: 3rem;
-    background-color: #C7EAF8;
-    display: grid;
-    place-items: center;
-    border-radius: 12px;
+
+.bottomblocktext {
+  font-weight: 500;
+  font-size: 24px;
+  color: white;
 }
-.bottomblocktext
-{
-    font-weight: 500;
-    font-size: 24px;
-    color: white;
+
+.bottomtext {
+  font-size: 32px;
+  font-weight: 500;
+  display: grid;
+  place-items: center;
+  grid-column: 2/3;
+  color: white;
 }
-.bottomtext
-{
-    font-size: 32px;
-    font-weight: 500;
-    display: grid;
-    place-items: center;
-    grid-column: 2/3;
-    color: white;
+
+.bottomtextmargin {
+  margin-bottom: 5rem;
+  margin-top: 1rem;
 }
-.bottomtextmargin
-{
-    margin-bottom: 5rem;
-    margin-top: 1rem;
+
+.copyright {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: end;
 }
-.copyright
-{
-    grid-column: 2/3;
-    display: flex;
-    justify-content: end;
+
+.copyrighttext {
+  display: grid;
+  place-items: center;
+  color: #799DAB;
+  font-weight: 500;
+  font-size: 12px;
 }
-.copyrighttext
-{
-    display: grid;
-    place-items: center;
-    color: #799DAB;
-    font-weight: 500;
-    font-size: 12px;
+
+
+
+header {
+  grid-column: 1/4;
 }
 
 .headerdivmain {
@@ -195,7 +195,7 @@ hr
   left: 0;
   width: 100%;
   z-index: 100;
-  background: rgba(34, 49, 63); /* Optional: semi-transparent background rgba*/
+  background: rgba(34, 49, 63);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -203,84 +203,30 @@ hr
   min-height: 70px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
-header
-{
-    grid-column: 1/4;
-}
-.logomain 
-{
-  height: 50px;
-}
-.headerbuttons 
-{
-  display: flex;
-  align-items: center;
-  gap: 30px; /* Adds consistent spacing between items */
-  margin-left: auto;
-}
-.buttondarLight
-{
-    color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1em;
-  transition: color 0.3s ease;
-}
-.headerbuttons a 
-{
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1em;
-  transition: color 0.3s ease;
-}
-
-.headerbuttons a:hover 
-{
-  color: #d0e6f7; /* Optional hover effect */
-}
-
-.buttonflag 
-{
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-
-.buttonflag img
-{
-  height: 24px;
-}
-
-
-
-
-
-
-
-
 
 .logomain {
   height: 50px;
 }
+
 .headerbuttons {
   display: flex;
   align-items: center;
-  gap: 30px; /* Adds consistent spacing between items */
+  gap: 30px;
   margin-left: auto;
+  list-style-type: none; 
+  padding-left: 0;       
+  margin: 0; 
 }
 
-.headerbuttons a  {
+.headerbuttons a {
   color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   font-size: 1em;
   transition: color 0.3s ease;
 }
-.buttondarLight
-{
-color: #ffffff;
+.headerbuttons p {
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   font-size: 1em;
@@ -288,7 +234,15 @@ color: #ffffff;
 }
 
 .headerbuttons a:hover {
-  color: #d0e6f7; /* Optional hover effect */
+  color: #d0e6f7;
+}
+
+.buttondarLight {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1em;
+  transition: color 0.3s ease;
 }
 
 .buttonflag {
@@ -297,109 +251,137 @@ color: #ffffff;
   cursor: pointer;
   padding: 0;
 }
+
 .buttonflag img {
   height: 24px;
 }
 
-@media (max-width: 800px)
-{
-    a
-    {
-        font-size: 12px;
-    }
-    .copyrighttext
-    {
-        font-size: 6px;
-    }
-    .bottomtext
-    {
-        font-size: 16px;
-    }
-    .bottomblocktext
-    {
-        font-size: 12px;
-    }
-    .introducingtext
-    {
-        font-size: 32px;
-    }
-    .bottomblocksdiv
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        gap: 1rem;
-    }
-    .solutiontext
-    {
-        font-size: 30px;
-        margin-top: 2rem;
-    }
-    .bottomblock
-    {
-        padding: 1rem;
-    }
-    .bottomimg
-    {
-        width: 40%;
-    }
-    .flagimg
-    {
-        width: 100%;
-        height: 100%;
-    }
-    .buttonflag
-    {
-        width: 20px;
-        height: 15px;
-    }
-    .solutionstext
-    {
-        font-size: 10px;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    .dotstext
-    {
-        font-size: 10px;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    .headerdivmain
-    {
-        grid-template-columns: 1fr 1fr;
-    }
-    .headerlowertextposition
-    {
-        font-size: 20px;
-        margin-top: 1rem;
-    }
-    .headerbuttonsleftmargin
-    {
-        margin: 0;
-    }
-    .headerceanterbuttons
-    {
-        display: grid;
-        grid-template-columns: 0.3fr 0.3fr;
-        margin-top: 3rem;
-        padding-bottom: 5rem;
-        gap: 1rem;
-    }
-    .logomain
-    {
-        width: 100px;
-        height: 40px;
-    }
-    .introducingtext
-    {
-        font-size: 16px;
-    }
-    .copyrightimg
-    {
-        width: 3%;
-    }
+
+
+@media (max-width: 800px) {
+  
+  a {
+    font-size: 12px;
+  }
+
+  .copyrighttext {
+    font-size: 6px;
+  }
+
+  .bottomtext {
+    font-size: 16px;
+  }
+
+  .bottomblocktext {
+    font-size: 12px;
+  }
+
+  .introducingtext {
+    font-size: 32px;
+  }
+
+  .bottomblocksdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+
+  .solutiontext {
+    font-size: 30px;
+    margin-top: 2rem;
+  }
+
+  .bottomblock {
+    padding: 1rem;
+  }
+
+  .bottomimg {
+    width: 40%;
+  }
+
+  .flagimg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .solutionstext {
+    font-size: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .dotstext {
+    font-size: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .bottomtextmargin {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .introducingtext {
+    font-size: 16px;
+  }
+
+  .copyrightimg {
+    width: 3%;
+  }
+
+  /* --- header адаптив --- */
+  .buttondarLight {
+    font-size: 12px;
+  }
+
+  .headerImagedots {
+    height: 50px;
+  }
+
+  .headerdivmain {
+    padding: 0 10px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .buttonflag img {
+    height: 20px;
+  }
+
+  .headerbuttons {
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  .headerbuttons a {
+    font-size: 12px;
+  }
+
+  .headerbuttonsleftmargin {
+    margin: 0;
+  }
+
+  .headerlowertextposition {
+    font-size: 20px;
+    margin-top: 1rem;
+  }
+
+  .headerceanterbuttons {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+    gap: 1rem;
+  }
+
+  .logomain {
+    width: 100px;
+    height: 40px;
+  }
 }
