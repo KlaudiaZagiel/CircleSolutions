@@ -20,6 +20,12 @@
             camera.position.z = 1;
             camera.rotation.x = Math.PI/2;
 
+            function onWindowResize() {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            }
+
             renderer = new THREE.WebGLRenderer();
             renderer.setSize(window.innerWidth, window.innerHeight);
             document.body.appendChild(renderer.domElement);
@@ -35,7 +41,7 @@
                 star.acceleration = 0.02;
                 starGeo.vertices.push(star);
             }
-            let sprite = new THREE.TextureLoader() .load("../images/star.png");
+            let sprite = new THREE.TextureLoader().load("../images/star.png");
             let starMaterial = new THREE.PointsMaterial({
                 color: 0xaaaaaa,
                 size: 0.7,
