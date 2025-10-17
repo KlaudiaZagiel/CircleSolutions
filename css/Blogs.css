@@ -19,6 +19,15 @@
   font-style: normal;
 }
 
+h1,h2,h3{
+  font-family: "CalibreB";
+}
+
+p{ 
+  font-family: "CalibreR";
+}
+
+
 body{
   background-color: whitesmoke;
   display: grid;
@@ -47,8 +56,9 @@ header{
   border-radius: 12px;
 
   .img1{
-    max-height: 285px;
-    max-width: 285px; 
+    max-width: 70%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover; 
   }
 
   .Square1{
@@ -79,8 +89,9 @@ header{
 
 
   .img2{
-    max-height: 430px;
-    max-width: 430px;
+    max-width: 70%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover; 
   }
 
   .Square2{
@@ -111,8 +122,9 @@ header{
 
 
   .img3{
-    max-height: 400px;
-    max-width: 400px; 
+    max-width: 70%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover; 
   }
 
   .Square3{
