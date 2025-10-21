@@ -2,7 +2,8 @@
 session_start();
 
 
-if (isset($_POST['toggle'])) {
+if (isset($_POST['toggle']))
+    {
     
     if (isset($_SESSION['light']) && $_SESSION['light'] === true)
         {
@@ -37,7 +38,7 @@ if (isset($_POST['toggle'])) {
             <ul class="headerbuttons">
                 <li><a href="../html/dots.php">D.O.T.S</a></li>
                 <li><a href="">Contact</a></li>
-                <li><a href="../html/aboutus.html">About</a></li>
+                <li><a href="../html/aboutus.php">About</a></li>
                 <li><a href="../html/whatwebuild.html">Solution</a></li>
                 <li>
                     <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">

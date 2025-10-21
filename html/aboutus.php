@@ -8,12 +8,26 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="headerdiv">
-            <a href="mainPage.html">Home</a>
-            <a href="../html/dots.html">D.O.T.S</a>
-            <a href="">Contact</a>
-            <a href="../html/mainPage.html">Solutions</a>
+    <header>
+    <div class="backroundimagemaindiv">
+        <div class="headerdivmain">
+            <a  href="../html/mainPage.php"><img class="headerImagedots"  src="../images/circleSolutionsLogo.png" alt="logo"></a>
+            <ul class="headerbuttons">
+                <li><a href="../html/dots.php">D.O.T.S</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="../html/aboutus.php">About</a></li>
+                <li><a href="../html/whatwebuild.html">Solution</a></li>
+                <li>
+                    <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
+                    <button name="toggle" class="buttonflag buttondarLight"><p class="darklightbuttontext">Dark/light</p></button>
+                </form>
+                </li>
+                    <li><button name="toggle" class="buttonflag"><img src="../images/flag.png" alt="flag"></button>
+                </li>
+            </ul>
+        </div>
     </div>
+  </header>
     <hr class="headerhr">
     <p class="headertext">We make software  simple.</p>
     <div class="maindiv">
@@ -36,8 +50,8 @@
                 </div>
                 
             </div>
-            <p class="centralblockbottomtext">‘’Our audience consists of decision-makers in IT and business - </p>
-                <p class="centralblockbottomtext">they don’t want to be overwhelmed; they want to be reassured.’’</p>
+            <p class="centralblockbottomtext highermobilemargintext">‘’Our audience consists of decision-makers in IT and business - </p>
+                <p class="centralblockbottomtext lovermobilemargintext">they don’t want to be overwhelmed; they want to be reassured.’’</p>
         </div>
         <div class="bottomdivone">
             <p class="bottombluetext">No complexity - only clarity</p>

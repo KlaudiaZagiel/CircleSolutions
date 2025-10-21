@@ -258,7 +258,8 @@ header {
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 800px) 
+{
   
   a {
     font-size: 12px;
