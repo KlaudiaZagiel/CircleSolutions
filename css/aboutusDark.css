@@ -10,7 +10,7 @@ body
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-   
+   background-color: black;
 }
 p
 {
@@ -37,7 +37,7 @@ a
 .headertext
 {
     margin-top: 10rem;
-    color: #799DAB;
+    color: #c7eaf8;
     font-size: 96px;
     font-weight: bold;
     display: grid;
@@ -82,7 +82,7 @@ a
 {
     margin-top: 3rem;
     border-radius: 12px;
-    background-color: rgba(121, 157, 171, 0.7);
+    background-color: rgba(199, 234, 248, 0.7);
     display: flex;
     flex-direction: column; 
     align-items: center;    
@@ -149,7 +149,7 @@ a
 }
 .bottombluetext
 {
-    color: #799DAB;
+    color: #c7eaf8;
     font-weight: bold;
     font-size: 36px;
     display: grid;
@@ -162,7 +162,7 @@ a
     text-indent: 2em;
     display: grid;
     place-items: center;
-    color: #000000;
+    color: white;
     font-weight: 500;
     font-size: 28px;
 }
@@ -187,7 +187,7 @@ a
   left: 0;
   width: 100%;
   z-index: 100;
-  background: #B7D0E3;
+  background: rgba(34, 49, 63);
   display: flex;
   justify-content: space-between;
   align-items: center;

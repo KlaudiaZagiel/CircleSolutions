@@ -1,11 +1,33 @@
+<?php
+session_start();
+
+
+if (isset($_POST['toggle'])) {
+    
+    if (isset($_SESSION['light']) && $_SESSION['light'] === true)
+        {
+            $_SESSION['light'] = false;
+        } else {
+            $_SESSION['light'] = true;
+    }
+    header("Location: " . $_SERVER['PHP_SELF']);
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/aboutus.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <?php
+    if (!empty($_SESSION['light'])) {
+        echo "<link rel='stylesheet' href='../css/aboutusDark.css'>";
+    } else {
+        echo "<link rel='stylesheet' href='../css/aboutus.css'>";
+    }
+    ?>
+    <title>About us</title>
 </head>
 <body>
     <header>
@@ -22,7 +44,7 @@
                     <button name="toggle" class="buttonflag buttondarLight"><p class="darklightbuttontext">Dark/light</p></button>
                 </form>
                 </li>
-                    <li><button name="toggle" class="buttonflag"><img src="../images/flag.png" alt="flag"></button>
+                    <li><a  class="buttonflag" href=""><img src="../images/flag.png" alt="flag"></a>
                 </li>
             </ul>
         </div>
