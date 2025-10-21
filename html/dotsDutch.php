@@ -35,18 +35,18 @@ if (isset($_POST['toggle'])) {
     <header>
     <div class="backroundimagemaindiv">
         <div class="headerdivmain">
-            <a  href="../html/mainPage.php"><img class="headerImagedots"  src="../images/circleSolutionsLogo.png" alt="logo"></a>
+            <a  href="../html/mainPageDutch.php"><img class="headerImagedots"  src="../images/circleSolutionsLogo.png" alt="logo"></a>
             <ul class="headerbuttons">
-                <li><a href="../html/dots.php">D.O.T.S</a></li>
+                <li><a href="../html/dotsDutch.php">D.O.T.S</a></li>
                 <li><a href="">Contact</a></li>
-                <li><a href="../html/aboutus.php">About</a></li>
-                <li><a href="../html/whatwebuild.html">Solution</a></li>
+                <li><a href="../html/aboutus.php">Over</a></li>
+                <li><a href="../html/whatwebuild.html">Oplossing</a></li>
                 <li>
                     <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
-                    <button name="toggle" class="buttonflag buttondarLight"><p class="darklightbuttontext">Dark/light</p></button>
+                    <button name="toggle" class="buttonflag buttondarLight"><p class="darklightbuttontext">Donker/licht</p></button>
                 </form>
                 </li>
-                    <li><a  class="buttonflag" href="../html/dotsDutch.php"><img src="../images/flag.png" alt="flag"></a></li>
+                    <li><a  class="buttonflag" href="../html/dots.php"><img src="../images/flag-niderlandov_b1.jpg" alt="flag"></a></li>
             </ul>
         </div>
     </div>
@@ -58,13 +58,13 @@ if (isset($_POST['toggle'])) {
             <p class="bigtextcircle">Circle</p>
             <p class="bigtextdots">Dots</p>
         </div>
-        <p class="headertext">Circle D.O.T.S is an integrated software platform designed
-to help companies steamline and manage their internal
-processes.</p>
+        <p class="headertext">Circle D.O.T.S is een geïntegreerd softwareplatform dat is ontworpen
+om bedrijven te helpen hun interne
+processen te stroomlijnen en te beheren.</p>
         <ul class="buttonsdiv">
-            <li><a href="../html/aboutus.html"><div class="buttondark"><p class="buttondarktext">Learn more about us</p></div></a></li>
-            <li class="buttonsecondposition"><a  href=""><div class="buttondark "><p class="buttonlighttext">Let’s get to work</p></div></a></li>
-            <li class="buttonthirdposition"><a  href="../html/whatwebuild.html"><div class="buttondark "><p class="buttondarktext">Check other solutions</p></div></a></li>
+            <li><a href="../html/aboutus.html"><div class="buttondark"><p class="buttondarktext">Meer informatie over ons</p></div></a></li>
+            <li class="buttonsecondposition"><a  href=""><div class="buttondark "><p class="buttonlighttext">Laten we aan de slag gaan</p></div></a></li>
+            <li class="buttonthirdposition"><a  href="../html/whatwebuild.html"><div class="buttondark "><p class="buttondarktext">Bekijk andere oplossingen</p></div></a></li>
         </ul>
 
         <div class="lastdivgrid">
@@ -76,9 +76,9 @@ processes.</p>
         echo "../images/intranet_icon.png";
     }
     ?>" alt="intranet_icon">
-            <p class="lasttext">A secure hub for updates, announcements, 
-and resources—keeping all communication
- in one place.</p>
+            <p class="lasttext">Een veilige hub voor updates, aankondigingen 
+en bronnen – alle communicatie
+ op één plek.</p>
         </div>
         <div class="lastdiv lastseconddivposition">
             <img class="lastimg" src=" <?php
@@ -88,9 +88,9 @@ and resources—keeping all communication
         echo "../images/dash-removebg-preview.png";
     }
     ?>" alt="dash-removebg-preview">
-            <p class="lasttext">Turn data into clear visuals 
-with customizable dashboards
- for faster, smarter decisions.</p>
+            <p class="lasttext">Zet gegevens om in duidelijke visuals 
+met aanpasbare dashboards
+ voor snellere, slimmere beslissingen.</p>
         </div>
         <div class="lastdiv lastthirddivposition">
             <img class="lastimg" src=" <?php
@@ -100,9 +100,9 @@ with customizable dashboards
         echo "../images/../images/documents.png";
     }
     ?>" alt="documents">
-            <p class="lasttext">Upload, organize, and co-edit files 
-with built-in version control 
-and smooth collaboration.</p>
+            <p class="lasttext">Bestanden uploaden, ordenen en gezamenlijk bewerken 
+met ingebouwde versiebeheer 
+en soepele samenwerking.</p>
         </div>
         </div>
         

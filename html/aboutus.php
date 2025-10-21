@@ -44,8 +44,7 @@ if (isset($_POST['toggle'])) {
                     <button name="toggle" class="buttonflag buttondarLight"><p class="darklightbuttontext">Dark/light</p></button>
                 </form>
                 </li>
-                    <li><a  class="buttonflag" href=""><img src="../images/flag.png" alt="flag"></a>
-                </li>
+                    <li><a  class="buttonflag" href="../html/aboutusDutch.php"><img src="../images/flag.png" alt="flag"></a></li>
             </ul>
         </div>
     </div>

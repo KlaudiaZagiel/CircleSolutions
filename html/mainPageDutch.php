@@ -34,18 +34,18 @@ if (isset($_POST['toggle']))
     <header>
     <div class="backroundimagemaindiv">
         <div class="headerdivmain">
-            <a  href="../html/mainPage.php"><img class="headerImagedots"  src="../images/circleSolutionsLogo.png" alt="logo"></a>
+            <a  href="../html/mainPageDutch.php"><img class="headerImagedots"  src="../images/circleSolutionsLogo.png" alt="logo"></a>
             <ul class="headerbuttons">
-                <li><a href="../html/dots.php">D.O.T.S</a></li>
+                <li><a href="../html/dotsDutch.php">D.O.T.S</a></li>
                 <li><a href="">Contact</a></li>
-                <li><a href="../html/aboutus.php">About</a></li>
-                <li><a href="../html/whatwebuild.html">Solution</a></li>
+                <li><a href="../html/aboutus.php">Over</a></li>
+                <li><a href="../html/whatwebuild.html">Oplossing</a></li>
                 <li>
                     <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
-                    <button name="toggle" class="buttonflag buttondarLight"><p class="darklightbuttontext">Dark/light</p></button>
+                    <button name="toggle" class="buttonflag buttondarLight"><p class="darklightbuttontext">Donker/licht</p></button>
                 </form>
                 </li>
-                    <li><a  class="buttonflag" href="../html/mainPageDutch.php"><img src="../images/flag.png" alt="flag"></a></li>
+                    <li><a  class="buttonflag" href="../html/mainPage.php"><img src="../images/flag-niderlandov_b1.jpg" alt="flag"></a></li>
             </ul>
         </div>
     </div>
@@ -54,12 +54,12 @@ if (isset($_POST['toggle']))
     <div class="backroundimagemaindiv">
         
         
-        <p class="solutiontext headertextposition">Software Solutions</p>
-        <p class="headertextposition headerlowertextposition">Connect. Collaborate. Simplify</p>
+        <p class="solutiontext headertextposition">Softwareoplossingen</p>
+        <p class="headertextposition headerlowertextposition">Verbinden. Samenwerken. Vereenvoudigen.</p>
         <div class="headerceanterbuttons">
             <a href="../pdfFiles/CircleSolutionsBrochure.pdf" download="CircleSolutionsBrochure.pdf" style="text-decoration: none;" type="application/pdf">
                 <div class="dotsdiv ">
-                    <p class="dotstext">Download our brochure</p>
+                    <p class="dotstext">Download onze brochure</p>
                 </div>
             </a>
             
@@ -68,7 +68,7 @@ if (isset($_POST['toggle']))
         </div>
     </div>
     <div class="bottomdiv">
-        <p class="introducingtext">Introducing Circle D.O.T.S</p>
+        <p class="introducingtext">Maak kennis met Circle D.O.T.S</p>
         <hr>
         <div class="bottomblocksdiv">
             <div class="bottomblock">
@@ -79,7 +79,7 @@ if (isset($_POST['toggle']))
         echo "../images/chat.png";
     }
     ?>" alt="chat">
-                <p class="bottomblocktext">Simplify Communication</p>
+                <p class="bottomblocktext">Vereenvoudig communicatie</p>
             </div>
                 
             <div class="bottomblock">
@@ -90,7 +90,7 @@ if (isset($_POST['toggle']))
         echo "../images/pazzle.png";
     }
     ?>" alt="puzzle">
-                <p class="bottomblocktext">Optimize teamwork</p>
+                <p class="bottomblocktext">Optimaliseer teamwork</p>
             </div>
 
             <div class="bottomblock">
@@ -101,12 +101,12 @@ if (isset($_POST['toggle']))
         echo "../images/search.png";
     }
     ?>" alt="search">
-                <p class="bottomblocktext">Smart Insights</p>
+                <p class="bottomblocktext">Slimme inzichten</p>
             </div>
         </div>
         <hr>
-        <p class="bottomtext">"Circle D.O.T.S. is our flagship platform to simplify communication,</p>
-        <p class="bottomtext bottomtextmargin">streamline collaboration, and provide smart insights for better decisions."</p>
+        <p class="bottomtext">Circle D.O.T.S. is ons vlaggenschipplatform om communicatie te vereenvoudigen,</p>
+        <p class="bottomtext bottomtextmargin">samenwerking stroomlijnen en slimme inzichten bieden voor betere beslissingen."</p>
         <div class="copyright">
             <img class="copyrightimg" src="../images/Copyright.png" alt="Copyright">
             <p class="copyrighttext">circlesolutions2025</p>
