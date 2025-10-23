@@ -95,7 +95,7 @@ header
   grid-column: 1 / -1;
   grid-row: 1;
   text-align: center;
-  color: #fff;
+  color: #B7D0E3;
   font-size: 3rem;
   font-weight: 700;
   text-shadow: 0 6px 18px rgba(0,0,0,0.6);
@@ -118,8 +118,8 @@ header
 .service-box {
   width: min(220px, 40vw);
   aspect-ratio: 1 / 1;
-  background: rgba(121,157,171,0.92);
-  color: #fff;
+  background: #B7D0E3;
+  color: rgba(121,157,171,0.92);
   border-radius: 50%;
   padding: 18px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
@@ -154,7 +154,7 @@ header
 }
 
 .service-box p {
-  color: #f0f0f0;
+  color: rgba(121,157,171,0.92);
   font-size: 0.95rem;
   margin-top: 8px;
   line-height: 1.3;
