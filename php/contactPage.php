@@ -1,3 +1,111 @@
+<?php
+$formErrorHtml = '';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+	$firstName   = filter_input(INPUT_POST, 'firstName');
+	$lastName    = filter_input(INPUT_POST, 'lastName');
+	$companyName = filter_input(INPUT_POST, 'companyName');
+	$email       = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+	$yourMessage = filter_input(INPUT_POST, 'yourMessage');
+
+	$errorMessages = array();
+	$emailInvalid  = "";
+
+	if (empty($firstName)) {
+		$errorMessages[] = "First Name" ;
+	}
+
+	if (empty($lastName)) {
+		$errorMessages[] = "Last Name" ;
+	}
+
+	if (empty($companyName)) {
+		$errorMessages[] = "Company Name" ;
+	}
+	
+	if (empty($email)) {
+		$errorMessages[] = "E-mail" ;
+	}
+
+	if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+		$emailInvalid = "Please input a valid E-mail";
+	}
+	
+	if (empty($yourMessage)) {
+		$errorMessages[] = "Your Message" ;
+	}
+
+	// appends all errors to a single string
+	// if errorMessages or emailInvalid
+	if (!empty($errorMessages) || (!empty($emailInvalid))) {
+		//if errorMessages only
+		if (!empty($errorMessages) && empty($emailInvalid)) {
+			$errorMessage = "Please input: " . implode(", ", $errorMessages);
+			// print '<div class="formErrorText">' . $errorMessage . '</div>';
+		}
+		// elseif emailInvalid and no errorMessages
+		elseif ((!empty($emailInvalid)) && empty($errorMessages)) {
+			$errorMessage = $emailInvalid;
+			// print '<div class="formErrorText">' . $errorMessage . '</div>';
+		}
+		//else both
+		else {
+			$errorMessage = "Please input: " . implode(", ", $errorMessages) . "<br>" . $emailInvalid;
+			// print '<div class="formErrorText">' . $errorMessage . '</div>';
+		}
+
+		//gets printed at the form section
+		$formErrorHtml = '<div class="formErrorText">' . $errorMessage . '</div>';
+
+	} else {
+		$csvFile = __DIR__ . '/../contactFormSubmissions/submissions.csv';
+		$header  = ['Timestamp','First Name','Last Name','Company Name', 'Email', 'Message'];
+		
+		$needHeader = !file_exists($csvFile) || filesize($csvFile) === 0;
+		$fp = fopen($csvFile, 'a');
+		if (!$fp) {
+			http_response_code(500);
+			echo 'Cannot open CSV for writing.';
+			exit;
+		}
+		if (!flock($fp, LOCK_EX)) {
+			fclose($fp);
+			http_response_code(500);
+			echo 'Could not lock file.';
+			exit;
+		}
+		
+		//separator, enclosure and escape passed separately to avoid deprecation warning
+		$sep = ',';
+		$enc = '"';
+		$esc = '\\';
+		
+		if ($needHeader) {
+			fputcsv($fp, $header, $sep, $enc, $esc);
+		}
+		fputcsv($fp, [gmdate('c'), $firstName, $lastName, $companyName, $email, $yourMessage], $sep, $enc, $esc);
+		
+		fflush($fp);
+		flock($fp, LOCK_UN);
+		fclose($fp);
+		
+		$referer = $_SERVER['HTTP_REFERER'] ?? 'index.php';
+		$sepchar = (strpos($referer, '?') === false) ? '?' : '&';
+
+		$next = '../html/mainPage.php'; // your home page
+		header('Location: contactPageSuccess.php?next=' . urlencode($next));
+		// header("Location: {$referer}{$sepchar}sent=1");
+		// exit;
+	}
+}
+?>
+
+				
+
+<!-- // mail confirmation: set up a mail client that can automatically send an email to the person that has 
+ filled in the contact info/form -->
+
+ <!-- add dutch version, make it responsive @media 800px-->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -7,13 +115,11 @@
 		<link rel="stylesheet" href="../css/contactPage.css">
 	</head>
 
-
-
 	<body>
 		<!-- Headers -->
 		<div class="header">
 			<!-- Header Buttons -->
-            <a href="mainPage.html" class="headerButton homeButton">Home</a>
+            <a href="mainPage.php" class="headerButton homeButton">Home</a>
             <a href="dots.html" class="headerButton dotsButton">D.O.T.S.</a>
             <a href="" class="headerButton solutionsButton">Solutions</a>
 			<a href="aboutus.html" class="headerButton aboutUsButton">About us</a>
@@ -33,17 +139,18 @@
 			<img class="verticalCircleSolutionsLogo" src="../images/contactPage/verticalCircleSolutionsLogo.png" alt="Vertical Circle Solutions Logo">
 
 			<img src="../images/contactPage/phone.png" class="phoneIconContact" alt="Phone Icon">
-			<div class="phoneIconText contactIconsText">0565445421</div>
+			<div class="phoneIconText contactIconsText"><a href="tel:0565445421">0565445421</a></div>
 
 			<img src="../images/contactPage/email.png" class="emailIconContact" alt="Email Icon">
-			<div class="emailIconText contactIconsText">info@circlesolutions.com</div>
+			<div class="emailIconText contactIconsText"><a href="mailto:info@circlesolutions.com?subject=Website%20contact">info@circlesolutions.com</a></div>
 
 			<img src="../images/contactPage/home.png" class="addressIconContact" alt="Address Icon">
-			<div class="addressIconText contactIconsText">Circle Street 76, Emmen</div>
+			<div class="addressIconText contactIconsText"><a href="https://maps.app.goo.gl/xbBmqjwVYxFGVoxU6" target="_blank" rel="noopener">Circle Street 76, Emmen</a></div>
 
 			<!-- Contact form -->
-			<div class="contactFormGrid">
 
+			<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method='POST' class="contactFormGrid" novalidate>
+					
 				<img src="../images/contactPage/userMemberIcon.png" class="userMemberIcon contactFormIcons" alt="User Member Icon">
 				<input type="text" class="firstNameInput contactFormInput" name="firstName" id="firstName" placeholder="First Name">
 
@@ -69,11 +176,11 @@
 					<img src="../images/contactPage/sendMessage.png" alt="Send Message Icon" class="sendMessageIcon contactFormInput">
 					<span class="sendMessageText">Send Message</span>
 				</button>
-
 				
+				<!-- Show errors from PHP at start of file -->
+				<?php print $formErrorHtml ?>
 
-
-			</div>
+			</form>
 
 			<!-- Social media tags -->
 			<img src="../images/contactPage/instagram.png" class="instagramIcon socialMediaIcons" alt="Instagram Icon">
@@ -85,11 +192,10 @@
 			 <img src="../images/contactPage/copyright.png" class="circleSolutionsCopyrightImage" alt="Copyright Icon">
 			<div class="circleSolutionsCopyrightTag">Circle Solutions 2025</div>
 
-
 		</div>
-
-
 
 	</body>
 
 </html>
+
+
