@@ -1,0 +1,509 @@
+* {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+/* Fonts */
+@font-face {
+	font-family: "CalibreLight";
+	src: url("../fonts/Calibre-Light.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "CalibreLightItalic";
+	src: url("../fonts/Calibre-LightItalic.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "CalibreRegular";
+	src: url("../fonts/Calibre-Regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "CalibreRegularItalic";
+	src: url("../fonts/Calibre-RegularItalic.otf") format("opentype");
+}
+
+@font-face {
+	 font-family: "CalibreSemiBold";
+	 src: url("../fonts/Calibre-Semibold.otf") format("opentype");;
+}
+
+@font-face {
+	font-family: "CalibreSemiboldItalic";
+	src: url("../fonts/Calibre-SemiboldItalic.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "CalibreBold";
+	src: url("../fonts/Calibre-Bold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "CalibreBoldItalic";
+	src: url("../fonts/Calibre-BoldItalic.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "CalibreMedium";
+	src: url("../fonts/Calibre-Medium.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "CalibreMediumItalic";
+	src: url("../fonts/Calibre-MediumItalic.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "CalibreBlack";
+	src: url("../fonts/Calibre-Black.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "CalibreBlackItalic";
+	src: url("../fonts/Calibre-BlackItalic.otf") format("opentype");
+}
+
+body {
+    display: grid;
+    place-items: center;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.header {
+	width: 95dvw;
+	height: 10dvh;
+	margin-inline: 5dvw;
+
+	display: grid;
+	grid-template-columns: repeat(24, 1fr);
+	align-items: center;
+	padding: 5px;
+}
+
+.headerButton {
+	appearance: none;
+	border: none;
+	text-decoration: none;
+
+	display: flex;
+	justify-content: center;
+
+	margin-top: 25px;
+
+	font-size: 1.5rem;
+	font-family: "CalibreBold";
+	color: black;
+}
+
+.homeButton {
+	grid-column: 15/17;
+}
+
+.dotsButton {
+	grid-column: 17/19;
+}
+
+.solutionsButton {
+	grid-column: 19/21;
+}
+
+.aboutUsButton {
+	grid-column: 21/23;
+}
+
+hr {
+	grid-column: 1/24;
+	border: 1px solid;
+	border-color: #D9D9D9;
+}
+
+/* Main page grid */
+
+.pageGrid {
+	display: grid;
+	grid-template-columns: 2fr 0.45fr 0.8fr;
+
+	align-items: left;
+	margin-inline: 5dvw;
+	padding: 15px;
+}
+
+/* Animation */
+
+.animationGrid {
+    grid-row: 5/10;
+    grid-column: 1;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: auto;
+	align-items: center;  
+	justify-items: start; 
+
+    margin-top: 40px;
+}
+
+.circleSolutionsText {
+    color: #799DAB;
+}
+
+.circleSolutionsLogoLargeText {
+    font-size: 6rem;
+	font-family: "CalibreBold";
+    line-height: 5rem;
+}
+
+.circleSolutionsWellBeInTouchText {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.circleSolutionsLogoMediumText {
+    font-size: 4.5rem;
+    font-family: "CalibreSemiBold";
+    grid-column: 1;
+    grid-row: 2;
+    color: #799DAB;
+}
+
+.circleSolutionsLogoCircle {
+    grid-column: 2;
+    grid-row: 1;
+
+    align-self: end;
+}
+
+.circleSolutionsLogoSolutions {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.circleSolutionsSmallText {
+    grid-column: 1;
+	grid-row: 3;
+
+    display: inline-block;
+	justify-self: start;
+
+    font-size: 1.5rem;
+    font-family: "CalibresemiBold";
+    line-height: 3rem;
+
+    margin-top: 40px;
+	padding: 20px 30px 15px 30px;
+	border-radius: 12px;
+	background-color: #799DAB;
+}
+
+.circleSolutionsLogoSmallText {
+    font-size: 3rem;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.circleSolutionsLogoJustConnectTheDots {
+    font-size: 3rem;
+    grid-column: 2;
+    grid-row: 3;
+    font-family: "CalibreRegular";
+
+    line-height: 3rem;
+    color: #799DAB;
+}
+
+.black {
+    color: black;
+}
+
+.radialProgress {
+    grid-column: 1;
+    grid-row: 1/ span 3;
+    justify-self: end;
+
+    --holesize: 52.5%;
+    --track-bg: #ffffff;
+
+    /* vmin takes the smallest viewport size and it's very useful for applications such as this */
+    height: 100%;
+    /* aspect ratio is also super cool for responsive design */
+    aspect-ratio: 1/1;
+    max-height: 40vmin;
+    max-width: 40vmin;
+    display: grid;
+    place-items: center;
+    position: relative;
+
+	margin-right: 40px;
+}
+
+.radialProgress::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    z-index: -1;
+
+    background: conic-gradient(
+            #C7EAF8
+            var(--progress, 0%),
+            white var(--progress, 0%) 100%);
+
+    -webkit-mask-image: radial-gradient(transparent var(--holesize),
+            black calc(var(--holesize) + 0.5px));
+
+    mask-image: radial-gradient(transparent var(--holesize),
+            black calc(var(--holesize) + 0.5px));
+}
+
+/* Contact icons and text */
+
+.contactIconsText a, .phoneIconText a, .emailIconText a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.contactIconsText {
+	color: #799DAB;
+	font-family: "CalibreSemiBold";
+	font-size: 1.5rem;
+}
+
+.phoneIconContact {
+	grid-column: 3;
+	grid-row: 6;
+
+	width: 40px;
+
+	margin-top: 220px;
+}
+
+.phoneIconText {
+	grid-column: 3;
+	grid-row: 6;
+
+	margin-top: 230px;
+	margin-left: 60px;
+}
+
+.emailIconContact {
+	grid-column: 3;
+	grid-row: 7;
+
+	width: 40px;
+
+	margin-top: 40px;
+}
+
+.emailIconText {
+	grid-column: 3;
+	grid-row: 7;
+
+	margin-top: 50px;
+	margin-left: 60px;
+}
+
+.addressIconContact {
+	grid-column: 3;
+	grid-row: 8;
+
+	width: 40px;
+	margin-top: 40px;
+}
+
+.addressIconText {
+	grid-column: 3;
+	grid-row: 8;
+
+	margin-top: 50px;
+	margin-left: 60px;
+}
+
+/* Social media icons at the bottom */
+.socialMediaIcons {
+	grid-column: 1;
+	grid-row: 10;
+	width: 30px;
+}
+
+.instagramIcon {
+	margin-left: 0px;
+}
+
+.xLogoIcon {
+	margin-left: 35px;
+}
+
+.linkedInIcon {
+	margin-left: 70px;
+}
+
+.circleSolutionsInstagramTag {
+	grid-column: 1;
+	grid-row: 10;
+
+	margin-left: 110px;
+	margin-top: 7px;
+
+	color: #799DAB;
+	font-family: "CalibreRegular";
+}
+
+.circleSolutionsCopyrightImage {
+	grid-column: 3;
+	grid-row: 10;
+
+	justify-self: end;
+	align-self: center;
+
+	margin-right: 212px;
+
+	height: 25px;
+}
+
+.circleSolutionsCopyrightTag {
+	grid-column: 3;
+	grid-row: 10;
+
+	color: #799DAB;
+	font-family: "CalibreRegular";
+
+	margin-top: 5px;
+	margin-right: 80px;
+
+	text-align: end;
+	align-self: center;
+}
+
+
+/* Responsive design */
+@media only screen and (max-width: 800px) {
+
+	/* Main page grid adjustments */
+	.pageGrid {
+		display: grid;
+		grid-template-columns: 4fr 0.4fr 0.4fr;
+		padding: 10px;
+	}
+
+	/* Animation */
+	.animationGrid {
+		grid-row: 5/10;
+		grid-column: 1;
+	
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-auto-rows: auto;
+		align-items: center;  
+		justify-items: start; 
+	
+		margin-top: 40px;
+	}
+	
+	.circleSolutionsLogoLargeText {
+		font-size: 4rem;
+		line-height: 3rem;
+	}
+	
+	.circleSolutionsWellBeInTouchText {
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+	
+	.circleSolutionsLogoMediumText {
+		font-size: 2.75rem;
+	}
+	
+	/* UNEDITED */
+	.circleSolutionsLogoCircle {
+		grid-column: 2;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.circleSolutionsSmallText {
+		font-size: 1.2rem;
+		line-height: 2rem;
+	}
+	
+	.circleSolutionsLogoSmallText {
+		font-size: 3rem;
+		grid-column: 2;
+		grid-row: 3;
+	}
+	
+	.circleSolutionsLogoJustConnectTheDots {
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+	
+	/* Change circle animation size */
+	.radialProgress {
+		max-height: 30vmin;
+		max-width: 30vmin;
+		margin-right: 20px;
+	}
+
+	/* Contact icons and text */
+	.contactIconsText {
+		font-size: 1rem;
+	}
+	
+	.phoneIconContact {
+		width: 20px;
+		margin-top: 227.5px;
+	}
+	
+	.phoneIconText {
+		margin-top: 230px;
+		margin-left: 30px;
+	}
+	
+	.emailIconContact {
+		width: 20px;
+		margin-top: 47.5px;
+	}
+	
+	.emailIconText {
+		margin-top: 50px;
+		margin-left: 30px;
+	}
+	
+	.addressIconContact {
+		width: 20px;
+		margin-top: 47.5px;
+	}
+	
+	.addressIconText {
+		margin-top: 50px;
+		margin-left: 30px;
+	}
+
+	
+	/* Copyright tag */
+	.circleSolutionsCopyrightImage {
+		margin-right: 110px;
+		margin-top: 2px;
+		height: 15px;
+	}
+	
+	.circleSolutionsCopyrightTag {
+		margin-top: 5px;
+		margin-right: 10px;
+
+		font-size: 0.75rem;
+	}
+
+}

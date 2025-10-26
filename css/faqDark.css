@@ -1,0 +1,278 @@
+@font-face {
+  font-family: 'Calibre';
+  src: url('../fonts/Calibre-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('../fonts/Calibre-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('../fonts/Calibre-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+
+  font-family: 'Calibre', Arial 'sans serif';
+  color: black;
+  margin: 30px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.90) 30%, rgba(0, 0, 0, 0.90) 100%), url(../images/faqimages/laptoptyping.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.topheader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(34, 49, 63, 0.85);
+  /* Optional: semi-transparent background rgba*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  min-height: 70px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.flag {
+  width: 30px;
+  margin-right: 40px;
+}
+
+
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.links a {
+  font-family: 'Calibre';
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.herotext {
+  font-family: 'Calibre';
+  font-weight: 40px;
+  text-align: center;
+  padding-top: 60px;
+  color: white;
+}
+
+
+p1 {
+  font-family: 'Calibre';
+  font-size: 20px;
+  opacity: 80%;
+  color: white;
+}
+
+.faqboxes {
+
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 50px;
+}
+
+.faq-qa {
+  /*the whole box question+answer*/
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  background-color: rgba(65, 84, 92, 0.9);
+  /*same background color but lower opacity*/
+}
+
+.faq-qa summary {
+  /*expandable box when u press the chevron*/
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-family: 'Calibre';
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.chevron {
+  width: 30px;
+  height: 40px;
+  padding: 20px;
+  margin-right: 10px;
+  display: inline-block;
+  transition: transform .25s ease;
+}
+
+.faq-qa[open] .chevron {
+  transform: rotate(180deg);
+}
+
+.answer {
+
+  display: flex;
+  background-color: lightgrey;
+  font-family: 'Calibre';
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 20px;
+  background: transparent;
+  opacity: 88%;
+}
+
+.faq-question {
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  font-weight: bolder;
+}
+
+.contactbox {
+  display: block;
+  text-align: center;
+}
+
+.contactbox a {
+  color: white;
+  font-family: 'Calibre';
+  font-size: 20px;
+}
+
+.contactbox p {
+  color: white;
+  font-family: 'Calibre';
+  font-size: 20px;
+}
+
+h2 {
+  color: white;
+  font-weight: 600;
+  font-family: 'Calibre';
+}
+
+p2 {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Calibre';
+  color: white;
+}
+
+.copyrightbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  padding: 10px 20px;
+  font-size: 12px;
+  margin-top: 60px;
+  font-family: 'Calibre';
+  opacity: 50%;
+}
+
+p2 {
+  color: #799dab;
+  font-size: 1rem;
+  margin-bottom: 2px;
+  margin-top: 40px;
+}
+
+.copyright {
+  right: 10px;
+  gap: 5px;
+}
+
+/*desktop*/
+@media (min-width: 1400px) {
+  .faqboxes {
+    max-width: 1100px;
+  }
+}
+
+/*phone*/
+@media (max-width: 800px) {
+  body {
+    margin: 12px;
+  }
+
+  .topheader {
+    padding: 0 10px;
+    min-height: 40px;
+    flex-wrap: wrap;
+    /*flex-wrap: wrap; if not enough space, move it to the next line*/
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .flag {
+    width: 20px;
+    margin-right: 17px;
+  }
+
+  .links {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .links a {
+    font-size: 12px;
+  }
+
+  .herotext {
+    padding-top: 70px;
+  }
+
+  .faqboxes {
+    max-width: 100%;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .faq-qa summary {
+    font-size: 15px;
+  }
+
+  .faq-question {
+    padding: 12px;
+    margin: 5px;
+  }
+
+  .chevron {
+    width: 20px;
+    height: 30px;
+    padding: 10px;
+  }
+
+  .answer {
+    font-size: 15px;
+    padding: 16px;
+  }
+
+  .contactbox a,
+  .contactbox p,
+  p2 {
+    font-size: 15px;
+  }
+}
