@@ -6,6 +6,8 @@ const setProgress = (progress) => {
   radialProgress.style.setProperty("--progress", `${percentage}%`);
 };
 
+// Conical gradient (draws circle loading animation) is based off the --progress flag in .radialProgress
+
 setProgress(0);
 
 let start = null;

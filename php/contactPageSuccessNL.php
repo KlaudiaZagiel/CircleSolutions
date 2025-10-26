@@ -18,10 +18,10 @@ $seconds = 5;
 		<!-- Headers -->
 		<div class="header">
 			<!-- Header Buttons -->
-            <a href="mainPage.html" class="headerButton homeButton">Home</a>
+            <a href="mainPage.html" class="headerButton homeButton">Startpagina</a>
             <a href="dots.html" class="headerButton dotsButton">D.O.T.S.</a>
-            <a href="" class="headerButton solutionsButton">Solutions</a>
-			<a href="aboutus.html" class="headerButton aboutUsButton">About us</a>
+            <a href="" class="headerButton solutionsButton">Oplossingen</a>
+			<a href="aboutus.html" class="headerButton aboutUsButton">Over Ons</a>
 
 			<hr>
 			
@@ -30,11 +30,10 @@ $seconds = 5;
 		<!-- Main Page -->
 		<div class="pageGrid">
 
-      <div class="circleSolutionsWellBeInTouchText circleSolutionsLogoLargeText circleSolutionsText black">We'll be in touch!</div>
-      <div class="circleSolutionsLogoMediumText circleSolutionsText">You're one step closer to closing the circle</div>
+      <div class="circleSolutionsWellBeInTouchText circleSolutionsLogoLargeText circleSolutionsText black">We nemen contact met je op!</div>
+      <div class="circleSolutionsLogoMediumText circleSolutionsText">Je bent een stap dichter bij het sluiten van de cirkel.</div>
     
-      <div class="circleSolutionsSmallText circleSolutionsText black subheadingNextSolution">You will be redirected to the home page shortly</div>
-
+      <div class="circleSolutionsSmallText circleSolutionsText black subheadingNextSolution">U wordt binnenkort doorgestuurd naar de startpagina.</div>
 
       <div class="animationGrid">
 
@@ -42,13 +41,11 @@ $seconds = 5;
       <div class="circleSolutionsLogoSolutions circleSolutionsLogoLargeText circleSolutionsText">solutions</div>
       <div class="circleSolutionsLogoJustConnectTheDots">just connect the dots</div>
 
-
       <div class="radialProgress"></div>
 
       </div>
 
       <script src="../js/contactPageSuccess.js"></script>
-
 
       <!-- Contact tags -->
 			<img src="../images/contactPage/phone.png" class="phoneIconContact" alt="Phone Icon">
@@ -58,7 +55,7 @@ $seconds = 5;
 			<div class="emailIconText contactIconsText"><a href="mailto:info@circlesolutions.com?subject=Website%20contact">info@circlesolutions.com</a></div>
 
 			<img src="../images/contactPage/home.png" class="addressIconContact" alt="Address Icon">
-			<div class="addressIconText contactIconsText"><a href="https://maps.app.goo.gl/xbBmqjwVYxFGVoxU6" target="_blank" rel="noopener">Circle Street 76, Emmen</a></div>
+			<div class="addressIconText contactIconsText"><a href="https://maps.app.goo.gl/xbBmqjwVYxFGVoxU6" target="_blank" rel="noopener">Cirkelstraat 76, Emmen</a></div>
 
 
 			<!-- Social media tags -->
@@ -72,12 +69,6 @@ $seconds = 5;
 			<div class="circleSolutionsCopyrightTag">Circle Solutions 2025</div>
 
 		</div>
-
-
-
-
-
-
 
   </body>
 </html>

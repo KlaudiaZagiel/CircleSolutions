@@ -10,16 +10,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	$errorMessages = array();
 	$emailInvalid  = "";
 
+	// Appends strings to error messages depending on condition
 	if (empty($firstName)) {
-		$errorMessages[] = "First Name" ;
+		$errorMessages[] = "Voornaam" ;
 	}
 
 	if (empty($lastName)) {
-		$errorMessages[] = "Last Name" ;
+		$errorMessages[] = "Achternaam" ;
 	}
 
 	if (empty($companyName)) {
-		$errorMessages[] = "Company Name" ;
+		$errorMessages[] = "Bedrijfsnaam" ;
 	}
 	
 	if (empty($email)) {
@@ -27,11 +28,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	}
 
 	if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-		$emailInvalid = "Please input a valid E-mail";
+		$emailInvalid = "Voer een geldig e-mailadres in.";
 	}
 	
 	if (empty($yourMessage)) {
-		$errorMessages[] = "Your Message" ;
+		$errorMessages[] = "Uw bericht" ;
 	}
 
 	// appends all errors to a single string
@@ -39,24 +40,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	if (!empty($errorMessages) || (!empty($emailInvalid))) {
 		//if errorMessages only
 		if (!empty($errorMessages) && empty($emailInvalid)) {
-			$errorMessage = "Please input: " . implode(", ", $errorMessages);
-			// print '<div class="formErrorText">' . $errorMessage . '</div>';
+			$errorMessage = "Voer het volgende in: " . implode(", ", $errorMessages);
 		}
 		// elseif emailInvalid and no errorMessages
 		elseif ((!empty($emailInvalid)) && empty($errorMessages)) {
 			$errorMessage = $emailInvalid;
-			// print '<div class="formErrorText">' . $errorMessage . '</div>';
 		}
 		//else both
 		else {
-			$errorMessage = "Please input: " . implode(", ", $errorMessages) . "<br>" . $emailInvalid;
-			// print '<div class="formErrorText">' . $errorMessage . '</div>';
+			$errorMessage = "Voer het volgende in: " . implode(", ", $errorMessages) . "<br>" . $emailInvalid;
 		}
 
 		//gets printed at the form section
 		$formErrorHtml = '<div class="formErrorText">' . $errorMessage . '</div>';
 
 	} else {
+		// If no errors, write contact form details to CSV
 		$csvFile = __DIR__ . '/../contactFormSubmissions/submissions.csv';
 		$header  = ['Timestamp','First Name','Last Name','Company Name', 'Email', 'Message'];
 		
@@ -74,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			exit;
 		}
 		
-		//separator, enclosure and escape passed separately to avoid deprecation warning
+		//separator, enclosure and escape passed separately to avoid deprecation warnings
 		$sep = ',';
 		$enc = '"';
 		$esc = '\\';
@@ -92,17 +91,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		$sepchar = (strpos($referer, '?') === false) ? '?' : '&';
 
 		$next = '../html/mainPage.php'; // your home page
-		header('Location: contactPageSuccess.php?next=' . urlencode($next));
-		// header("Location: {$referer}{$sepchar}sent=1");
-		// exit;
+		header('Location: contactPageSuccessNL.php?next=' . urlencode($next));
 	}
 }
 ?>
-
-				
-
-<!-- // mail confirmation: set up a mail client that can automatically send an email to the person that has 
- filled in the contact info/form -->
 
  <!-- add dutch version, make it responsive @media 800px-->
 
@@ -119,10 +111,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		<!-- Headers -->
 		<div class="header">
 			<!-- Header Buttons -->
-            <a href="mainPage.php" class="headerButton homeButton">Home</a>
+            <a href="mainPage.php" class="headerButton homeButton">Startpagina</a>
             <a href="dots.html" class="headerButton dotsButton">D.O.T.S.</a>
-            <a href="" class="headerButton solutionsButton">Solutions</a>
-			<a href="aboutus.html" class="headerButton aboutUsButton">About us</a>
+            <a href="" class="headerButton solutionsButton">Oplossingen</a>
+			<a href="aboutus.html" class="headerButton aboutUsButton">Over Ons</a>
 
 			<hr>
 			
@@ -131,10 +123,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		<!-- Main Page -->
 		<div class="pageGrid">
 			<!-- Hero text -->
-			<h1 class="heroReadyTo">Ready to</h1>
-			<h1 class="heroGetStarted">get started?</h1>
+			<h1 class="heroReadyTo">Klaar om</h1>
+			<h1 class="heroGetStarted">te beginnen?</h1>
 
-			<h2 class="subheadingNextSolution">Your next solution begins here. Let's talk.</h2>
+			<h2 class="subheadingNextSolution">Uw volgende oplossing begint hier. Laten we eens praten.</h2>
 
 			<img class="verticalCircleSolutionsLogo" src="../images/contactPage/verticalCircleSolutionsLogo.png" alt="Vertical Circle Solutions Logo">
 
@@ -145,21 +137,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			<div class="emailIconText contactIconsText"><a href="mailto:info@circlesolutions.com?subject=Website%20contact">info@circlesolutions.com</a></div>
 
 			<img src="../images/contactPage/home.png" class="addressIconContact" alt="Address Icon">
-			<div class="addressIconText contactIconsText"><a href="https://maps.app.goo.gl/xbBmqjwVYxFGVoxU6" target="_blank" rel="noopener">Circle Street 76, Emmen</a></div>
+			<div class="addressIconText contactIconsText"><a href="https://maps.app.goo.gl/xbBmqjwVYxFGVoxU6" target="_blank" rel="noopener">Cirkelstraat 76, Emmen</a></div>
 
 			<!-- Contact form -->
 
 			<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method='POST' class="contactFormGrid" novalidate>
 					
 				<img src="../images/contactPage/userMemberIcon.png" class="userMemberIcon contactFormIcons" alt="User Member Icon">
-				<input type="text" class="firstNameInput contactFormInput" name="firstName" id="firstName" placeholder="First Name">
+				<input type="text" class="firstNameInput contactFormInput" name="firstName" id="firstName" placeholder="Voornaam">
 
-				<input type="text" class="lastNameInput contactFormInput" name="lastName" id="lastName" placeholder="Last Name">
+				<input type="text" class="lastNameInput contactFormInput" name="lastName" id="lastName" placeholder="Achternaam">
 
 				<hr class="contactFormHr1 contactFormHr">
 
 				<img src="../images/contactPage/companyIcon.png" class="companyIcon contactFormIcons" alt="">
-				<input type="text" class="companyNameInput contactFormInput" name="companyName" id="companyName" placeholder="Company Name">
+				<input type="text" class="companyNameInput contactFormInput" name="companyName" id="companyName" placeholder="Bedrijfsnaam">
 
 				<hr class="contactFormHr2 contactFormHr">
 
@@ -168,16 +160,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 				<hr class="contactFormHr3 contactFormHr">
 
-				<input type="text" class="yourMessageInput contactFormInput" name="yourMessage" id="yourMessage" placeholder="Your Message">
-
-				<!-- <input type="submit" class="sendMessageButton" name="sendMessage" id="sendMessage" value="Send Message"> -->
+				<input type="text" class="yourMessageInput contactFormInput" name="yourMessage" id="yourMessage" placeholder="Uw Bericht">
 
 				<button type="submit" class="sendMessageButton">
 					<img src="../images/contactPage/sendMessage.png" alt="Send Message Icon" class="sendMessageIcon contactFormInput">
-					<span class="sendMessageText">Send Message</span>
+					<span class="sendMessageText">Bericht verzenden</span>
 				</button>
 				
-				<!-- Show errors from PHP at start of file -->
+				<!-- Show errors from PHP in the form -->
 				<?php print $formErrorHtml ?>
 
 			</form>
