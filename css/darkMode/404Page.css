@@ -9,7 +9,7 @@ body {
     padding:0;
     width: 100vw;
     height: 100vh;
-    background: #ffffff;
+    background: #000000;
     display: flex;
     overflow: hidden;
 }
@@ -43,45 +43,65 @@ body {
   left: 0;
   width: 100%;
   z-index: 100;
-  background: rgba(34, 49, 63, 0.85);
+  background:#B7D0E3; /* Optional: semi-transparent background rgba*/
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   min-height: 70px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-} 
-
-.logomain {
-    max-width: 100%;
-    height: auto;
 }
-
-.headerbuttons {
-    margin-left: auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 25px;
-    color: #000;
-    font-family: Calibre;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 50px;
-    text-decoration: none;
+header
+{
+    grid-column: 1/4;
 }
-
-.headerbuttons a {
+.logomain 
+{
+  height: 50px;
+}
+.headerbuttons 
+{
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Adds consistent spacing between items */
+  margin-left: auto;
+  list-style-type: none; 
+  padding-left: 0;       
+  margin: 0; 
+}
+.buttondarLight
+{
     color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1em;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+.headerbuttons a 
+{
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1em;
+  transition: color 0.3s ease;
 }
 
-.headerbuttons a:hover {
-    color: #d0e6f7;
+.headerbuttons a:hover 
+{
+  color: #d0e6f7; /* Optional hover effect */
+}
+
+.buttonflag 
+{
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.buttonflag img
+{
+  height: 24px;
 }
 
 
