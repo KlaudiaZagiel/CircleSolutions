@@ -31,18 +31,18 @@ if (isset($_POST['toggle'])) {
     <header>
     <div class="backroundimagemaindiv">
         <div class="headerdivmain">
-            <a href="../html/mainPage.php"><img class="headerImagedots" src="../images/circleSolutionsLogo.png" alt="Circle Solutions-logo"></a>
+            <a href="../nl/mainPage.php"><img class="headerImagedots" src="../images/circleSolutionsLogo.png" alt="Circle Solutions-logo"></a>
             <ul class="headerbuttons">
-                <li><a href="../html/dots.php">D.O.T.S</a></li>
-                <li><a href="../php/contactPage.php">Contact</a></li>
-                <li><a href="../html/aboutus.php">Over ons</a></li>
-                <li><a href="../html/whatwebuild.php">Oplossingen</a></li>
+                <li><a href="../nl/dots.php">D.O.T.S</a></li>
+                <li><a href="../nl/contactPage.php">Contact</a></li>
+                <li><a href="../nl/aboutUs.php">Over ons</a></li>
+                <li><a href="../nl/whatWeBuild.php">Oplossingen</a></li>
                 <li>
                     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'], ENT_QUOTES); ?>" method="POST">
                         <button name="toggle" class="buttonflag buttondarLight">Donker/licht</button>
                     </form>
                 </li>
-                <li><a class="buttonflag" href="../html/mainPageDutch.php"><img src="../images/flag.png" alt="vlag"></a></li>
+                <li><a class="buttonflag" href="../en/whatwebuild.php"><img src="../images/flag.png" alt="vlag"></a></li>
             </ul>
         </div>
     </div>
@@ -90,8 +90,8 @@ if (isset($_POST['toggle'])) {
 
   <footer class="cta" role="contentinfo">
     <h2>Bekijk D.O.T.S of laten we aan de slag gaan.</h2>
-    <a class="cta-link" href="../html/dots.php">Bekijk D.O.T.S</a>
-    <a class="cta-primary" href="../php/contactPage.php">Start uw project</a>
+    <a class="cta-link" href="../nl/dots.php">Bekijk D.O.T.S</a>
+    <a class="cta-primary" href="../nl/contactPage.php">Start uw project</a>
   </footer>
 </body>
 </html>

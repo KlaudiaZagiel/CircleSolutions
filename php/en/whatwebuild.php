@@ -30,18 +30,18 @@ if (isset($_POST['toggle'])) {
     <header>
     <div class="backroundimagemaindiv">
         <div class="headerdivmain">
-            <a href="../html/mainPage.php"><img class="headerImagedots" src="../images/circleSolutionsLogo.png" alt="logo"></a>
+            <a href="../en/mainPage.php"><img class="headerImagedots" src="../images/circleSolutionsLogo.png" alt="logo"></a>
             <ul class="headerbuttons">
-                <li><a href="../html/dots.php">D.O.T.S</a></li>
-                <li><a href="../php/contactPage.php">Contact</a></li>
-                <li><a href="../html/aboutus.php">About</a></li>
-                <li><a href="../html/whatwebuild.php">Solution</a></li>
+                <li><a href="../en/dots.php">D.O.T.S</a></li>
+                <li><a href="../en/contactPage.php">Contact</a></li>
+                <li><a href="../en/aboutUs.php">About</a></li>
+                <li><a href="../en/whatwebuild.php">Solution</a></li>
                 <li>
                     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'], ENT_QUOTES); ?>" method="POST">
                         <button name="toggle" class="buttonflag buttondarLight">Dark/light</button>
                     </form>
                 </li>
-                <li><a class="buttonflag" href="../html/mainPageDutch.php"><img src="../images/flag.png" alt="flag"></a></li>
+                <li><a class="buttonflag" href="../nl/whatWeBuild.php"><img src="../images/flag.png" alt="flag"></a></li>
             </ul>
         </div>
     </div>
@@ -89,8 +89,8 @@ if (isset($_POST['toggle'])) {
 
   <footer class="cta" role="contentinfo">
     <h2>Check out D.O.T.S or let’s get to work.</h2>
-    <a class="cta-link" href="../html/dots.php">Check D.O.T.S</a>
-    <a class="cta-primary" href="../php/contactPage.php">Start your project</a>
+    <a class="cta-link" href="../en/dots.php">Check D.O.T.S</a>
+    <a class="cta-primary" href="../en/contactPage.php">Start your project</a>
   </footer>
 </body>
 </html>
