@@ -23,7 +23,7 @@ if (isset($_POST['toggle']))
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
     if (!empty($_SESSION['light'])) {
-        echo "<link rel='stylesheet' href='../../css/darkMode/404Page.css>";
+        echo "<link rel='stylesheet' href='../../css/darkMode/404Page.css'>";
     } else {
         echo "<link rel='stylesheet' href='../../css/lightMode/404Page.css'>";
     }

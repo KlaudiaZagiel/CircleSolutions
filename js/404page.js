@@ -29,7 +29,7 @@
             star.acceleration = 0.02;
             starGeo.vertices.push(star);
         }
-        const sprite = new THREE.TextureLoader().load("../images/star.png");
+        const sprite = new THREE.TextureLoader().load("/CircleSolutions/images/star.png");
         const starMaterial = new THREE.PointsMaterial({
             color: 0xaaaaaa,
             size: 0.7,
