@@ -7,7 +7,7 @@
 
 /* Base styles */
 body {
-  font-family: 'Calibre', Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: 'Calibre';
   color: #222;
   background: url('../images/Technology.png') center/cover no-repeat fixed;
   -webkit-font-smoothing: antialiased;
@@ -23,51 +23,71 @@ body {
   padding-top: 70px;
 }
 
-/* Header */
 .headerdivmain {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 200;
-  background: rgba(34,49,63,0.85);
+  z-index: 100;
+  background:#B7D0E3; /* Optional: semi-transparent background rgba*/
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  align-items: center;
+  padding: 0 20px;
+  min-height: 70px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
-
-.logomain {
+header
+{
+    grid-column: 1/4;
+}
+.logomain 
+{
   height: 50px;
-  display: block;
 }
-
-.headerbuttons {
+.headerbuttons 
+{
   display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
   align-items: center;
+  gap: 30px; /* Adds consistent spacing between items */
+  margin-left: auto;
+  list-style-type: none; 
+  padding-left: 0;       
+  margin: 0; 
 }
-
-.headerbuttons a {
-  color: #fff;
+.buttondarLight
+{
+    color: #ffffff;
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+.headerbuttons a 
+{
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1em;
+  transition: color 0.3s ease;
 }
 
-.buttonflag {
+.headerbuttons a:hover 
+{
+  color: #d0e6f7; /* Optional hover effect */
+}
+
+.buttonflag 
+{
   background: none;
   border: none;
-  padding: 0;
   cursor: pointer;
+  padding: 0;
 }
 
-.buttonflag img {
+.buttonflag img
+{
   height: 24px;
-  display: block;
 }
 
 /* Page title */
@@ -75,7 +95,7 @@ body {
   grid-column: 1 / -1;
   grid-row: 1;
   text-align: center;
-  color: #fff;
+  color: #B7D0E3;
   font-size: 3rem;
   font-weight: 700;
   text-shadow: 0 6px 18px rgba(0,0,0,0.6);
@@ -98,8 +118,8 @@ body {
 .service-box {
   width: min(220px, 40vw);
   aspect-ratio: 1 / 1;
-  background: rgba(121,157,171,0.92);
-  color: #fff;
+  background: #B7D0E3;
+  color: rgba(121,157,171,0.92);
   border-radius: 50%;
   padding: 18px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
@@ -134,7 +154,7 @@ body {
 }
 
 .service-box p {
-  color: #f0f0f0;
+  color: rgba(121,157,171,0.92);
   font-size: 0.95rem;
   margin-top: 8px;
   line-height: 1.3;
@@ -225,7 +245,7 @@ body {
   }
 
   .headerbuttons a {
-    font-size: 0.9rem;
+    font-size: 12px;
   }
 
   .buttonflag img {

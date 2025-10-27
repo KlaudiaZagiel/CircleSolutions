@@ -75,6 +75,9 @@ hr
     grid-column: 2/4;
     display: grid;
     grid-template-columns: 1fr 0.2fr 1fr 0.2fr 1fr;
+    list-style-type: none; 
+  padding-left: 0;       
+  margin: 0; 
 }
 .buttondark
 {
@@ -169,7 +172,7 @@ hr
   left: 0;
   width: 100%;
   z-index: 100;
-  background: rgba(34, 49, 63, 0.85); /* Optional: semi-transparent background rgba*/
+  background: #B7D0E3; /* Optional: semi-transparent background rgba*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -203,6 +206,9 @@ color: #ffffff;
   align-items: center;
   gap: 30px; /* Adds consistent spacing between items */
   margin-left: auto;
+  list-style-type: none; 
+  padding-left: 0;       
+  margin: 0; 
 }
 
 .headerbuttons a 
@@ -240,14 +246,12 @@ color: #ffffff;
 .logomain {
   height: 50px;
 }
-
-
-
 .buttonflag img {
   height: 24px;
 }
 @media (max-width: 800px)
 {
+    
     .lastdivgrid
     {
         padding-top: 3rem;
@@ -267,10 +271,22 @@ color: #ffffff;
     {
         width: 20%;
     }
-    .q
+    .headerImagedots
     {
         height: 50px;
     }
+    .buttondarLight
+    {
+        font-size: 12px;
+    }
+    .headerbuttons
+  {
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    align-items: center;
+  }
     .headerbuttons a 
     {
         font-size:12px ;
@@ -328,4 +344,5 @@ color: #ffffff;
     {
         font-size: 16px;
     }
+    
 }

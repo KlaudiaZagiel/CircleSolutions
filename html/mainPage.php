@@ -2,7 +2,8 @@
 session_start();
 
 
-if (isset($_POST['toggle'])) {
+if (isset($_POST['toggle']))
+    {
     
     if (isset($_SESSION['light']) && $_SESSION['light'] === true)
         {
@@ -27,24 +28,25 @@ if (isset($_POST['toggle'])) {
         echo "<link rel='stylesheet' href='../css/mainPageStyles.css'>";
     }
     ?>
-    <title>Document</title>
+    <title>Main page</title>
 </head>
 <body>
     <header>
     <div class="backroundimagemaindiv">
         <div class="headerdivmain">
-            <a  href="../html/mainPage.php"><img class="q"  src="../images/circleSolutionsLogo.png" alt="logo"></a>
-            <div class="headerbuttons">
-                <a href="../html/dots.php">D.O.T.S</a>
-                <a href="">Contact</a>
-                <a href="../html/aboutus.html">About</a>
-                <a href="../html/whatwebuild.html">Solution</a>
-                <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
-                    <button name="toggle" class="buttonflag buttondarLight">Dark/light</button>
+            <a  href="../html/mainPage.php"><img class="headerImagedots"  src="../images/circleSolutionsLogo.png" alt="logo"></a>
+            <ul class="headerbuttons">
+                <li><a href="../html/dots.php">D.O.T.S</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="../html/aboutus.php">About</a></li>
+                <li><a href="../html/whatwebuild.html">Solution</a></li>
+                <li>
+                    <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
+                    <button name="toggle" class="buttonflag buttondarLight"><p class="darklightbuttontext">Dark/light</p></button>
                 </form>
-                    <button name="toggle" class="buttonflag"><img src="../images/flag.png" alt="flag"></button>
-
-            </div>
+                </li>
+                    <li><a  class="buttonflag" href="../html/mainPageDutch.php"><img src="../images/flag.png" alt="flag"></a></li>
+            </ul>
         </div>
     </div>
   </header>

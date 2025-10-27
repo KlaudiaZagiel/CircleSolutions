@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body
 {
     margin: 0;
@@ -46,6 +52,7 @@ a
 {
     display: grid;
     grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr;
+    margin-top: 5rem;
 }
 .centraldiv
 {
@@ -132,11 +139,13 @@ a
 }
 .bottomhr
 {
-    margin-top: 4rem;
+    
     grid-column: 3/4;
-    width: 1;
+    width: 1px;
     color: #D9D9D9;
     height: 100%;
+    margin: 0 auto;
+    margin-top: 4rem;
 }
 .bottombluetext
 {
@@ -170,4 +179,154 @@ a
     color: #799DAB;
     font-weight: 500;
     font-size: 12px;
+}
+
+.headerdivmain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: #B7D0E3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  min-height: 70px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.logomain {
+  height: 50px;
+}
+
+.headerbuttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: auto;
+  list-style-type: none; 
+  padding-left: 0;       
+  margin: 0; 
+}
+
+.headerbuttons a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+.headerbuttons p {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.headerbuttons a:hover {
+  color: #d0e6f7;
+}
+
+.buttondarLight {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.buttonflag {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.buttonflag img {
+  height: 24px;
+}
+
+@media (max-width: 800px) 
+{
+    .buttondarLight {
+    font-size: 12px;
+  }
+
+  .headerImagedots {
+    height: 50px;
+  }
+  .buttonflag img {
+    height: 20px;
+  }
+  .headerbuttons {
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+  }
+  .headerbuttons a {
+    font-size: 12px;
+  }
+  .headertext
+  {
+    font-size: 48px;
+  }
+  .centralblock
+  {
+    margin-top: 1rem;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center; 
+    transform: none;        
+    width: 100%;            
+    height: 65%;       
+  }
+  .centralblockdiv
+  {
+    height: 30%;
+    width: 60%;
+  }
+  .centralblockimg1 
+  {
+    width: 30%;
+  }
+  .centralblockimg2 
+  {
+    width: 23%;
+  }
+  .centralblockimg3 
+  {
+    width: 25%;
+  }
+  .centralblocktext
+  {
+    font-size: 12px;
+  }
+  .centralblocktextlowermargin
+  {
+    margin: 10px;
+  }
+  .centralblockbottomtext
+  {
+    font-size: 16px;
+    margin-top: 0;
+  }
+  .highermobilemargintext
+  {
+    margin-top: 5rem;
+  }
+  .lovermobilemargintext
+  {
+    margin-top: 1rem;
+  }
+  .bottombluetext
+  {
+    font-size: 18px;
+  }
+  .bottomtext
+  {
+    font-size: 14px;
+  }
 }
