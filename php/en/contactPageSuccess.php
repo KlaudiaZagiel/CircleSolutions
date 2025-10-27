@@ -1,6 +1,6 @@
 <?php
 $next    = $_GET['next'] ?? '../html/mainPage.php';
-$seconds = 5000;
+$seconds = 5;
 ?>
 <!DOCTYPE html>
 <html lang="en">
