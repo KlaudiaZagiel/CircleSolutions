@@ -38,7 +38,7 @@ a {
 
 .backroundimagemaindiv {
   margin-top: 35px;
-  background-image: url(../images/backimagemain.png);
+  background-image: url(../../images/mainPage/backimagemain.png);
   background-size: 100% 100%;  
   background-repeat: no-repeat;
   display: grid;
