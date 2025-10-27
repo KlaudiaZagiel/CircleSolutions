@@ -35,6 +35,8 @@ body {
   font-style: normal;
 }
 
+/* Change the color functions to HSLA and remove repetition of lines of code! */
+
 .headerdivmain {
   position: fixed;
   top: 0;
