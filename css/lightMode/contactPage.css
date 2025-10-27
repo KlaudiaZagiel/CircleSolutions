@@ -8,62 +8,62 @@
 /* Fonts */
 @font-face {
 	font-family: "CalibreLight";
-	src: url("../fonts/Calibre-Light.otf") format("opentype");
+	src: url("../../fonts/Calibre-Light.otf") format("opentype");
 }
 
 @font-face {
 	font-family: "CalibreLightItalic";
-	src: url("../fonts/Calibre-LightItalic.otf") format("opentype");
+	src: url("../../fonts/Calibre-LightItalic.otf") format("opentype");
 }
 
 @font-face {
 	font-family: "CalibreRegular";
-	src: url("../fonts/Calibre-Regular.otf") format("opentype");
+	src: url("../../fonts/Calibre-Regular.otf") format("opentype");
 }
 
 @font-face {
 	font-family: "CalibreRegularItalic";
-	src: url("../fonts/Calibre-RegularItalic.otf") format("opentype");
+	src: url("../../fonts/Calibre-RegularItalic.otf") format("opentype");
 }
 
 @font-face {
 	 font-family: "CalibreSemiBold";
-	 src: url("../fonts/Calibre-Semibold.otf") format("opentype");;
+	 src: url("../../fonts/Calibre-Semibold.otf") format("opentype");;
 }
 
 @font-face {
 	font-family: "CalibreSemiboldItalic";
-	src: url("../fonts/Calibre-SemiboldItalic.otf") format("opentype");
+	src: url("../../fonts/Calibre-SemiboldItalic.otf") format("opentype");
 }
 
 @font-face {
 	font-family: "CalibreBold";
-	src: url("../fonts/Calibre-Bold.otf") format("opentype");
+	src: url("../../fonts/Calibre-Bold.otf") format("opentype");
 }
 
 @font-face {
 	font-family: "CalibreBoldItalic";
-	src: url("../fonts/Calibre-BoldItalic.otf") format("opentype");
+	src: url("../../fonts/Calibre-BoldItalic.otf") format("opentype");
 }
 
 @font-face {
 	font-family: "CalibreMedium";
-	src: url("../fonts/Calibre-Medium.otf") format("opentype");
+	src: url("../../fonts/Calibre-Medium.otf") format("opentype");
 }
 
 @font-face {
 	font-family: "CalibreMediumItalic";
-	src: url("../fonts/Calibre-MediumItalic.otf") format("opentype");
+	src: url("../../fonts/Calibre-MediumItalic.otf") format("opentype");
 }
 
 @font-face {
 	font-family: "CalibreBlack";
-	src: url("../fonts/Calibre-Black.otf") format("opentype");
+	src: url("../../fonts/Calibre-Black.otf") format("opentype");
 }
 
 @font-face {
 	font-family: "CalibreBlackItalic";
-	src: url("../fonts/Calibre-BlackItalic.otf") format("opentype");
+	src: url("../../fonts/Calibre-BlackItalic.otf") format("opentype");
 }
 
 /* Header */
