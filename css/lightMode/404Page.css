@@ -102,7 +102,7 @@ body {
     line-height: 12px;
     position: absolute;
     top: 70px;
-    right: 100px;
+    right: 10px;
 }
 
 .notfound{
@@ -151,4 +151,30 @@ body {
 
 .homemessage a:hover {
     color: #799DAB;
+}
+
+@media (max-width: 800px)
+{
+
+    .homemessage{
+        font-size: 16px;
+        width: 300px;
+        height: 40px;
+    }
+
+    .notfound{
+        width: 300px;
+        height: 60px;
+        font-size: 32px;
+        top: 150px;
+        right: 0;
+    }
+
+    .text404{
+        width: 300px;
+        height: 200px;
+        font-size: 128px;
+        top: 125px;
+        right: 0;
+    }
 }
