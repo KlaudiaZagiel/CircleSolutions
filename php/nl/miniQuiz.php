@@ -30,7 +30,7 @@ if ($score >= 7) {
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
