@@ -174,7 +174,6 @@ h1 {
 }
 
 /* Contact icons and text */
-
 .contactIconsText a, .phoneIconText a, .emailIconText a {
 	color: inherit;
 	text-decoration: none;
@@ -240,6 +239,7 @@ h1 {
 
 .contactFormGrid {
 	margin-top: 80px;
+	margin-bottom: 70px;
 
 	grid-column: 1;
 	grid-row: 4/10;
@@ -257,8 +257,6 @@ h1 {
 	border-radius: 20px;
 
 	align-items: center;
-
-	margin-bottom: 70px;
 }
 
 .contactFormInput {
@@ -466,25 +464,23 @@ h1 {
 	align-self: center;
 }
 
-/* Responsive design */
+/* Responsive design @800px */
 @media only screen and (max-width: 800px) {
 
-	/* Ready to */
-	h1 {font-size: 3rem;}
+	/* Ready to get started?*/
+	h1 {font-size: 4rem;}
 
-	/* Get started? */
+	/* your next solution begins here */
 	h2.subheadingNextSolution {font-size: 1.5rem;}
 
 	/* Main page grid adjustments */
 	.pageGrid {
-		display: grid;
 		grid-template-columns: 4fr 0.4fr 0.4fr;
 		padding: 10px;
 	}
 
 	/* Smaller logo to give more space for the contact form */
 	.verticalCircleSolutionsLogo {
-		grid-row: 2/6;
 		height: 80%;
 	}
 
@@ -495,14 +491,13 @@ h1 {
 
 	.contactFormGrid {
 		margin-top: 60px;
+		margin-bottom: 40px;
 	
 		grid-column: 1;
 		grid-row: 4/10;
 	
 		grid-template-columns: 0.8fr 1fr 1fr 0.25fr 1fr 1fr 0.5fr;
 		grid-template-rows: repeat(5, 0.35fr 0.5fr) 0.35fr;
-	
-		margin-bottom: 40px;
 	}
 
 	.contactFormIcons {
@@ -552,6 +547,9 @@ h1 {
 		margin-left: 30px;
 	}
 
+	.sendMessageIcon {
+		padding-left: 15px;
+	}
 	
 	/* Copyright tag */
 	.circleSolutionsCopyrightImage {
@@ -565,6 +563,110 @@ h1 {
 		margin-right: 10px;
 
 		font-size: 0.75rem;
+	}
+
+}
+
+/* Responsive design @400px */
+@media only screen and (max-width: 400px) {
+
+	/* Ready to */
+	h1 {font-size: 3rem;}
+
+	/* Get started? */
+	h2.subheadingNextSolution {font-size: 1.5rem;}
+
+	/* Main page grid adjustments */
+	.pageGrid {
+		grid-template-columns: 1fr;
+	}
+
+	/* Logo dissapears entirely to give more space for the form*/
+	.verticalCircleSolutionsLogo {
+		height: 0%;
+	}
+
+	/* Contact form adjustments */
+	.contactFormGrid {
+		margin-bottom: 20px;
+	}
+	
+	.sendMessageText {
+		padding: 5px;
+	}
+
+	/* Contact icons and text */
+	.phoneIconContact {
+		grid-column: 1;
+		grid-row: 10;
+		
+		margin-top: 0px;
+	}
+	
+	.phoneIconText {
+		grid-column: 1;
+		grid-row: 10;
+
+		margin-top: 2.5px;
+	}
+	
+	.emailIconContact {
+		grid-column: 1;
+		grid-row: 11;
+
+		margin-top: 17.5px;
+	}
+	
+	.emailIconText {
+		grid-column: 1;
+		grid-row: 11;
+
+		margin-top: 20px;
+	}
+	
+	.addressIconContact {
+		grid-column: 1;
+		grid-row: 12;
+
+		margin-top: 17.5px;
+	}
+	
+	.addressIconText {
+		grid-column: 1;
+		grid-row: 12;
+
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.sendMessageIcon {
+		padding-left: 7px;
+	}
+
+	/* Social media icons at the bottom */
+	.socialMediaIcons {
+		grid-column: 1;
+		grid-row: 13;
+	}
+
+	.circleSolutionsInstagramTag {
+		grid-column: 1;
+		grid-row: 13;
+
+		margin-top: 8px;
+
+		font-size: 0.75rem;
+	}
+	
+	/* Copyright tag */
+	.circleSolutionsCopyrightImage {
+		grid-column: 1;
+		grid-row: 14;
+	}
+	
+	.circleSolutionsCopyrightTag {
+		grid-column: 1;
+		grid-row: 14;
 	}
 
 }

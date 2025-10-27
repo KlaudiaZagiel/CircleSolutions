@@ -388,7 +388,7 @@ hr {
 }
 
 
-/* Responsive design */
+/* Responsive design @800px*/
 @media only screen and (max-width: 800px) {
 
 	/* Main page grid adjustments */
@@ -396,20 +396,6 @@ hr {
 		display: grid;
 		grid-template-columns: 4fr 0.4fr 0.4fr;
 		padding: 10px;
-	}
-
-	/* Animation */
-	.animationGrid {
-		grid-row: 5/10;
-		grid-column: 1;
-	
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-auto-rows: auto;
-		align-items: center;  
-		justify-items: start; 
-	
-		margin-top: 40px;
 	}
 	
 	.circleSolutionsLogoLargeText {
@@ -424,13 +410,6 @@ hr {
 	
 	.circleSolutionsLogoMediumText {
 		font-size: 2.75rem;
-	}
-	
-	/* UNEDITED */
-	.circleSolutionsLogoCircle {
-		grid-column: 2;
-		grid-row: 1;
-		align-self: end;
 	}
 
 	.circleSolutionsSmallText {
@@ -504,6 +483,127 @@ hr {
 		margin-right: 10px;
 
 		font-size: 0.75rem;
+	}
+
+}
+
+/* Responsive design @400px */
+@media only screen and (max-width: 400px) {
+	
+	/* Main page grid adjustments */
+	.pageGrid {
+		grid-template-columns: 1fr;
+	}
+	
+	.circleSolutionsLogoLargeText {
+		font-size: 3rem;
+		line-height: 3rem;
+		margin-right: 10px;
+	}
+	
+	.circleSolutionsLogoMediumText {
+		font-size: 1.75rem;
+		margin-right: 10px;
+	}
+
+	.circleSolutionsSmallText {
+		font-size: 1rem;
+		line-height: 1.5rem;
+
+		margin-top: 20px;
+		padding: 10px 20px 5px 20px;
+		border-radius: 12px;
+	}
+	
+	.circleSolutionsLogoSmallText {
+		font-size: 3rem;
+		grid-column: 2;
+		grid-row: 3;
+	}
+	
+	.circleSolutionsLogoJustConnectTheDots {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+	
+	/* Change circle animation size */
+	.radialProgress {
+		max-height: 40vmin;
+		max-width: 40vmin;
+	}
+
+	/* Contact icons and text */
+	.phoneIconContact {
+		grid-column: 1;
+		grid-row: 10;
+		
+		margin-top: 20px;
+	}
+	
+	.phoneIconText {
+		grid-column: 1;
+		grid-row: 10;
+
+		margin-top: 22.5px;
+	}
+	
+	.emailIconContact {
+		grid-column: 1;
+		grid-row: 11;
+
+		margin-top: 17.5px;
+	}
+	
+	.emailIconText {
+		grid-column: 1;
+		grid-row: 11;
+
+		margin-top: 20px;
+	}
+	
+	.addressIconContact {
+		grid-column: 1;
+		grid-row: 12;
+
+		margin-top: 17.5px;
+	}
+	
+	.addressIconText {
+		grid-column: 1;
+		grid-row: 12;
+
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.sendMessageIcon {
+		padding-left: 7px;
+	}
+
+	/* Social media icons at the bottom */
+	.socialMediaIcons {
+		grid-column: 1;
+		grid-row: 13;
+	}
+
+	.circleSolutionsInstagramTag {
+		grid-column: 1;
+		grid-row: 13;
+
+		margin-top: 8px;
+
+		font-size: 0.75rem;
+	}
+	
+	/* Copyright tag */
+	.circleSolutionsCopyrightImage {
+		grid-column: 1;
+		grid-row: 14;
+	}
+	
+	.circleSolutionsCopyrightTag {
+		grid-column: 1;
+		grid-row: 14;
 	}
 
 }
