@@ -156,6 +156,16 @@ body {
 @media (max-width: 800px)
 {
 
+        .logomain{
+        width: 100px;
+        height: auto;
+    }
+
+    .headerbuttons{
+        font-size: 14px;
+        gap: 15px;
+    }
+
     .homemessage{
         font-size: 16px;
         width: 300px;

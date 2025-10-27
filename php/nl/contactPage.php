@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 	} else {
 		// If no errors, write contact form details to CSV
-		$csvFile = __DIR__ . '/../contactFormSubmissions/submissions.csv';
+		$csvFile = __DIR__ . '/../../contactFormSubmissions/submissions.csv';
 		$header  = ['Timestamp','First Name','Last Name','Company Name', 'Email', 'Message'];
 		
 		$needHeader = !file_exists($csvFile) || filesize($csvFile) === 0;
@@ -90,8 +90,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		$referer = $_SERVER['HTTP_REFERER'] ?? 'index.php';
 		$sepchar = (strpos($referer, '?') === false) ? '?' : '&';
 
-		$next = '../html/mainPage.php'; // your home page
-		header('Location: contactPageSuccessNL.php?next=' . urlencode($next));
+		$next = 'mainPage.php'; // your home page
+			header('Location: contactPageSuccess.php?next=' . urlencode($next));
 	}
 }
 ?>
@@ -104,7 +104,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Contact</title>
-		<link rel="stylesheet" href="../css/contactPage.css">
+		<link rel="stylesheet" href="../../css/lightMode/contactPage.css">
 	</head>
 
 	<body>
@@ -112,9 +112,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		<div class="header">
 			<!-- Header Buttons -->
             <a href="mainPage.php" class="headerButton homeButton">Startpagina</a>
-            <a href="dots.html" class="headerButton dotsButton">D.O.T.S.</a>
+            <a href="dots.php" class="headerButton dotsButton">D.O.T.S.</a>
             <a href="" class="headerButton solutionsButton">Oplossingen</a>
-			<a href="aboutus.html" class="headerButton aboutUsButton">Over Ons</a>
+			<a href="aboutUs.php" class="headerButton aboutUsButton">Over Ons</a>
 
 			<hr>
 			
@@ -128,34 +128,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 			<h2 class="subheadingNextSolution">Uw volgende oplossing begint hier. Laten we eens praten.</h2>
 
-			<img class="verticalCircleSolutionsLogo" src="../images/contactPage/verticalCircleSolutionsLogo.png" alt="Vertical Circle Solutions Logo">
+			<img class="verticalCircleSolutionsLogo" src="../../images/contactPage/verticalCircleSolutionsLogo.png" alt="Vertical Circle Solutions Logo">
 
-			<img src="../images/contactPage/phone.png" class="phoneIconContact" alt="Phone Icon">
+			<img src="../../images/contactPage/phone.png" class="phoneIconContact" alt="Phone Icon">
 			<div class="phoneIconText contactIconsText"><a href="tel:0565445421">0565445421</a></div>
 
-			<img src="../images/contactPage/email.png" class="emailIconContact" alt="Email Icon">
+			<img src="../../images/contactPage/email.png" class="emailIconContact" alt="Email Icon">
 			<div class="emailIconText contactIconsText"><a href="mailto:info@circlesolutions.com?subject=Website%20contact">info@circlesolutions.com</a></div>
 
-			<img src="../images/contactPage/home.png" class="addressIconContact" alt="Address Icon">
+			<img src="../../images/contactPage/home.png" class="addressIconContact" alt="Address Icon">
 			<div class="addressIconText contactIconsText"><a href="https://maps.app.goo.gl/xbBmqjwVYxFGVoxU6" target="_blank" rel="noopener">Cirkelstraat 76, Emmen</a></div>
 
 			<!-- Contact form -->
 
 			<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method='POST' class="contactFormGrid" novalidate>
 					
-				<img src="../images/contactPage/userMemberIcon.png" class="userMemberIcon contactFormIcons" alt="User Member Icon">
+				<img src="../../images/contactPage/userMemberIcon.png" class="userMemberIcon contactFormIcons" alt="User Member Icon">
 				<input type="text" class="firstNameInput contactFormInput" name="firstName" id="firstName" placeholder="Voornaam">
 
 				<input type="text" class="lastNameInput contactFormInput" name="lastName" id="lastName" placeholder="Achternaam">
 
 				<hr class="contactFormHr1 contactFormHr">
 
-				<img src="../images/contactPage/companyIcon.png" class="companyIcon contactFormIcons" alt="">
+				<img src="../../images/contactPage/companyIcon.png" class="companyIcon contactFormIcons" alt="">
 				<input type="text" class="companyNameInput contactFormInput" name="companyName" id="companyName" placeholder="Bedrijfsnaam">
 
 				<hr class="contactFormHr2 contactFormHr">
 
-				<img src="../images/contactPage/emailIcon.png" class="emailIcon contactFormIcons" alt="">
+				<img src="../../images/contactPage/emailIcon.png" class="emailIcon contactFormIcons" alt="">
 				<input type="text" class="emailInput contactFormInput" name="email" id="email" placeholder="E-mail">
 
 				<hr class="contactFormHr3 contactFormHr">
@@ -163,7 +163,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 				<input type="text" class="yourMessageInput contactFormInput" name="yourMessage" id="yourMessage" placeholder="Uw Bericht">
 
 				<button type="submit" class="sendMessageButton">
-					<img src="../images/contactPage/sendMessage.png" alt="Send Message Icon" class="sendMessageIcon contactFormInput">
+					<img src="../../images/contactPage/sendMessage.png" alt="Send Message Icon" class="sendMessageIcon contactFormInput">
 					<span class="sendMessageText">Bericht verzenden</span>
 				</button>
 				
@@ -173,13 +173,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			</form>
 
 			<!-- Social media tags -->
-			<img src="../images/contactPage/instagram.png" class="instagramIcon socialMediaIcons" alt="Instagram Icon">
-			<img src="../images/contactPage/x.png" class="xLogoIcon socialMediaIcons" alt="X logo Icon">
-			<img src="../images/contactPage/linkedIn.png" class="linkedInIcon socialMediaIcons" alt="LinkedIn Icon">
+			<img src="../../images/contactPage/instagram.png" class="instagramIcon socialMediaIcons" alt="Instagram Icon">
+			<img src="../../images/contactPage/x.png" class="xLogoIcon socialMediaIcons" alt="X logo Icon">
+			<img src="../../images/contactPage/linkedIn.png" class="linkedInIcon socialMediaIcons" alt="LinkedIn Icon">
 			<div class="circleSolutionsInstagramTag">@circlesolutions</div>
 
 			<!-- Copyright tag -->
-			 <img src="../images/contactPage/copyright.png" class="circleSolutionsCopyrightImage" alt="Copyright Icon">
+			 <img src="../../images/contactPage/copyright.png" class="circleSolutionsCopyrightImage" alt="Copyright Icon">
 			<div class="circleSolutionsCopyrightTag">Circle Solutions 2025</div>
 
 		</div>
@@ -187,5 +187,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	</body>
 
 </html>
-
-
