@@ -20,7 +20,7 @@ if ($submitted) {
 
 if ($score >= 7) {
 
-    $message = "Perfect score! You crushed all 8 questions! Use code SOLUTIONS15 to receive 15% discount!";
+    $message = "Perfect score!🔥 You crushed all 8 questions! Use code SOLUTIONS15 to receive 15% discount!";
 } else {
 
     $message = " Almost...😅 You scored " . $score . "/8. Try again to get your 15% off!";
@@ -53,7 +53,7 @@ if ($score >= 7) {
     </div>
     <div class="herotext">
         <h1>Are you ready to code your discount?🧠</h1>
-        <p1>Solve our quiz and get up to 15% off on our services!</p1>
+        <p>Solve our quiz and get up to 15% off on our services!</p>
     </div>
 
     <?php
@@ -73,7 +73,7 @@ if ($score >= 7) {
         </div>
 
         <div class="question">
-            <h3>🌟What's the difference between UI and UX design?🧩</h3>
+            <h3>🌟What's the difference between UI and UX design?</h3>
             <label><input type="radio" name="q2" value="a" required>What does it even mean?</label>
             <label><input type="radio" name="q2" value="b">UX stands for 'Ultra Extreme Experience'.</label>
             <label><input type="radio" name="q2" value="c">Both are types of soda.</label>
