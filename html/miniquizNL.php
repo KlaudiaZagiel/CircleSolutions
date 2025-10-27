@@ -36,7 +36,7 @@ if ($score >= 7) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle Solutions MiniQuiz</title>
-    <link rel="stylesheet" href="../css/miniquizNL.css">
+    <link rel="stylesheet" href="../css/miniquiz.css">
 </head>
 
 <body>
