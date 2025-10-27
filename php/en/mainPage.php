@@ -23,9 +23,9 @@ if (isset($_POST['toggle']))
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <?php
     if (!empty($_SESSION['light'])) {
-        echo "<link rel='stylesheet' href='../css/mainPageStylesdark.css'>";
+        echo "<link rel='stylesheet' href='../../css/darkMode/mainPageStyles.css'>";
     } else {
-        echo "<link rel='stylesheet' href='../css/mainPageStyles.css'>";
+        echo "<link rel='stylesheet' href='../../css/lightMode/mainPageStyles.css'>";
     }
     ?>
     <title>Main page</title>
@@ -34,12 +34,12 @@ if (isset($_POST['toggle']))
     <header>
     <div class="backroundimagemaindiv">
         <div class="headerdivmain">
-            <a  href="../html/mainPage.php"><img class="headerImagedots"  src="../images/circleSolutionsLogo.png" alt="logo"></a>
+            <a  href="../../php/en/mainPage.php"><img class="headerImagedots"  src="../../images/circleSolutionsLogo.png" alt="logo"></a>
             <ul class="headerbuttons">
-                <li><a href="../html/dots.php">D.O.T.S</a></li>
+                <li><a href="../../php/en/dots.php">D.O.T.S</a></li>
                 <li><a href="">Contact</a></li>
-                <li><a href="../html/aboutus.php">About</a></li>
-                <li><a href="../html/whatwebuild.html">Solution</a></li>
+                <li><a href="../../php/aboutus.php">About</a></li>
+                <li><a href="../../php/whatwebuild.html">Solution</a></li>
                 <li>
                     <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
                     <button name="toggle" class="buttonflag buttondarLight"><p class="darklightbuttontext">Dark/light</p></button>
@@ -57,7 +57,7 @@ if (isset($_POST['toggle']))
         <p class="solutiontext headertextposition">Software Solutions</p>
         <p class="headertextposition headerlowertextposition">Connect. Collaborate. Simplify</p>
         <div class="headerceanterbuttons">
-            <a href="../pdfFiles/CircleSolutionsBrochure.pdf" download="CircleSolutionsBrochure.pdf" style="text-decoration: none;" type="application/pdf">
+            <a href="../../pdfFiles/CircleSolutionsBrochure.pdf" download="CircleSolutionsBrochure.pdf" style="text-decoration: none;" type="application/pdf">
                 <div class="dotsdiv ">
                     <p class="dotstext">Download our brochure</p>
                 </div>
@@ -74,9 +74,9 @@ if (isset($_POST['toggle']))
             <div class="bottomblock">
                 <img class="bottomimg" src="<?php
     if (!empty($_SESSION['light'])) {
-        echo "../images/chat_white.png";
+        echo "../../images/mainPage/chat_white.png";
     } else {
-        echo "../images/chat.png";
+        echo "../../images/mainPage/chat.png";
     }
     ?>" alt="chat">
                 <p class="bottomblocktext">Simplify Communication</p>
@@ -85,9 +85,9 @@ if (isset($_POST['toggle']))
             <div class="bottomblock">
                 <img class="bottomimg" src="<?php
     if (!empty($_SESSION['light'])) {
-        echo "../images/pazzle_white.png";
+        echo "../../images/mainPage/puzzle_white.png";
     } else {
-        echo "../images/pazzle.png";
+        echo "../../images/mainPage/puzzle.png";
     }
     ?>" alt="puzzle">
                 <p class="bottomblocktext">Optimize teamwork</p>
@@ -96,9 +96,9 @@ if (isset($_POST['toggle']))
             <div class="bottomblock">
                 <img class="bottomimg" src="<?php
     if (!empty($_SESSION['light'])) {
-        echo "../images/search_white.png";
+        echo "../../images/mainPage/search_white.png";
     } else {
-        echo "../images/search.png";
+        echo "../../images/mainPage/search.png";
     }
     ?>" alt="search">
                 <p class="bottomblocktext">Smart Insights</p>
