@@ -6,7 +6,7 @@
 body
 {
     font-family: 'Inter', sans-serif;
-   background-color: black;
+   
 }
 p
 {
@@ -16,6 +16,7 @@ p
 a
 {
     text-decoration: none; 
+    color: #000000;
     margin: 0;
     padding: 0;
     font-size: 24px;
@@ -32,7 +33,7 @@ a
 .maindiv
 {
     margin-top: 7rem;
-    background-image: url(../../images/dots/arrow_white.png);
+    background-image: url(../../images/dots/blackarrowwithdotsup.png);
     background-size: 100% 100%;  
     background-repeat: no-repeat;
     display: grid;
@@ -52,17 +53,16 @@ hr
 {
     font-weight: bold;
     font-size: 128pt;
-    color: white;
+    color: #000000;
 }
 .bigtextdots
 {
     font-weight: bold;
-    color: #c7eaf8;
+    color: #799DAB;
     font-size: 128pt;
 }
 .headertext
 {
-    color: white;
     margin-top: 3rem;
     line-height: 1.6; 
     grid-column: 2/4;
@@ -81,7 +81,7 @@ hr
 }
 .buttondark
 {
-    background-color: #c7eaf8;
+    background-color: #799DAB;
     padding-top: 1rem;
     padding-bottom: 1rem;
     width: 100%;
@@ -90,7 +90,7 @@ hr
 }
 .buttondarktext
 {
-    color: #799dab;
+    color: #000000;
     font-size: 32px;
     font-weight: 500;
     display: grid;
@@ -121,7 +121,7 @@ hr
 }
 .lasttext
 {
-    color: white;
+    color: #000000;
     font-weight: 500;
     font-size: 24px;
     display: grid;
@@ -172,7 +172,7 @@ hr
   left: 0;
   width: 100%;
   z-index: 100;
-  background: rgba(34, 49, 63); /* Optional: semi-transparent background rgba*/
+  background: #B7D0E3; /* Optional: semi-transparent background rgba*/
   display: flex;
   justify-content: space-between;
   align-items: center;

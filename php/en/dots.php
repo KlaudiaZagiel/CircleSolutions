@@ -23,34 +23,49 @@ if (isset($_POST['toggle'])) {
     
     <?php
     if (!empty($_SESSION['light'])) {
-        echo "<link rel='stylesheet' href='../css/dotsdark.css'>";
+        echo "<link rel='stylesheet' href='../../css/darkMode/dots.css'>";
     } else {
-        echo "<link rel='stylesheet' href='../css/dots.css'>";
+        echo "<link rel='stylesheet' href='../../css/lightMode/dots.css'>";
     }
     ?>
     <title>D.O.T.S</title>
+    
 </head>
 <body>
     
     <header>
-    <div class="backroundimagemaindiv">
-        <div class="headerdivmain">
-            <a  href="../html/mainPage.php"><img class="headerImagedots"  src="../images/circleSolutionsLogo.png" alt="logo"></a>
-            <ul class="headerbuttons">
-                <li><a href="../html/dots.php">D.O.T.S</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="../html/aboutus.php">About</a></li>
-                <li><a href="../html/whatwebuild.html">Solution</a></li>
-                <li>
-                    <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
-                    <button name="toggle" class="buttonflag buttondarLight"><p class="darklightbuttontext">Dark/light</p></button>
-                </form>
-                </li>
-                    <li><a  class="buttonflag" href="../html/dotsDutch.php"><img src="../images/flag.png" alt="flag"></a></li>
-            </ul>
-        </div>
-    </div>
-  </header>
+		<div class="backroundimagemaindiv">
+			<div class="headerdivmain">
+				<a href="../../php/en/mainPage.php">
+					<img class="headerImagedots" src="../../images/header/circleSolutionsLogo.png" alt="logo">
+				</a>
+				<ul class="headerbuttons">
+					<li><a href="../../php/en/dots.php">D.O.T.S</a></li>
+					<li><a href="../../php/en/contactPage.php">Contact</a></li>
+					<li><a href="../../php/en/aboutus.php">About Us</a></li>
+					<li><a href="../../php/en/whatwebuild.php">Solution</a></li>
+					<li>
+						<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
+							<button name="toggle" class="buttonflag buttondarLight">
+								<img src="<?php
+									if (!empty($_SESSION['light'])) {
+										echo "../../images/header/darkModeToggle.png";
+									} else {
+										echo "../../images/header/lightModeToggle.png";
+									}
+								?>" alt="">
+							</button>
+						</form>
+					</li>
+					<li>
+						<a class="buttonflag" href="../../php/nl/mainPage.php">
+							<img src="../../images/flag.png" alt="flag">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
     <div class="maindiv">
         
         <hr>
@@ -62,7 +77,7 @@ if (isset($_POST['toggle'])) {
 to help companies steamline and manage their internal
 processes.</p>
         <ul class="buttonsdiv">
-            <li><a href="../html/aboutus.html"><div class="buttondark"><p class="buttondarktext">Learn more about us</p></div></a></li>
+            <li><a href="../../php/en/aboutus.php"><div class="buttondark"><p class="buttondarktext">Learn more about us</p></div></a></li>
             <li class="buttonsecondposition"><a  href=""><div class="buttondark "><p class="buttonlighttext">Let’s get to work</p></div></a></li>
             <li class="buttonthirdposition"><a  href="../html/whatwebuild.html"><div class="buttondark "><p class="buttondarktext">Check other solutions</p></div></a></li>
         </ul>
@@ -71,9 +86,9 @@ processes.</p>
             <div class="lastdiv lastfirstdivposition">
             <img class="lastimg" src=" <?php
     if (!empty($_SESSION['light'])) {
-        echo "../images/intranet_icon_white.png";
+        echo "../../images/dots/intranet_icon_white.png";
     } else {
-        echo "../images/intranet_icon.png";
+        echo "../../images/dots/intranet_icon.png";
     }
     ?>" alt="intranet_icon">
             <p class="lasttext">A secure hub for updates, announcements, 
@@ -83,9 +98,9 @@ and resources—keeping all communication
         <div class="lastdiv lastseconddivposition">
             <img class="lastimg" src=" <?php
     if (!empty($_SESSION['light'])) {
-        echo "../images/dash_white.png";
+        echo "../../images/dots/dash_white.png";
     } else {
-        echo "../images/dash-removebg-preview.png";
+        echo "../../images/dots/dash-removebg-preview.png";
     }
     ?>" alt="dash-removebg-preview">
             <p class="lasttext">Turn data into clear visuals 
@@ -95,9 +110,9 @@ with customizable dashboards
         <div class="lastdiv lastthirddivposition">
             <img class="lastimg" src=" <?php
     if (!empty($_SESSION['light'])) {
-        echo "../images/../images/documents_white.png";
+        echo "../../images/dots/documents_white.png";
     } else {
-        echo "../images/../images/documents.png";
+        echo "../../images/dots/documents.png";
     }
     ?>" alt="documents">
             <p class="lasttext">Upload, organize, and co-edit files 
@@ -109,7 +124,7 @@ and smooth collaboration.</p>
 
 
         <div class="copyright">
-            <img class="copyrightimg" src="../images/Copyright.png" alt="Copyright">
+            <img class="copyrightimg" src="../../images/Copyright.png" alt="Copyright">
             <p class="copyrighttext">circlesolutions2025</p>
         </div>
     </div>
