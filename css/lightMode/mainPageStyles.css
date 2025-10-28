@@ -39,7 +39,7 @@ a
 .backroundimagemaindiv
 {
     margin-top: 35px;
-    background-image: url(../images/backimagemain_light.png);
+    background-image: url(../../images/mainPage/backimagemain_light.png);
     background-size: 100% 100%;  
     background-repeat: no-repeat;
     display: grid;
@@ -308,13 +308,12 @@ header
     }
     .bottomblocksdiv
     {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        gap: 1rem;
+        display: inline-grid;              
+        grid-auto-flow: row;               
+        gap: 2rem;                         
+        width: max-content;                
+        margin: 5rem auto;                 
+        justify-content: center;  
     }
     .solutiontext
     {
@@ -323,7 +322,13 @@ header
     }
     .bottomblock
     {
+        background-color: #799DAB;
+        border-radius: 12px;
         padding: 1rem;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        width: auto;                       
     }
     .bottomimg
     {
@@ -380,5 +385,34 @@ header
     .copyrightimg
     {
         width: 3%;
+    }
+}
+
+@media (max-width: 560px)
+{
+    .headerImagedots
+    {
+        width: 100px; 
+    }
+    .headerbuttons
+    {
+        gap: 10px;
+    }
+}
+@media (max-width: 400px)
+{
+    
+    .headerImagedots
+    {
+        width: 70px;
+    }
+    .headerbuttons a 
+    {
+        font-size: 10px;
+    }
+    .buttonflag img
+    {
+        width: 20px;
+        height: 17px;
     }
 }

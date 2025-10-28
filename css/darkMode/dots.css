@@ -32,7 +32,7 @@ a
 .maindiv
 {
     margin-top: 7rem;
-    background-image: url(../images/arrow_white.png);
+    background-image: url(../../images/dots/arrow_white.png);
     background-size: 100% 100%;  
     background-repeat: no-repeat;
     display: grid;

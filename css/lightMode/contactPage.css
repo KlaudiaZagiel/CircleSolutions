@@ -8,62 +8,62 @@
 /* Fonts */
 @font-face {
 	font-family: "CalibreLight";
-	src: url("../fonts/Calibre-Light.otf") format("opentype");
+	src: url("../../fonts/Calibre-Light.otf") format("opentype");
 }
 
 @font-face {
 	font-family: "CalibreLightItalic";
-	src: url("../fonts/Calibre-LightItalic.otf") format("opentype");
+	src: url("../../fonts/Calibre-LightItalic.otf") format("opentype");
 }
 
 @font-face {
 	font-family: "CalibreRegular";
-	src: url("../fonts/Calibre-Regular.otf") format("opentype");
+	src: url("../../fonts/Calibre-Regular.otf") format("opentype");
 }
 
 @font-face {
 	font-family: "CalibreRegularItalic";
-	src: url("../fonts/Calibre-RegularItalic.otf") format("opentype");
+	src: url("../../fonts/Calibre-RegularItalic.otf") format("opentype");
 }
 
 @font-face {
 	 font-family: "CalibreSemiBold";
-	 src: url("../fonts/Calibre-Semibold.otf") format("opentype");;
+	 src: url("../../fonts/Calibre-Semibold.otf") format("opentype");;
 }
 
 @font-face {
 	font-family: "CalibreSemiboldItalic";
-	src: url("../fonts/Calibre-SemiboldItalic.otf") format("opentype");
+	src: url("../../fonts/Calibre-SemiboldItalic.otf") format("opentype");
 }
 
 @font-face {
 	font-family: "CalibreBold";
-	src: url("../fonts/Calibre-Bold.otf") format("opentype");
+	src: url("../../fonts/Calibre-Bold.otf") format("opentype");
 }
 
 @font-face {
 	font-family: "CalibreBoldItalic";
-	src: url("../fonts/Calibre-BoldItalic.otf") format("opentype");
+	src: url("../../fonts/Calibre-BoldItalic.otf") format("opentype");
 }
 
 @font-face {
 	font-family: "CalibreMedium";
-	src: url("../fonts/Calibre-Medium.otf") format("opentype");
+	src: url("../../fonts/Calibre-Medium.otf") format("opentype");
 }
 
 @font-face {
 	font-family: "CalibreMediumItalic";
-	src: url("../fonts/Calibre-MediumItalic.otf") format("opentype");
+	src: url("../../fonts/Calibre-MediumItalic.otf") format("opentype");
 }
 
 @font-face {
 	font-family: "CalibreBlack";
-	src: url("../fonts/Calibre-Black.otf") format("opentype");
+	src: url("../../fonts/Calibre-Black.otf") format("opentype");
 }
 
 @font-face {
 	font-family: "CalibreBlackItalic";
-	src: url("../fonts/Calibre-BlackItalic.otf") format("opentype");
+	src: url("../../fonts/Calibre-BlackItalic.otf") format("opentype");
 }
 
 /* Header */
@@ -174,7 +174,6 @@ h1 {
 }
 
 /* Contact icons and text */
-
 .contactIconsText a, .phoneIconText a, .emailIconText a {
 	color: inherit;
 	text-decoration: none;
@@ -240,13 +239,14 @@ h1 {
 
 .contactFormGrid {
 	margin-top: 80px;
+	margin-bottom: 70px;
 
 	grid-column: 1;
 	grid-row: 4/10;
 
 	display: grid;
 	grid-template-columns: repeat(3, 1fr) 0.5fr repeat(3, 1fr);
-	grid-template-rows: repeat(5, 0.7fr 1fr) 0.7fr;
+	grid-template-rows: repeat(6, 0.7fr 1fr) 0.7fr;
 
 	background: radial-gradient(
 		circle at center,
@@ -257,8 +257,6 @@ h1 {
 	border-radius: 20px;
 
 	align-items: center;
-
-	margin-bottom: 70px;
 }
 
 .contactFormInput {
@@ -272,6 +270,7 @@ h1 {
 	font-size: 1.2rem;
 	padding-top: 5px;
 
+	background-color: white;
 	color: rgb(81, 81, 81);
 	transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
@@ -336,6 +335,10 @@ h1 {
 	grid-row: 7;
 }
 
+.speechIcon {
+	grid-row: 8;
+}
+
 .yourMessageInput {
 	grid-column: 2/7;
 	grid-row: 8;
@@ -343,17 +346,26 @@ h1 {
 	height: 90px;
 }
 
-.sendMessageIcon {
-	height: 80%;
-	padding-top: 15px;
-	padding-left: 30px;
+.contactFormHr4 {
+	grid-row: 9;
+}
 
-	justify-self: left;
+.telescopeIcon {
+	grid-row: 10;
+}
+
+#howDidYouHear {
+	grid-column: 3/6;
+	grid-row: 10;
+}
+
+.contactFormHr5 {
+	grid-row: 11;
 }
 
 .sendMessageButton {
 	grid-column: 3/6;
-	grid-row: 10;
+	grid-row: 12;
 
 	display: flex;
 
@@ -366,6 +378,13 @@ h1 {
 	transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
+.sendMessageIcon {
+	height: 80%;
+	padding-top: 15px;
+	padding-left: 30px;
+
+	justify-self: left;
+}
 
 .sendMessageButton:hover{
 	outline: none;
@@ -385,29 +404,19 @@ h1 {
 
 .formErrorText {
 	grid-column: 1/8;
-	grid-row: 9;
+	grid-row: 13;
 
 	font-family: "CalibreSemiBold";
 	font-size: 1.2rem;
 	text-align: center;
 
+	padding-inline: 50px;
+	padding-block: 20px;
+
 	align-self: center;
 	justify-self: center;
 
 	color: rgb(142, 42, 42);
-}
-
-.formSucccessText {
-	grid-column: 1/8;
-	grid-row: 9;
-
-	font-family: "CalibreRegular";
-	font-size: 1rem;
-
-	align-self: center;
-	justify-self: center;
-
-	color: green;
 }
 
 /* Social media icons at the bottom */
@@ -466,25 +475,23 @@ h1 {
 	align-self: center;
 }
 
-/* Responsive design */
+/* Responsive design @800px */
 @media only screen and (max-width: 800px) {
 
-	/* Ready to */
-	h1 {font-size: 3rem;}
+	/* Ready to get started?*/
+	h1 {font-size: 4rem;}
 
-	/* Get started? */
+	/* your next solution begins here */
 	h2.subheadingNextSolution {font-size: 1.5rem;}
 
 	/* Main page grid adjustments */
 	.pageGrid {
-		display: grid;
 		grid-template-columns: 4fr 0.4fr 0.4fr;
 		padding: 10px;
 	}
 
 	/* Smaller logo to give more space for the contact form */
 	.verticalCircleSolutionsLogo {
-		grid-row: 2/6;
 		height: 80%;
 	}
 
@@ -495,14 +502,13 @@ h1 {
 
 	.contactFormGrid {
 		margin-top: 60px;
+		margin-bottom: 40px;
 	
 		grid-column: 1;
 		grid-row: 4/10;
 	
 		grid-template-columns: 0.8fr 1fr 1fr 0.25fr 1fr 1fr 0.5fr;
 		grid-template-rows: repeat(5, 0.35fr 0.5fr) 0.35fr;
-	
-		margin-bottom: 40px;
 	}
 
 	.contactFormIcons {
@@ -552,6 +558,9 @@ h1 {
 		margin-left: 30px;
 	}
 
+	.sendMessageIcon {
+		padding-left: 15px;
+	}
 	
 	/* Copyright tag */
 	.circleSolutionsCopyrightImage {
@@ -565,6 +574,110 @@ h1 {
 		margin-right: 10px;
 
 		font-size: 0.75rem;
+	}
+
+}
+
+/* Responsive design @400px */
+@media only screen and (max-width: 400px) {
+
+	/* Ready to */
+	h1 {font-size: 3rem;}
+
+	/* Get started? */
+	h2.subheadingNextSolution {font-size: 1.5rem;}
+
+	/* Main page grid adjustments */
+	.pageGrid {
+		grid-template-columns: 1fr;
+	}
+
+	/* Logo dissapears entirely to give more space for the form*/
+	.verticalCircleSolutionsLogo {
+		height: 0%;
+	}
+
+	/* Contact form adjustments */
+	.contactFormGrid {
+		margin-bottom: 20px;
+	}
+	
+	.sendMessageText {
+		padding: 5px;
+	}
+
+	/* Contact icons and text */
+	.phoneIconContact {
+		grid-column: 1;
+		grid-row: 10;
+		
+		margin-top: 0px;
+	}
+	
+	.phoneIconText {
+		grid-column: 1;
+		grid-row: 10;
+
+		margin-top: 2.5px;
+	}
+	
+	.emailIconContact {
+		grid-column: 1;
+		grid-row: 11;
+
+		margin-top: 17.5px;
+	}
+	
+	.emailIconText {
+		grid-column: 1;
+		grid-row: 11;
+
+		margin-top: 20px;
+	}
+	
+	.addressIconContact {
+		grid-column: 1;
+		grid-row: 12;
+
+		margin-top: 17.5px;
+	}
+	
+	.addressIconText {
+		grid-column: 1;
+		grid-row: 12;
+
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.sendMessageIcon {
+		padding-left: 7px;
+	}
+
+	/* Social media icons at the bottom */
+	.socialMediaIcons {
+		grid-column: 1;
+		grid-row: 13;
+	}
+
+	.circleSolutionsInstagramTag {
+		grid-column: 1;
+		grid-row: 13;
+
+		margin-top: 8px;
+
+		font-size: 0.75rem;
+	}
+	
+	/* Copyright tag */
+	.circleSolutionsCopyrightImage {
+		grid-column: 1;
+		grid-row: 14;
+	}
+	
+	.circleSolutionsCopyrightTag {
+		grid-column: 1;
+		grid-row: 14;
 	}
 
 }

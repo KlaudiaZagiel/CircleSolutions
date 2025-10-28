@@ -9,7 +9,7 @@ body {
     padding:0;
     width: 100vw;
     height: 100vh;
-    background: #ffffff;
+    background: #000000;
     display: flex;
     overflow: hidden;
 }

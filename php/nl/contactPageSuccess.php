@@ -1,16 +1,17 @@
 <!-- Code a closing circle in HTML CSS and JS -->
 <?php
-$next    = $_GET['next'] ?? '../html/mainPage.php';
+$next    = $_GET['next'] ?? 'mainPage.php';
 $seconds = 5;
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank you!</title>
-    <link rel="stylesheet" href="../css/contactPageSuccess.css">
+    <link rel="stylesheet" href="../../css/lightMode/contactPageSuccess.css">
     <meta http-equiv="refresh" content="<?= (int)$seconds ?>;url=<?= htmlspecialchars($next, ENT_QUOTES) ?>">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
   </head>
 
   <body>
@@ -18,10 +19,10 @@ $seconds = 5;
 		<!-- Headers -->
 		<div class="header">
 			<!-- Header Buttons -->
-            <a href="mainPage.html" class="headerButton homeButton">Startpagina</a>
-            <a href="dots.html" class="headerButton dotsButton">D.O.T.S.</a>
+            <a href="mainPage.php" class="headerButton homeButton">Startpagina</a>
+            <a href="dots.php" class="headerButton dotsButton">D.O.T.S.</a>
             <a href="" class="headerButton solutionsButton">Oplossingen</a>
-			<a href="aboutus.html" class="headerButton aboutUsButton">Over Ons</a>
+			<a href="aboutUs.php" class="headerButton aboutUsButton">Over Ons</a>
 
 			<hr>
 			
@@ -45,27 +46,27 @@ $seconds = 5;
 
       </div>
 
-      <script src="../js/contactPageSuccess.js"></script>
+      <script src="../../js/contactPageSuccess.js"></script>
 
       <!-- Contact tags -->
-			<img src="../images/contactPage/phone.png" class="phoneIconContact" alt="Phone Icon">
+			<img src="../../images/contactPage/phone.png" class="phoneIconContact" alt="Phone Icon">
 			<div class="phoneIconText contactIconsText"><a href="tel:0565445421">0565445421</a></div>
 
-			<img src="../images/contactPage/email.png" class="emailIconContact" alt="Email Icon">
+			<img src="../../images/contactPage/email.png" class="emailIconContact" alt="Email Icon">
 			<div class="emailIconText contactIconsText"><a href="mailto:info@circlesolutions.com?subject=Website%20contact">info@circlesolutions.com</a></div>
 
-			<img src="../images/contactPage/home.png" class="addressIconContact" alt="Address Icon">
+			<img src="../../images/contactPage/home.png" class="addressIconContact" alt="Address Icon">
 			<div class="addressIconText contactIconsText"><a href="https://maps.app.goo.gl/xbBmqjwVYxFGVoxU6" target="_blank" rel="noopener">Cirkelstraat 76, Emmen</a></div>
 
 
 			<!-- Social media tags -->
-			<img src="../images/contactPage/instagram.png" class="instagramIcon socialMediaIcons" alt="Instagram Icon">
-			<img src="../images/contactPage/x.png" class="xLogoIcon socialMediaIcons" alt="X logo Icon">
-			<img src="../images/contactPage/linkedIn.png" class="linkedInIcon socialMediaIcons" alt="LinkedIn Icon">
+			<img src="../../images/contactPage/instagram.png" class="instagramIcon socialMediaIcons" alt="Instagram Icon">
+			<img src="../../images/contactPage/x.png" class="xLogoIcon socialMediaIcons" alt="X logo Icon">
+			<img src="../../images/contactPage/linkedIn.png" class="linkedInIcon socialMediaIcons" alt="LinkedIn Icon">
 			<div class="circleSolutionsInstagramTag">@circlesolutions</div>
 
 			<!-- Copyright tag -->
-      <img src="../images/contactPage/copyright.png" class="circleSolutionsCopyrightImage" alt="Copyright Icon">
+      <img src="../../images/contactPage/copyright.png" class="circleSolutionsCopyrightImage" alt="Copyright Icon">
 			<div class="circleSolutionsCopyrightTag">Circle Solutions 2025</div>
 
 		</div>

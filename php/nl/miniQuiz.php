@@ -30,13 +30,18 @@ if ($score >= 7) {
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle Solutions MiniQuiz</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="../../css/lightMode/miniQuiz.css">
+=======
+    <link rel="stylesheet" href="../css/miniquizNL.css">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
+>>>>>>> c3e4f42552d94ef10b3894fdfa84169b003cd98b
 </head>
 
 <body>
