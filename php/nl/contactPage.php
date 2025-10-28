@@ -110,6 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		<title>Contact</title>
 		<link rel="stylesheet" href="../../css/lightMode/contactPage.css">
 		<script defer src="../../js/contactPage.js"></script>
+		<link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
 	</head>
 
 	<body>

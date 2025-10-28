@@ -31,6 +31,7 @@ if (isset($_POST['toggle']))
     <link rel="shortcut icon" href="#" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
     <title>404 Not Found</title>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
 </head>
 <body>
     <!-- Star background -->

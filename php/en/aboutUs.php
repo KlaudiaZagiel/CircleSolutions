@@ -28,6 +28,7 @@ if (isset($_POST['toggle'])) {
     }
     ?>
     <title>About us</title>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
 </head>
 <body>
    <header>

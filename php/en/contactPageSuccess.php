@@ -11,6 +11,7 @@ $seconds = 5;
     <link rel="stylesheet" href="../../css/lightMode/contactPageSuccess.css">
     <script defer src="../../js/contactPageSuccess.js"></script>
     <meta http-equiv="refresh" content="<?= (int)$seconds ?>;url=<?= htmlspecialchars($next, ENT_QUOTES) ?>">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
   </head>
 
   <body>
