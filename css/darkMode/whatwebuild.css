@@ -6,14 +6,14 @@
 }
 
 /* Base styles */
-body {
+.backgroundimagemaindiv{
   font-family: 'Calibre';
   color: #222;
-  background: url('../images/Technology.png') center/cover no-repeat fixed;
+  background: url(../../images/Technology.png)center/cover no-repeat fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-} 
+}
 
 /* Page wrapper */
 .page-wrapper {
@@ -29,7 +29,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 100;
-  background:rgba(34, 49, 63);
+  background: rgba(34, 49, 63);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,7 +118,7 @@ header
 .service-box {
   width: min(220px, 40vw);
   aspect-ratio: 1 / 1;
-  background: rgba(121,157,171,0.92);
+  background: rgba(34, 49, 63);
   color: white;
   border-radius: 50%;
   padding: 18px;
