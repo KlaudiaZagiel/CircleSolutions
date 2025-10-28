@@ -88,6 +88,10 @@ if (isset($_POST['toggle'])) {
 				We envision a world where software is as easy and natural to use as breathing.”
 			</p>
 		</div>
+        <div class="copyrightabout">
+			<img class="copyrightimg" src="../../images/Copyright.png" alt="Copyright">
+			<p class="copyrighttext">circlesolutions2025</p>
+		</div>
 	</div>
 
 </body>

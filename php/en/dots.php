@@ -120,7 +120,7 @@ if (isset($_POST['toggle'])) {
 			</div>
 		</div>
 
-		<div class="copyright">
+		<div class="copyrightdots">
 			<img class="copyrightimg" src="../../images/Copyright.png" alt="Copyright">
 			<p class="copyrighttext">circlesolutions2025</p>
 		</div>

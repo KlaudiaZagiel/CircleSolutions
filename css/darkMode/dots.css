@@ -1,363 +1,333 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body
-{
-   
-   background-color: black;
-}
-p
-{
-    margin: 0;
-    padding: 0;
-}
-a
-{
-    text-decoration: none; 
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
-    font-weight: bold;
-}
-.headerdiv
-{
-    padding-top: 3rem;
-    display: flex;
-    gap: 1rem;
-    margin-right: 5rem;
-    justify-content: end;
-}
-.maindiv
-{
-    margin-top: 7rem;
-    background-image: url(../../images/dots/arrow_white.png);
-    background-size: 100% 100%;  
-    background-repeat: no-repeat;
-    display: grid;
-    grid-template-columns: 0.2fr 2fr 2fr 0.2fr;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.dotsmaintext
-{
-    grid-column: 2/3;
-    display: flex;
+body {
+	background-color: black;
 }
-.bigtextcircle
-{
-    font-weight: bold;
-    font-size: 128pt;
-    color: white;
+
+p {
+	margin: 0;
+	padding: 0;
 }
-.bigtextdots
-{
-    font-weight: bold;
-    color: #c7eaf8;
-    font-size: 128pt;
+
+a {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	font-weight: bold;
 }
-.headertext
-{
-    color: white;
-    margin-top: 3rem;
-    line-height: 1.6; 
-    grid-column: 2/4;
-    width: 58%;
-    font-weight: 500;
-    font-size: 32px;
+
+.headerdiv {
+	padding-top: 3rem;
+	display: flex;
+	gap: 1rem;
+	margin-right: 5rem;
+	justify-content: end;
 }
-.buttonsdiv
-{
-    grid-column: 2/4;
-    display: grid;
-    grid-template-columns: 1fr 0.2fr 1fr 0.2fr 1fr;
-    list-style-type: none; 
-  padding-left: 0;       
-  margin: 0; 
+
+.maindiv {
+	margin-top: 7rem;
+	background-image: url(../../images/dots/arrow_white.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: grid;
+	grid-template-columns: 0.2fr 2fr 2fr 0.2fr;
 }
-.buttondark
-{
-    background-color: #c7eaf8;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    width: 100%;
-    margin-top: 5rem;
-    border-radius: 12px;
+
+.dotsmaintext {
+	grid-column: 2/3;
+	display: flex;
 }
-.buttondarktext
-{
-    color: #799dab;
-    font-size: 32px;
-    font-weight: 500;
-    display: grid;
-    place-items: center;
+
+.bigtextcircle {
+	font-weight: bold;
+	font-size: 128pt;
+	color: white;
 }
-.buttonlighttext
-{
-    color: #FFFFFF;
-    font-size: 32px;
-    font-weight: 500;
-    display: grid;
-    place-items: center;
+
+.bigtextdots {
+	font-weight: bold;
+	color: #c7eaf8;
+	font-size: 128pt;
 }
-.buttonsecondposition
-{
-    grid-column: 3/4;
+
+.headertext {
+	color: white;
+	margin-top: 3rem;
+	line-height: 1.6;
+	grid-column: 2/4;
+	width: 58%;
+	font-weight: 500;
+	font-size: 32px;
 }
-.buttonthirdposition
-{
-    grid-column: 5/6;
+
+.buttonsdiv {
+	grid-column: 2/4;
+	display: grid;
+	grid-template-columns: 1fr 0.2fr 1fr 0.2fr 1fr;
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
 }
-.lastdiv
-{
-    border-radius: 12px;
-    background-color: #C7EAF8;
-    opacity: 0.8;
-    display: flex;
+
+.buttondark {
+	background-color: #c7eaf8;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width: 100%;
+	margin-top: 5rem;
+	border-radius: 12px;
 }
-.lasttext
-{
-    color: white;
-    font-weight: 500;
-    font-size: 24px;
-    display: grid;
-    place-items: center;
+
+.buttondarktext {
+	color: #799dab;
+	font-size: 32px;
+	font-weight: 500;
+	display: grid;
+	place-items: center;
 }
-.lastimg
-{
-    width: 50%;
+
+.buttonlighttext {
+	color: #ffffff;
+	font-size: 32px;
+	font-weight: 500;
+	display: grid;
+	place-items: center;
 }
-.lastdivgrid
-{
-    margin-top: 10rem;
-    grid-column: 2/4;
-    display: grid;
-    grid-template-columns: 1fr 0.1fr 1fr;
-    grid-template-rows: 0.5fr 0.2fr 0.5fr 0.2fr 0.5fr;
+
+.buttonsecondposition {
+	grid-column: 3/4;
 }
-.lastfirstdivposition
-{
-    grid-column: 3/4;
+
+.buttonthirdposition {
+	grid-column: 5/6;
 }
-.lastseconddivposition
-{
-    grid-row: 3/4;
+
+.lastdiv {
+	border-radius: 12px;
+	background-color: #c7eaf8;
+	opacity: 0.8;
+	display: flex;
 }
-.lastthirddivposition
-{
-    grid-row: 5/6;
-    grid-column: 3/4;
+
+.lasttext {
+	color: white;
+	font-weight: 500;
+	font-size: 24px;
+	display: grid;
+	place-items: center;
 }
-.copyright
-{
-    grid-column: 3/4;
-    display: flex;
-    justify-content: end;
+
+.lastimg {
+	width: 50%;
 }
-.copyrighttext
-{
-    display: grid;
-    place-items: center;
-    color: #799DAB;
-    font-weight: 500;
-    font-size: 12px;
+
+.lastdivgrid {
+	margin-top: 10rem;
+	grid-column: 2/4;
+	display: grid;
+	grid-template-columns: 1fr 0.1fr 1fr;
+	grid-template-rows: 0.5fr 0.2fr 0.5fr 0.2fr 0.5fr;
 }
+
+.lastfirstdivposition {
+	grid-column: 3/4;
+}
+
+.lastseconddivposition {
+	grid-row: 3/4;
+}
+
+.lastthirddivposition {
+	grid-row: 5/6;
+	grid-column: 3/4;
+}
+
+.copyrightdots {
+	grid-column: 3/4;
+	display: flex;
+	justify-content: end;
+}
+
+.copyrighttext {
+	display: grid;
+	place-items: center;
+	color: #799dab;
+	font-weight: 500;
+	font-size: 12px;
+}
+
 .headerdivmain {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  background: rgba(34, 49, 63); /* Optional: semi-transparent background rgba*/
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  min-height: 70px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-}
-.buttondarLight
-{
-color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1em;
-  transition: color 0.3s ease;
-}
-/* Base Reset */
-
-
-/* Header Section */
-
-
-
-
-.logomain 
-{
-  height: 50px;
-}
-.headerbuttons 
-{
-  display: flex;
-  align-items: center;
-  gap: 30px; /* Adds consistent spacing between items */
-  margin-left: auto;
-  list-style-type: none; 
-  padding-left: 0;       
-  margin: 0; 
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	background: rgba(34, 49, 63);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	min-height: 70px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
-.headerbuttons a 
-{
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1em;
-  transition: color 0.3s ease;
+.buttondarLight {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1em;
+	transition: color 0.3s ease;
 }
-
-.headerbuttons a:hover 
-{
-  color: #d0e6f7; /* Optional hover effect */
-}
-
-.buttonflag 
-{
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-
-.hrTop
-{
-    width: 100%;
-    grid-column: 2/4;
-}
-
-
-
-
-
-
-
-
 
 .logomain {
-  height: 50px;
+	height: 50px;
 }
+
+.headerbuttons {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	margin-left: auto;
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.headerbuttons a {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1em;
+	transition: color 0.3s ease;
+}
+
+.headerbuttons a:hover {
+	color: #d0e6f7;
+}
+
+.buttonflag {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+}
+
+.hrTop {
+	width: 100%;
+	grid-column: 2/4;
+}
+
 .buttonflag img {
-  height: 24px;
+	height: 24px;
 }
-@media (max-width: 800px)
-{
-    
-    .lastdivgrid
-    {
-        padding-top: 3rem;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: stretch; 
-        width: fit-content;   
-        margin: 0 auto;  
-        gap: 2rem; 
-    }
-    .lasttext
-    {
-        font-size: 12px;
-    }
-    .lastimg
-    {
-        width: 20%;
-    }
-    .headerImagedots
-    {
-        height: 50px;
-    }
-    .buttondarLight
-    {
-        font-size: 12px;
-    }
-    .headerbuttons
-  {
-    gap: 30px;
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    align-items: center;
-  }
-    .headerbuttons a 
-    {
-        font-size:12px ;
-    }
-    .headerdivmain
-  {
-    padding: 0 10px;
-    width: 100%;
-  }
-  
-  .buttonflag img
-  {
-    height: 20px;
-  }
-    a
-    {
-        font-size: 12px;
-    }
-    .headerdiv
-    {
-        margin-right:2rem;
-    }
-    .bigtextcircle
-    {
-        font-size:64pt ;
-    }
-    .bigtextdots
-    {
-        font-size: 64pt;
-    }
-    .headertext
-    {
-        margin-top: 2rem;
-        font-size: 16px;
-    }
-    .buttonsdiv
-    {
-        display: flex;
-        justify-content: center;
-        
-        flex-direction: column;
-        align-items: stretch; 
-        width: fit-content;   
-        margin: 0 auto;      
-    }
-    .buttondark
-    {
-        margin-top: 2rem;
-    }
-    .buttondarktext
-    {
-        font-size: 16px;
-    }
-    .buttonlighttext
-    {
-        font-size: 16px;
-    }
-    
+
+@media (max-width: 800px) {
+	.lastdivgrid {
+		padding-top: 3rem;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: stretch;
+		width: fit-content;
+		margin: 0 auto;
+		gap: 2rem;
+	}
+
+	.lasttext {
+		font-size: 12px;
+	}
+
+	.lastimg {
+		width: 20%;
+	}
+
+	.headerImagedots {
+		height: 50px;
+	}
+
+	.buttondarLight {
+		font-size: 12px;
+	}
+
+	.headerbuttons {
+		gap: 30px;
+		display: flex;
+		justify-content: center;
+		margin-left: auto;
+		align-items: center;
+	}
+
+	.headerbuttons a {
+		font-size: 12px;
+	}
+
+	.headerdivmain {
+		padding: 0 10px;
+		width: 100%;
+	}
+
+	.buttonflag img {
+		height: 20px;
+	}
+
+	a {
+		font-size: 12px;
+	}
+
+	.headerdiv {
+		margin-right: 2rem;
+	}
+
+	.bigtextcircle {
+		font-size: 64pt;
+	}
+
+	.bigtextdots {
+		font-size: 64pt;
+	}
+
+	.headertext {
+		margin-top: 2rem;
+		font-size: 16px;
+	}
+
+	.buttonsdiv {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: stretch;
+		width: fit-content;
+		margin: 0 auto;
+	}
+
+	.buttondark {
+		margin-top: 2rem;
+	}
+
+	.buttondarktext {
+		font-size: 16px;
+	}
+
+	.buttonlighttext {
+		font-size: 16px;
+	}
 }
-@media (max-width: 400px)
-{
-    .bigtextcircle
-    {
-        font-size: 50px;
-    }
-    .bigtextdots
-    {
-        font-size: 50px;
-    }
-    .maindiv
-    {
-        margin-top: 4rem;
-    }
+
+@media (max-width: 400px) {
+	.bigtextcircle {
+		font-size: 50px;
+	}
+
+	.bigtextdots {
+		font-size: 50px;
+	}
+
+	.maindiv {
+		margin-top: 4rem;
+	}
 }
