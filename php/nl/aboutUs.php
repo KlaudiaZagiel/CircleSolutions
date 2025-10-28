@@ -21,10 +21,10 @@ if (isset($_POST['toggle'])) {
     <?php
     if (!empty($_SESSION['light'])) {
         echo "<link rel='stylesheet' href='../../css/darkMode/aboutUs.css'>";
-        echo "<link rel='stylesheet' href='../../css/darkMode/mainpageStyles.css'>";
+        echo "<link rel='stylesheet' href='../../css/darkMode/header.css'>";
     } else {
         echo "<link rel='stylesheet' href='../../css/lightMode/aboutUs.css'>";
-        echo "<link rel='stylesheet' href='../../css/lightMode/mainpageStyles.css'>";
+        echo "<link rel='stylesheet' href='../../css/lightMode/header.css'>";
     }
     ?>
     <title>Over ons</title>
@@ -78,6 +78,10 @@ if (isset($_POST['toggle'])) {
                 “Ons doel is om software te ontwikkelen die is afgestemd op individuele behoeften, waardoor mensen en bedrijven worden ondersteund met oplossingen die aansluiten bij hun unieke kwaliteiten. We streven naar een wereld waarin software net zo eenvoudig en natuurlijk te gebruiken is als ademhalen.”
             </p>
         </div>
+        <div class="copyrightabout">
+			<img class="copyrightimg" src="../../images/Copyright.png" alt="Copyright">
+			<p class="copyrighttext">circlesolutions2025</p>
+		</div>
     </div>
 </body>
 </html>

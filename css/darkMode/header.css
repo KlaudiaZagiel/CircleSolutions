@@ -1,0 +1,117 @@
+.headerdivmain {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	background: rgba(34, 49, 63);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	min-height: 70px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.logomain {
+	height: 50px;
+}
+
+.headerbuttons {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	margin-left: auto;
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.headerbuttons a {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1em;
+	transition: color 0.3s ease;
+}
+
+.headerbuttons p {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1em;
+	transition: color 0.3s ease;
+}
+
+.headerbuttons a:hover {
+	color: #d0e6f7;
+}
+
+.buttondarLight {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1em;
+	transition: color 0.3s ease;
+}
+
+.buttonflag {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+}
+
+.buttonflag img {
+	height: 24px;
+}
+
+@media (max-width: 800px) {
+    .buttondarLight {
+		font-size: 12px;
+	}
+
+	.headerImagedots {
+		height: 50px;
+	}
+
+    .buttonflag img {
+		height: 20px;
+	}
+
+	.headerbuttons {
+		gap: 30px;
+		display: flex;
+		justify-content: center;
+		margin-left: auto;
+	}
+
+	.headerbuttons a {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 560px) {
+	.headerImagedots {
+		width: 100px;
+	}
+
+	.headerbuttons {
+		gap: 10px;
+	}
+}
+
+@media (max-width: 400px) {
+	.headerImagedots {
+		width: 70px;
+	}
+
+	.headerbuttons a {
+		font-size: 10px;
+	}
+
+	.buttonflag img {
+		width: 20px;
+		height: 17px;
+	}
+}

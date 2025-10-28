@@ -21,10 +21,10 @@ if (isset($_POST['toggle'])) {
     <?php
     if (!empty($_SESSION['light'])) {
         echo "<link rel='stylesheet' href='../../css/darkMode/dots.css'>";
-        echo "<link rel='stylesheet' href='../../css/darkMode/mainpageStyles.css'>";
+        echo "<link rel='stylesheet' href='../../css/darkMode/header.css'>";
     } else {
         echo "<link rel='stylesheet' href='../../css/lightMode/dots.css'>";
-        echo "<link rel='stylesheet' href='../../css/lightMode/mainPageStyles.css'>";
+        echo "<link rel='stylesheet' href='../../css/lightMode/header.css'>";
     }
     ?>
     <title>D.O.T.S</title>
@@ -102,7 +102,7 @@ if (isset($_POST['toggle'])) {
             </div>
         </div>
 
-        <div class="copyright">
+        <div class="copyrightdots">
             <img class="copyrightimg" src="../../images/Copyright.png" alt="Copyright">
             <p class="copyrighttext">circlesolutions2025</p>
         </div>

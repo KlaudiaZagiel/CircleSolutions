@@ -3,7 +3,13 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+@font-face {
+	font-family: 'Calibre';
+	src: url('../../fonts/Calibre-Semibold.otf') format('opentype');
+}
+body {
+	font-family: 'Calibre';
+}
 p {
 	margin: 0;
 	padding: 0;

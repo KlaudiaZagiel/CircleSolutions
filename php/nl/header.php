@@ -1,3 +1,21 @@
+<?php
+$script = $_SERVER['SCRIPT_NAME'] ?? '';
+$toggleTarget = '/php/en/mainPage.php';
+
+if ($script !== '') {
+    $candidate = preg_replace('#/(php|html)/nl/#', '/$1/en/', $script, 1, $count);
+
+    if ($count === 0) {
+        $candidate = preg_replace('#/nl/#', '/en/', $script, 1, $count);
+    }
+
+    if ($count > 0) {
+        $toggleTarget = $candidate;
+    } elseif (preg_match('#^(.*?)/(php|html)/#', $script, $match)) {
+        $toggleTarget = $match[1] . '/php/en/mainPage.php';
+    }
+}
+?>
 <header>
         <div class="backroundimagemaindiv">
             <div class="headerdivmain">
@@ -23,7 +41,7 @@
                         </form>
                     </li>
                     <li>
-                        <a class="buttonflag" href="../../php/en/mainPage.php">
+                        <a class="buttonflag" href="<?= htmlspecialchars($toggleTarget, ENT_QUOTES) ?>">
                             <img src="../../images/header/flagNl.jpg" alt="flag">
                         </a>
                     </li>

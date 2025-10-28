@@ -22,10 +22,10 @@ if (isset($_POST['toggle'])) {
 	<?php
 	if (!empty($_SESSION['light'])) {
 		echo "<link rel='stylesheet' href='../../css/darkMode/dots.css'>";
-		echo "<link rel='stylesheet' href='../../css/darkMode/mainPageStyles.css'>";
+		echo "<link rel='stylesheet' href='../../css/darkMode/header.css'>";
 	} else {
 		echo "<link rel='stylesheet' href='../../css/lightMode/dots.css'>";
-		echo "<link rel='stylesheet' href='../../css/lightMode/mainPageStyles.css'>";
+		echo "<link rel='stylesheet' href='../../css/lightMode/header.css'>";
 	}
 	?>
 
