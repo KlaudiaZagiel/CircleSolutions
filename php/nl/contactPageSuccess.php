@@ -11,6 +11,7 @@ $seconds = 5;
     <title>Thank you!</title>
     <link rel="stylesheet" href="../../css/lightMode/contactPageSuccess.css">
     <meta http-equiv="refresh" content="<?= (int)$seconds ?>;url=<?= htmlspecialchars($next, ENT_QUOTES) ?>">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
   </head>
 
   <body>
