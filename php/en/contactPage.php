@@ -1,11 +1,12 @@
 <?php
 $formErrorHtml = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-	$firstName   = filter_input(INPUT_POST, 'firstName');
-	$lastName    = filter_input(INPUT_POST, 'lastName');
-	$companyName = filter_input(INPUT_POST, 'companyName');
-	$email       = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-	$yourMessage = filter_input(INPUT_POST, 'yourMessage');
+	$firstName     = filter_input(INPUT_POST, 'firstName');
+	$lastName      = filter_input(INPUT_POST, 'lastName');
+	$companyName   = filter_input(INPUT_POST, 'companyName');
+	$email         = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+	$yourMessage   = filter_input(INPUT_POST, 'yourMessage');
+	$howDidYouHear = filter_input(INPUT_POST, 'howDidYouHear');
 
 	$errorMessages = array();
 	$emailInvalid  = "";
@@ -35,6 +36,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		$errorMessages[] = "Your Message" ;
 	}
 
+	if (empty($howDidYouHear)) {
+		$errorMessages[] = "How did you hear about us?";
+	}
+
 	// appends all errors to a single string
 	// if errorMessages or emailInvalid
 	if (!empty($errorMessages) || (!empty($emailInvalid))) {
@@ -57,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	} else {
 		// If no errors, write contact form details to CSV
 		$csvFile = __DIR__ . '/../../contactFormSubmissions/submissions.csv';
-		$header  = ['Timestamp','First Name','Last Name','Company Name', 'Email', 'Message'];
+		$header  = ['Timestamp','First name','Last name','Company name', 'Email', 'Message', 'How did you hear about us?'];
 		
 		$needHeader = !file_exists($csvFile) || filesize($csvFile) === 0;
 		$fp = fopen($csvFile, 'a');
@@ -81,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		if ($needHeader) {
 			fputcsv($fp, $header, $sep, $enc, $esc);
 		}
-		fputcsv($fp, [gmdate('c'), $firstName, $lastName, $companyName, $email, $yourMessage], $sep, $enc, $esc);
+		fputcsv($fp, [gmdate('c'), $firstName, $lastName, $companyName, $email, $yourMessage, $howDidYouHear], $sep, $enc, $esc);
 		
 		fflush($fp);
 		flock($fp, LOCK_UN);
@@ -96,8 +101,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
- <!-- add dutch version, make it responsive @media 800px-->
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -105,6 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Contact</title>
 		<link rel="stylesheet" href="../../css/lightMode/contactPage.css">
+		<script defer src="../../js/contactPage.js"></script>
 	</head>
 
 	<body>
@@ -150,17 +154,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 				<hr class="contactFormHr1 contactFormHr">
 
-				<img src="../../images/contactPage/companyIcon.png" class="companyIcon contactFormIcons" alt="">
+				<img src="../../images/contactPage/companyIcon.png" class="companyIcon contactFormIcons" alt="Company Icon">
 				<input type="text" class="companyNameInput contactFormInput" name="companyName" id="companyName" placeholder="Company Name">
 
 				<hr class="contactFormHr2 contactFormHr">
 
-				<img src="../../images/contactPage/emailIcon.png" class="emailIcon contactFormIcons" alt="">
+				<img src="../../images/contactPage/emailIcon.png" class="emailIcon contactFormIcons" alt="Email Icon">
 				<input type="text" class="emailInput contactFormInput" name="email" id="email" placeholder="E-mail">
 
 				<hr class="contactFormHr3 contactFormHr">
 
+				<img src="../../images/contactPage/speechIcon.png" class="speechIcon contactFormIcons" alt="Speech Icon">
 				<input type="text" class="yourMessageInput contactFormInput" name="yourMessage" id="yourMessage" placeholder="Your Message">
+
+				<hr class="contactFormHr4 contactFormHr">
+
+				<img src="../../images/contactPage/telescopeIcon.png" class="telescopeIcon contactFormIcons" alt="Telescope Icon">
+				<select name="howDidYouHear" class="contactFormInput" id="howDidYouHear" required>
+					<option value="placeholder" disabled selected>How did you hear about us?</option>
+					<option value="Research">Research</option>
+					<option value="Marketing">Marketing</option>
+					<option value="Industry event">Industry event</option>
+					<option value="Trade show">Trade show</option>
+					<option value="Conference">Conference</option>
+					<option value="Direct outreach">Direct outreach</option>
+					<option value="Social media">Social Media</option>
+					<option value="Industry magazine">Industry magazine</option>
+					<option value="Word of mouth">Word of Mouth</option>
+				</select>
+
+				<hr class="contactFormHr5 contactFormHr">
 
 				<button type="submit" class="sendMessageButton">
 					<img src="../../images/contactPage/sendMessage.png" alt="Send Message Icon" class="sendMessageIcon contactFormInput">
@@ -187,5 +210,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	</body>
 
 </html>
-
-

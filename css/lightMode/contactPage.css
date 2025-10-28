@@ -246,7 +246,7 @@ h1 {
 
 	display: grid;
 	grid-template-columns: repeat(3, 1fr) 0.5fr repeat(3, 1fr);
-	grid-template-rows: repeat(5, 0.7fr 1fr) 0.7fr;
+	grid-template-rows: repeat(6, 0.7fr 1fr) 0.7fr;
 
 	background: radial-gradient(
 		circle at center,
@@ -270,6 +270,7 @@ h1 {
 	font-size: 1.2rem;
 	padding-top: 5px;
 
+	background-color: white;
 	color: rgb(81, 81, 81);
 	transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
@@ -334,6 +335,10 @@ h1 {
 	grid-row: 7;
 }
 
+.speechIcon {
+	grid-row: 8;
+}
+
 .yourMessageInput {
 	grid-column: 2/7;
 	grid-row: 8;
@@ -341,17 +346,26 @@ h1 {
 	height: 90px;
 }
 
-.sendMessageIcon {
-	height: 80%;
-	padding-top: 15px;
-	padding-left: 30px;
+.contactFormHr4 {
+	grid-row: 9;
+}
 
-	justify-self: left;
+.telescopeIcon {
+	grid-row: 10;
+}
+
+#howDidYouHear {
+	grid-column: 3/6;
+	grid-row: 10;
+}
+
+.contactFormHr5 {
+	grid-row: 11;
 }
 
 .sendMessageButton {
 	grid-column: 3/6;
-	grid-row: 10;
+	grid-row: 12;
 
 	display: flex;
 
@@ -364,6 +378,13 @@ h1 {
 	transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
+.sendMessageIcon {
+	height: 80%;
+	padding-top: 15px;
+	padding-left: 30px;
+
+	justify-self: left;
+}
 
 .sendMessageButton:hover{
 	outline: none;
@@ -383,29 +404,19 @@ h1 {
 
 .formErrorText {
 	grid-column: 1/8;
-	grid-row: 9;
+	grid-row: 13;
 
 	font-family: "CalibreSemiBold";
 	font-size: 1.2rem;
 	text-align: center;
 
+	padding-inline: 50px;
+	padding-block: 20px;
+
 	align-self: center;
 	justify-self: center;
 
 	color: rgb(142, 42, 42);
-}
-
-.formSucccessText {
-	grid-column: 1/8;
-	grid-row: 9;
-
-	font-family: "CalibreRegular";
-	font-size: 1rem;
-
-	align-self: center;
-	justify-self: center;
-
-	color: green;
 }
 
 /* Social media icons at the bottom */

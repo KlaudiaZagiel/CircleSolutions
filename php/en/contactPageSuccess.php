@@ -9,6 +9,7 @@ $seconds = 5;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank you!</title>
     <link rel="stylesheet" href="../../css/lightMode/contactPageSuccess.css">
+    <script defer src="../../js/contactPageSuccess.js"></script>
     <meta http-equiv="refresh" content="<?= (int)$seconds ?>;url=<?= htmlspecialchars($next, ENT_QUOTES) ?>">
   </head>
 
@@ -36,15 +37,13 @@ $seconds = 5;
 
       <div class="animationGrid">
 
-      <div class="circleSolutionsLogoCircle circleSolutionsLogoLargeText circleSolutionsText">circle</div>
-      <div class="circleSolutionsLogoSolutions circleSolutionsLogoLargeText circleSolutionsText">solutions</div>
-      <div class="circleSolutionsLogoJustConnectTheDots">just connect the dots</div>
+        <div class="circleSolutionsLogoCircle circleSolutionsLogoLargeText circleSolutionsText">circle</div>
+        <div class="circleSolutionsLogoSolutions circleSolutionsLogoLargeText circleSolutionsText">solutions</div>
+        <div class="circleSolutionsLogoJustConnectTheDots">just connect the dots</div>
 
-      <div class="radialProgress"></div>
+        <div class="radialProgress"></div>
 
       </div>
-
-      <script src="../../js/contactPageSuccess.js"></script>
 
       <!-- Contact tags -->
 			<img src="../../images/contactPage/phone.png" class="phoneIconContact" alt="Phone Icon">
