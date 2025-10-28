@@ -70,17 +70,17 @@ if (isset($_POST['toggle'])) {
         <div class="centraldiv">
             <div class="centralblock">
                 <div class="centralblockdiv centralblockmargin">
-                    <img class="centralblockimg1 " src="../images/tick.png" alt="tick">
+                    <img class="centralblockimg1 " src="../../images/aboutUs/tick.png" alt="tick">
                     <p class="centralblocktext centralblocktexthighermargin">Simple</p>
                     <p class="centralblocktext centralblocktextlowermargin">Simple interfaces that anyone can use.</p>
                 </div>
                 <div class="centralblockdiv centralblockmargin">
-                    <img class="centralblockimg2" src="../images/lighting.png" alt="lighting">
+                    <img class="centralblockimg2" src="../../images/aboutUs/lighting.png" alt="lighting">
                     <p class="centralblocktext centralblocktexthighermargin">Efficient</p>
                     <p class="centralblocktext centralblocktextlowermargin">Steamlined processes that save time.</p>
                 </div>
                 <div class="centralblockdiv centralblockmargin">
-                    <img class="centralblockimg3" src="../images/person.png" alt="person">
+                    <img class="centralblockimg3" src="../../images/aboutUs/person.png" alt="person">
                     <p class="centralblocktext centralblocktexthighermargin">User-friendly</p>
                     <p class="centralblocktext centralblocktextlowermargin">Efortless solution for real users.</p>
                 </div>

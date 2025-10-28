@@ -79,8 +79,8 @@ to help companies steamline and manage their internal
 processes.</p>
         <ul class="buttonsdiv">
             <li><a href="../../php/en/aboutus.php"><div class="buttondark"><p class="buttondarktext">Learn more about us</p></div></a></li>
-            <li class="buttonsecondposition"><a  href=""><div class="buttondark "><p class="buttonlighttext">Let’s get to work</p></div></a></li>
-            <li class="buttonthirdposition"><a  href="../html/whatwebuild.html"><div class="buttondark "><p class="buttondarktext">Check other solutions</p></div></a></li>
+            <li class="buttonsecondposition"><a  href="../en/contactPage.php"><div class="buttondark "><p class="buttonlighttext">Let’s get to work</p></div></a></li>
+            <li class="buttonthirdposition"><a  href="../en/whatwebuild.php"><div class="buttondark "><p class="buttondarktext">Check other solutions</p></div></a></li>
         </ul>
 
         <div class="lastdivgrid">

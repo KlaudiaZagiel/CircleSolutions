@@ -1,14 +1,11 @@
 <?php
 session_start();
 
-
 if (isset($_POST['toggle'])) {
-    
-    if (isset($_SESSION['light']) && $_SESSION['light'] === true)
-        {
-            $_SESSION['light'] = false;
-        } else {
-            $_SESSION['light'] = true;
+    if (isset($_SESSION['light']) && $_SESSION['light'] === true) {
+        $_SESSION['light'] = false;
+    } else {
+        $_SESSION['light'] = true;
     }
     header("Location: " . $_SERVER['PHP_SELF']);
     exit();
@@ -23,69 +20,94 @@ if (isset($_POST['toggle'])) {
     <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
     <?php
     if (!empty($_SESSION['light'])) {
-        echo "<link rel='stylesheet' href='../css/aboutusDark.css'>";
+        echo "<link rel='stylesheet' href='../../css/darkMode/aboutUs.css'>";
     } else {
-        echo "<link rel='stylesheet' href='../css/aboutus.css'>";
+        echo "<link rel='stylesheet' href='../../css/lightMode/aboutUs.css'>";
     }
     ?>
-    <title>About us</title>
+    <title>Over ons</title>
 </head>
 <body>
     <header>
-    <div class="backroundimagemaindiv">
-        <div class="headerdivmain">
-            <a  href="../html/mainPageDutch.php"><img class="headerImagedots"  src="../images/circleSolutionsLogo.png" alt="logo"></a>
-            <ul class="headerbuttons">
-                <li><a href="../html/dotsDutch.php">D.O.T.S</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="../html/aboutus.php">Over</a></li>
-                <li><a href="../html/whatwebuild.html">Oplossing</a></li>
-                <li>
-                    <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
-                    <button name="toggle" class="buttonflag buttondarLight"><p class="darklightbuttontext">Donker/licht</p></button>
-                </form>
-                </li>
-                    <li><a  class="buttonflag" href="../html/aboutus.php"><img src="../images/flag-niderlandov_b1.jpg" alt="flag"></a></li>
-            </ul>
+        <div class="backroundimagemaindiv">
+            <div class="headerdivmain">
+                <a href="../../php/nl/mainPage.php">
+                    <img class="headerImagedots" src="../../images/header/circleSolutionsLogo.png" alt="logo">
+                </a>
+                <ul class="headerbuttons">
+                    <li><a href="../../php/nl/dots.php">D.O.T.S</a></li>
+                    <li><a href="../../php/nl/contactPage.php">Contact</a></li>
+                    <li><a href="../../php/nl/aboutus.php">Over ons</a></li>
+                    <li><a href="../../php/nl/whatwebuild.php">Oplossing</a></li>
+                    <li>
+                        <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
+                            <button name="toggle" class="buttonflag buttondarLight">
+                                <img src="<?php
+                                    if (!empty($_SESSION['light'])) {
+                                        echo "../../images/header/darkModeToggle.png";
+                                    } else {
+                                        echo "../../images/header/lightModeToggle.png";
+                                    }
+                                ?>" alt="">
+                            </button>
+                        </form>
+                    </li>
+                    <li>
+                        <a class="buttonflag" href="../../php/en/aboutus.php">
+                            <img src="../../images/flag.png" alt="flag">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-  </header>
+    </header>
+
     <hr class="headerhr">
-    <p class="headertext">Wij maken software  eenvoudig.</p>
+    <p class="headertext">Wij maken software eenvoudig.</p>
+
     <div class="maindiv">
         <div class="centraldiv">
             <div class="centralblock">
                 <div class="centralblockdiv centralblockmargin">
-                    <img class="centralblockimg1 " src="../images/tick.png" alt="tick">
+                    <img class="centralblockimg1" src="../../images/aboutUs/tick.png" alt="tick">
                     <p class="centralblocktext centralblocktexthighermargin">Eenvoudig</p>
                     <p class="centralblocktext centralblocktextlowermargin">Eenvoudige interfaces die iedereen kan gebruiken.</p>
                 </div>
                 <div class="centralblockdiv centralblockmargin">
-                    <img class="centralblockimg2" src="../images/lighting.png" alt="lighting">
+                    <img class="centralblockimg2" src="../../images/aboutUs/lighting.png" alt="lighting">
                     <p class="centralblocktext centralblocktexthighermargin">Efficiënt</p>
                     <p class="centralblocktext centralblocktextlowermargin">Gestroomlijnde processen die tijd besparen.</p>
                 </div>
                 <div class="centralblockdiv centralblockmargin">
-                    <img class="centralblockimg3" src="../images/person.png" alt="person">
+                    <img class="centralblockimg3" src="../../images/aboutUs/person.png" alt="person">
                     <p class="centralblocktext centralblocktexthighermargin">Gebruiksvriendelijk</p>
-                    <p class="centralblocktext centralblocktextlowermargin">Eenvoudige oplossing voor echte gebruikers.</p>
+                    <p class="centralblocktext centralblocktextlowermargin">Moeiteloze oplossing voor echte gebruikers.</p>
                 </div>
-                
             </div>
-            <p class="centralblockbottomtext highermobilemargintext">‘’Ons publiek bestaat uit besluitvormers op het gebied van IT en bedrijfsvoering - </p>
-                <p class="centralblockbottomtext lovermobilemargintext">Ze willen niet overweldigd worden; ze willen gerustgesteld worden.’’</p>
+
+            <p class="centralblockbottomtext highermobilemargintext">
+                ‘’Ons publiek bestaat uit besluitvormers op het gebied van IT en bedrijfsvoering —
+            </p>
+            <p class="centralblockbottomtext lovermobilemargintext">
+                ze willen niet overweldigd worden; ze willen gerustgesteld worden.’’
+            </p>
         </div>
+
         <div class="bottomdivone">
-            <p class="bottombluetext">Geen complexiteit - alleen duidelijkheid</p>
-            <p class="bottomtext">Bij Circle Solutions bouwen we software op maat die werkt zoals u dat wilt: eenvoudig, efficiënt en zonder onnodige extra's. Wij geloven in eenvoud, functionaliteit en oplossingen die echt bij de gebruiker passen. Onze filosofie is duidelijk: verbind gewoon de punten.</p>
+            <p class="bottombluetext">Geen complexiteit — alleen duidelijkheid</p>
+            <p class="bottomtext">
+                Bij Circle Solutions bouwen we software op maat die werkt zoals u dat wilt — eenvoudig, efficiënt en zonder onnodige extra's. We geloven in eenvoud, functionaliteit en oplossingen die echt bij de gebruiker passen. Onze filosofie is duidelijk: verbind gewoon de punten.
+            </p>
         </div>
+
         <hr class="bottomhr">
+
         <div class="bottomblocksdivtwo">
             <p class="bottombluetext">Bedrijf met missie</p>
-            <p class="bottomtext">“Ons doel is om software te ontwikkelen die is afgestemd op individuele behoeften, waardoor mensen en bedrijven worden ondersteund met oplossingen die aansluiten bij hun unieke kwaliteiten. Wij streven naar een wereld waarin software net zo eenvoudig en natuurlijk te gebruiken is als ademhalen.”</p>
+            <p class="bottomtext">
+                “Ons doel is om software te ontwikkelen die is afgestemd op individuele behoeften, waardoor mensen en bedrijven worden ondersteund met oplossingen die aansluiten bij hun unieke kwaliteiten. We streven naar een wereld waarin software net zo eenvoudig en natuurlijk te gebruiken is als ademhalen.”
+            </p>
         </div>
-        
     </div>
-    
 </body>
 </html>

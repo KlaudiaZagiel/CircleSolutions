@@ -56,7 +56,7 @@ a
 }
 .centraldiv
 {
-    background-image: url(../images/backimageaboutus.png);
+    background-image: url(../../images/aboutus/backimageaboutus.png);
     background-size: 100% 100%; 
     background-repeat: no-repeat;
     height: 580px;
