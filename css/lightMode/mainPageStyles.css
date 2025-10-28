@@ -1,418 +1,409 @@
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-body
-{
-    font-family: 'Inter', sans-serif;
-   
+
+@font-face {
+	font-family: 'Calibre';
+	src: url('../../fonts/Calibre-Semibold.otf') format('opentype');
 }
-p
-{
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
+
+body {
+	font-family: 'Calibre';
 }
-a
-{
-    text-decoration: none; 
-    color: black;
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
-    font-weight: bold;
+
+p {
+	font-family: 'Calibre';
+	margin: 0;
+	padding: 0;
 }
-.logomain
-{
-    width: 180px;
+
+a {
+	text-decoration: none;
+	color: black;
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.logomain {
+	width: 180px;
     height: 60px;
 }
-.buttonflag
-{
-   background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0; 
+
+.buttonflag {
+    background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
 }
-.backroundimagemaindiv
-{
-    margin-top: 35px;
-    background-image: url(../../images/mainPage/backimagemain_light.png);
-    background-size: 100% 100%;  
-    background-repeat: no-repeat;
-    display: grid;
-    grid-template-columns: 0.5fr 5fr 0.5fr;
-}
-.headerdivmain
-{
-    grid-column: 2/3;
-    display: grid;
-    grid-template-columns: 1.6fr 1fr;
-}
-.headertextposition
-{
-    grid-column: 2/3;
-    display: flex;
-    justify-content: center;
-    color: #C7EAF8;
-}
-.solutiontext
-{
-    font-weight: 600;
-    margin-top: 7rem;
-    font-size: 75px;
-    
-}
-.headerlowertextposition
-{
-    font-weight: 600;
-    margin-top: 3rem;
-    font-size: 40px;
-}
-.dotsdiv
-{
-    border-radius: 12px;
-    background-color: #C7EAF8;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 60px;
-}
-.solutiondiv
-{
-    height: 60px;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    background-color: #C7EAF8;
-}
-.headerceanterbuttons
-{
-    margin-top: 10rem;
-    padding-bottom: 20rem;
-    display: flex;
-    justify-content: center;
-    grid-column: 2/3;
-}
-.dotstext
-{
-    color: #799dab;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-size: 24px;
-}
-.headerbuttonsleftmargin
-{
-    margin-left: 2rem;
-}
-.solutionstext
-{
-    font-size: 24px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    color:#000000;
-}
-.bottomdiv
-{
-    display: grid;
-    grid-template-columns: 0.5fr 5fr 0.5fr;
-}
-.introducingtext
-{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    grid-column: 2/3;
-    display: grid;
-    place-items: center;
-    color: #000000;
-    font-weight: bold;
-    font-size: 64px;
-    align-items: center;
-}
-hr
-{
-    background-color: #D9D9D9;
-    width: 100%;    
-    height: 2px;
-    grid-column: 2/3;
-}
-.bottomblocksdiv
-{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    grid-column: 2/3;
-    display: flex;
-    justify-content: space-between;
-}
-.bottomblock
-{
-    width: 20%;
-    padding: 3rem;
-    background-color: #799DAB;
-    display: grid;
-    place-items: center;
-    border-radius: 12px;
-}
-.bottomblocktext
-{
-    font-weight: 500;
-    font-size: 24px;
-}
-.bottomtext
-{
-    font-size: 32px;
-    font-weight: 500;
-    display: grid;
-    place-items: center;
-    grid-column: 2/3;
-}
-.bottomtextmargin
-{
-    margin-bottom: 5rem;
-    margin-top: 1rem;
-}
-.copyright
-{
-    grid-column: 2/3;
-    display: flex;
-    justify-content: end;
-}
-.copyrighttext
-{
-    display: grid;
-    place-items: center;
-    color: #799DAB;
-    font-weight: 500;
-    font-size: 12px;
+
+.backroundimagemaindiv {
+	margin-top: 35px;
+	background-image: url(../../images/mainPage/backimagemain_light.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: grid;
+	grid-template-columns: 0.5fr 5fr 0.5fr;
 }
 
 .headerdivmain {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  background:#B7D0E3; /* Optional: semi-transparent background rgba*/
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  min-height: 70px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-}
-header
-{
-    grid-column: 1/4;
-}
-.logomain 
-{
-  height: 50px;
-}
-.headerbuttons 
-{
-  display: flex;
-  align-items: center;
-  gap: 30px; /* Adds consistent spacing between items */
-  margin-left: auto;
-  list-style-type: none; 
-  padding-left: 0;       
-  margin: 0; 
-}
-.buttondarLight
-{
-    color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1em;
-  transition: color 0.3s ease;
-}
-.headerbuttons a 
-{
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1em;
-  transition: color 0.3s ease;
+	grid-column: 2/3;
+	display: grid;
+	grid-template-columns: 1.6fr 1fr;
 }
 
-.headerbuttons a:hover 
-{
-  color: #d0e6f7; /* Optional hover effect */
+.headertextposition {
+	grid-column: 2/3;
+	display: flex;
+	justify-content: center;
+	color: #C7EAF8;
 }
 
-.buttonflag 
-{
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
+.solutiontext {
+	font-weight: 600;
+	margin-top: 7rem;
+	font-size: 75px;
 }
 
-.buttonflag img
-{
-  height: 24px;
+.headerlowertextposition {
+	font-weight: 600;
+	margin-top: 3rem;
+	font-size: 40px;
 }
 
-@media (max-width: 800px)
-{
-    .buttondarLight
-    {
-        font-size: 12px;
-    }
-    .headerImagedots
-    {
-        height: 50px;
-    }
-    .headerdivmain
-  {
-    padding: 0 10px;
-    width: 100%;
-  }
-    .buttonflag img
-  {
-    height: 20px;
-  }
-  .headerbuttons
-  {
-    gap: 30px;
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-  }
-  .headerbuttons a 
-    {
-        font-size:12px ;
-    }
-    a
-    {
-        font-size: 12px;
-    }
-    .copyrighttext
-    {
-        font-size: 6px;
-    }
-    .bottomtext
-    {
-        font-size: 16px;
-    }
-    .bottomblocktext
-    {
-        font-size: 12px;
-    }
-    .introducingtext
-    {
-        font-size: 32px;
-    }
-    .bottomblocksdiv
-    {
-        display: inline-grid;              
-        grid-auto-flow: row;               
-        gap: 2rem;                         
-        width: max-content;                
-        margin: 5rem auto;                 
-        justify-content: center;  
-    }
-    .solutiontext
-    {
-        font-size: 30px;
-        margin-top: 2rem;
-    }
-    .bottomblock
-    {
-        background-color: #799DAB;
-        border-radius: 12px;
-        padding: 1rem;
-        display: grid;
-        place-items: center;
-        text-align: center;
-        width: auto;                       
-    }
-    .bottomimg
-    {
-        width: 40%;
-    }
-    .flagimg
-    {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .solutionstext
-    {
-        font-size: 10px;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    .dotstext
-    {
-        font-size: 10px;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    .headerdivmain
-    {
-        grid-template-columns: 1fr 1fr;
-    }
-    .headerlowertextposition
-    {
-        font-size: 20px;
-        margin-top: 1rem;
-    }
-    .headerbuttonsleftmargin
-    {
-        margin: 0;
-    }
-    .headerceanterbuttons
-    {
-        display: flex;
-        margin: 0 auto;
-        margin-top: 3rem;
-        padding-bottom: 5rem;
-        gap: 1rem;
-    }
-    .logomain
-    {
-        width: 100px;
-        height: 40px;
-    }
-    .introducingtext
-    {
-        font-size: 16px;
-    }
-    .copyrightimg
-    {
-        width: 3%;
-    }
+.dotsdiv {
+	border-radius: 12px;
+	background-color: #C7EAF8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
 }
 
-@media (max-width: 560px)
-{
-    .headerImagedots
-    {
-        width: 100px; 
-    }
-    .headerbuttons
-    {
-        gap: 10px;
-    }
+.solutiondiv {
+	height: 60px;
+	border-radius: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #C7EAF8;
 }
-@media (max-width: 400px)
-{
-    
-    .headerImagedots
-    {
-        width: 70px;
-    }
-    .headerbuttons a 
-    {
-        font-size: 10px;
-    }
-    .buttonflag img
-    {
-        width: 20px;
-        height: 17px;
-    }
+
+.headerceanterbuttons {
+	margin-top: 10rem;
+	padding-bottom: 20rem;
+	display: flex;
+	justify-content: center;
+	grid-column: 2/3;
+}
+
+.dotstext {
+	color: #799dab;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	font-size: 24px;
+}
+
+.headerbuttonsleftmargin {
+	margin-left: 2rem;
+}
+
+.solutionstext {
+	font-size: 24px;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	color: #000000;
+}
+
+.bottomdiv {
+	display: grid;
+	grid-template-columns: 0.5fr 5fr 0.5fr;
+}
+
+.introducingtext {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	grid-column: 2/3;
+	display: grid;
+	place-items: center;
+	color: #000000;
+	font-weight: bold;
+	font-size: 64px;
+	align-items: center;
+}
+
+hr {
+	background-color: #D9D9D9;
+	width: 100%;
+	height: 2px;
+	grid-column: 2/3;
+}
+
+.bottomblocksdiv {
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	grid-column: 2/3;
+	display: flex;
+	justify-content: space-between;
+}
+
+.bottomblock {
+	width: 20%;
+	padding: 3rem;
+	background-color: #799DAB;
+	display: grid;
+	place-items: center;
+	border-radius: 12px;
+}
+
+.bottomblocktext {
+	font-weight: 500;
+	font-size: 24px;
+}
+
+.bottomtext {
+	font-size: 32px;
+	font-weight: 500;
+	display: grid;
+	place-items: center;
+	grid-column: 2/3;
+}
+
+.bottomtextmargin {
+	margin-bottom: 5rem;
+	margin-top: 1rem;
+}
+
+.copyright {
+	grid-column: 2/3;
+	display: flex;
+	justify-content: end;
+}
+
+.copyrighttext {
+	display: grid;
+	place-items: center;
+	color: #799DAB;
+	font-weight: 500;
+	font-size: 12px;
+}
+
+.headerdivmain {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	background: #B7D0E3;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	min-height: 70px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+header {
+	grid-column: 1/4;
+}
+
+.logomain {
+	height: 50px;
+}
+
+.headerbuttons {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	margin-left: auto;
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.buttondarLight {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1em;
+	transition: color 0.3s ease;
+}
+
+.headerbuttons a {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1em;
+	transition: color 0.3s ease;
+}
+
+.headerbuttons a:hover {
+	color: #d0e6f7;
+}
+
+.buttonflag {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+}
+
+.buttonflag img {
+	height: 24px;
+}
+
+@media (max-width: 800px) {
+	.buttondarLight {
+		font-size: 12px;
+	}
+
+	.headerImagedots {
+		height: 50px;
+	}
+
+	.headerdivmain {
+		padding: 0 10px;
+		width: 100%;
+	}
+
+	.buttonflag img {
+		height: 20px;
+	}
+
+	.headerbuttons {
+		gap: 30px;
+		display: flex;
+		justify-content: center;
+		margin-left: auto;
+	}
+
+	.headerbuttons a {
+		font-size: 12px;
+	}
+
+	a {
+		font-size: 12px;
+	}
+
+	.copyrighttext {
+		font-size: 6px;
+	}
+
+	.bottomtext {
+		font-size: 16px;
+	}
+
+	.bottomblocktext {
+		font-size: 12px;
+	}
+
+	.introducingtext {
+		font-size: 32px;
+	}
+
+	.bottomblocksdiv {
+		display: inline-grid;
+		grid-auto-flow: row;
+		gap: 2rem;
+		width: max-content;
+		margin: 5rem auto;
+		justify-content: center;
+	}
+
+	.solutiontext {
+		font-size: 30px;
+		margin-top: 2rem;
+	}
+
+	.bottomblock {
+		border-radius: 12px;
+		padding: 1rem;
+		display: grid;
+		place-items: center;
+		text-align: center;
+		width: auto;
+	}
+
+	.bottomimg {
+		width: 40%;
+	}
+
+	.flagimg {
+		width: 100%;
+		height: 100%;
+	}
+
+	.solutionstext {
+		font-size: 10px;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.dotstext {
+		font-size: 10px;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.headerdivmain {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.headerlowertextposition {
+		font-size: 20px;
+		margin-top: 1rem;
+	}
+
+	.headerbuttonsleftmargin {
+		margin: 0;
+	}
+
+	.headerceanterbuttons {
+		display: flex;
+		margin: 0 auto;
+		margin-top: 3rem;
+		padding-bottom: 5rem;
+		gap: 1rem;
+	}
+
+	.logomain {
+		width: 100px;
+		height: 40px;
+	}
+
+	.introducingtext {
+		font-size: 16px;
+	}
+
+	.copyrightimg {
+		width: 3%;
+	}
+}
+
+@media (max-width: 560px) {
+	.headerImagedots {
+		width: 100px;
+	}
+
+	.headerbuttons {
+		gap: 10px;
+	}
+}
+
+@media (max-width: 400px) {
+	.headerImagedots {
+		width: 70px;
+	}
+
+	.headerbuttons a {
+		font-size: 10px;
+	}
+
+	.buttonflag img {
+		width: 20px;
+		height: 17px;
+	}
 }
