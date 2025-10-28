@@ -21,7 +21,7 @@
 
 body {
     font-family: 'Calibre';
-    background-color: white;
+    background-color: rgb(19, 19, 19);
     margin: 30px;
 }
 
@@ -73,11 +73,12 @@ body {
     border-radius: 8px;
     border-style: none;
     cursor: pointer;
-    color: rgb(75, 72, 72);
+    color: white;
     transition: all 0.3s ease;
     box-shadow: 5px 5px 5px rgba(0.2, 0.2, 0.2, 0.1);
     font-size: 1rem;
     font-weight: 700;
+    background-color: #799dab;
 
 }
 
@@ -97,15 +98,15 @@ body {
 h1 {
     font-size: 2rem;
     align-self: center;
-    color: rgb(65, 61, 61);
+    color: white;
     text-align: center;
 }
 
 .solvequiz {
     font-size: 1.2rem;
     align-self: center;
-    color: black;
-    opacity: 60%;
+    color: white;
+    opacity: 80%;
     text-align: center;
 }
 
@@ -123,7 +124,7 @@ h1 {
     gap: 8px;
     font-size: 1.2rem;
     font-weight: 500;
-    color: black;
+    color: white;
 }
 
 .question label {
@@ -132,11 +133,10 @@ h1 {
     gap: 10px;
     padding: 20px 1px;
     margin-bottom: 10px;
-    border: 1.5px solid #e0e7ef;
+    border: 1.5px solid #799dab;
     border-radius: 10px;
     background: #799dab;
     color: white;
-
 }
 
 input[type="radio"] {
