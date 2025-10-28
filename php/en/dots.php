@@ -20,6 +20,7 @@ if (isset($_POST['toggle'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
     
     <?php
     if (!empty($_SESSION['light'])) {
@@ -78,8 +79,8 @@ to help companies steamline and manage their internal
 processes.</p>
         <ul class="buttonsdiv">
             <li><a href="../../php/en/aboutus.php"><div class="buttondark"><p class="buttondarktext">Learn more about us</p></div></a></li>
-            <li class="buttonsecondposition"><a  href=""><div class="buttondark "><p class="buttonlighttext">Let’s get to work</p></div></a></li>
-            <li class="buttonthirdposition"><a  href="../html/whatwebuild.html"><div class="buttondark "><p class="buttondarktext">Check other solutions</p></div></a></li>
+            <li class="buttonsecondposition"><a  href="../en/contactPage.php"><div class="buttondark "><p class="buttonlighttext">Let’s get to work</p></div></a></li>
+            <li class="buttonthirdposition"><a  href="../en/whatwebuild.php"><div class="buttondark "><p class="buttondarktext">Check other solutions</p></div></a></li>
         </ul>
 
         <div class="lastdivgrid">

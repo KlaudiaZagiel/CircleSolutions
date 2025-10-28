@@ -33,7 +33,7 @@ a
 .maindiv
 {
     margin-top: 7rem;
-    background-image: url(../images/blackarrowwithdotsup.png);
+    background-image: url(../../images/dots/blackarrowwithdotsup.png);
     background-size: 100% 100%;  
     background-repeat: no-repeat;
     display: grid;

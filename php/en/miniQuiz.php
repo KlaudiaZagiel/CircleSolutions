@@ -36,24 +36,29 @@ if ($score >= 7) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle Solutions MiniQuiz</title>
+<<<<<<< HEAD
+    <link rel="stylesheet" href="../../css/lightMode/miniQuiz.css">
+=======
     <link rel="stylesheet" href="../css/miniquiz.css">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
+>>>>>>> c3e4f42552d94ef10b3894fdfa84169b003cd98b
 </head>
 
 <body>
     <div class="topheader">
-        <img src="../images/circleSolutionsLogo.png" alt="logo" class="logo">
+        <img src="../../images/circleSolutionsLogo.png" alt="logo" class="logo">
         <div class="links">
             <a href="mainPage.html">Home</a>
             <a href="contact.html">Contact</a>
             <a href="aboutus.html">About</a>
             <a href="whatwebuild.html">Solutions</a>
             <a href="dots.html">D.O.T.S</a>
-            <img src="../images/flag.png" alt="flag" class="flag">
+            <img src="../../images/flag.png" alt="flag" class="flag">
         </div>
     </div>
     <div class="herotext">
         <h1>Are you ready to code your discount?🧠</h1>
-        <p>Solve our quiz and get up to 15% off on our services!</p>
+        <p class="solvequiz">Solve our quiz and get up to 15% off on our services!</p>
     </div>
 
     <?php
