@@ -66,61 +66,11 @@
 	src: url("../../fonts/Calibre-BlackItalic.otf") format("opentype");
 }
 
-/* Header */
-/* 
-.header {
-	width: 95dvw;
-	height: 10dvh;
-	margin-inline: 5dvw;
-
-	display: grid;
-	grid-template-columns: repeat(24, 1fr);
-	align-items: center;
-	padding: 5px;
+body {
+	background-color: #181a1b;
 }
-
-.headerButton {
-	appearance: none;
-	border: none;
-	text-decoration: none;
-
-	display: flex;
-	justify-content: center;
-
-	margin-top: 25px;
-
-	font-size: 1.5rem;
-	font-family: "CalibreBold";
-	color: black;
-
-}
-
-.homeButton {
-	grid-column: 15/17;
-}
-
-.dotsButton {
-	grid-column: 17/19;
-
-}
-
-.solutionsButton {
-	grid-column: 19/21;
-
-}
-
-.aboutUsButton {
-	grid-column: 21/23;
-}
-
-hr {
-	grid-column: 1/24;
-	border: 1px solid;
-	border-color: #D9D9D9;
-} */
 
 /* Main page contents */
-
 .pageGrid {
 	display: grid;
 	grid-template-columns: 1.80fr 0.65fr 1fr;
@@ -140,6 +90,7 @@ h1 {
 	margin-top: 100px;
 	grid-column: 1;
 	grid-row: 1;
+	color: rgb(235, 235, 235);
 }
 
 .heroGetStarted {
@@ -157,12 +108,12 @@ h1 {
 	justify-self: start;
 	font-size: 1.5rem;
 	font-family: "CalibreSemiBold";
-
+	color: rgb(235, 235, 235);
 	margin-top: 40px;
 
 	padding: 20px 30px 15px 30px;
 	border-radius: 12px;
-	background-color: #799DAB;
+	background-color: #678895;
 }
 
 .verticalCircleSolutionsLogo {
@@ -250,7 +201,7 @@ h1 {
 
 	background: radial-gradient(
 		circle at center,
-		#cfdfe5 0%,
+		#22363e 0%,
 		#799DAB 100%
 	  );
 
@@ -270,8 +221,8 @@ h1 {
 	font-size: 1.2rem;
 	padding-top: 5px;
 
-	background-color: white;
-	color: rgb(81, 81, 81);
+	background-color: rgb(235, 235, 235);;
+	color: rgb(65, 65, 65);
 	transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
@@ -370,11 +321,10 @@ h1 {
 	display: flex;
 
 	border-radius: 10px;
-	background-color: white;
 
 	height: 70px;
 
-	color: rgb(81, 81, 81);
+	color: rgb(65, 65, 65);
 	transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 

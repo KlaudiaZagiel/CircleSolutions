@@ -1,32 +1,47 @@
 <?php
+session_start();
+
+if (isset($_POST['toggle'])) {
+	if (isset($_SESSION['light']) && $_SESSION['light'] === true) {
+		$_SESSION['light'] = false;
+	} else {
+		$_SESSION['light'] = true;
+	}
+	header("Location: " . $_SERVER['PHP_SELF']);
+	exit();
+}
+
 $next    = $_GET['next'] ?? 'mainPage.php';
 $seconds = 5;
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank you!</title>
-    <link rel="stylesheet" href="../../css/lightMode/contactPageSuccess.css">
     <script defer src="../../js/contactPageSuccess.js"></script>
     <meta http-equiv="refresh" content="<?= (int)$seconds ?>;url=<?= htmlspecialchars($next, ENT_QUOTES) ?>">
     <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
+
+    <?php
+		// CSS chosen based on dark or light mode
+		if (!empty($_SESSION['light'])) {
+			echo "<link rel='stylesheet' href='../../css/darkMode/contactPageSuccess.css'>";
+			echo "<link rel='stylesheet' href='../../css/darkMode/header.css'>";
+		} else {
+			echo "<link rel='stylesheet' href='../../css/lightMode/contactPageSuccess.css'>";
+			echo "<link rel='stylesheet' href='../../css/lightMode/header.css'>";
+		}
+    ?>
+
   </head>
 
   <body>
 
-		<!-- Headers -->
-		<div class="header">
-			<!-- Header Buttons -->
-            <a href="mainPage.html" class="headerButton homeButton">Home</a>
-            <a href="dots.html" class="headerButton dotsButton">D.O.T.S.</a>
-            <a href="" class="headerButton solutionsButton">Solutions</a>
-			<a href="aboutus.html" class="headerButton aboutUsButton">About us</a>
-
-			<hr>
-			
-    </div>
+    <!-- Header -->
+		<?php include '../../php/en/header.php'; ?>
 
 		<!-- Main Page -->
 		<div class="pageGrid">

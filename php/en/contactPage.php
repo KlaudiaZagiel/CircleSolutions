@@ -1,4 +1,16 @@
 <?php
+session_start();
+
+if (isset($_POST['toggle'])) {
+	if (isset($_SESSION['light']) && $_SESSION['light'] === true) {
+		$_SESSION['light'] = false;
+	} else {
+		$_SESSION['light'] = true;
+	}
+	header("Location: " . $_SERVER['PHP_SELF']);
+	exit();
+}
+
 $formErrorHtml = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	$firstName     = filter_input(INPUT_POST, 'firstName');
@@ -101,29 +113,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
+<?php
+$theme = !empty($_SESSION['light']) ? 'dark' : 'light';
+?>
+<body data-theme="<?= htmlspecialchars($theme, ENT_QUOTES) ?>">
+
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Contact</title>
-		<link rel="stylesheet" href="../../css/lightMode/contactPage.css">
 		<script defer src="../../js/contactPage.js"></script>
 		<link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
+
+		<?php
+		// CSS chosen based on dark or light mode
+		if (!empty($_SESSION['light'])) {
+			echo "<link rel='stylesheet' href='../../css/darkMode/contactPage.css'>";
+			echo "<link rel='stylesheet' href='../../css/darkMode/header.css'>";
+			$verticalCircleSolutionsLogoFile = 'verticalCircleSolutionsLogoDark.png';
+		} else {
+			echo "<link rel='stylesheet' href='../../css/lightMode/contactPage.css'>";
+			echo "<link rel='stylesheet' href='../../css/lightMode/header.css'>";
+			$verticalCircleSolutionsLogoFile = 'verticalCircleSolutionsLogoLight.png';
+		}
+		$verticalCircleSolutionsLogoPath = "../../images/contactPage/" . $verticalCircleSolutionsLogoFile;
+	?>
+
 	</head>
 
 	<body>
-		<!-- Headers -->
-		<div class="header">
-			<!-- Header Buttons -->
-            <a href="mainPage.php" class="headerButton homeButton">Home</a>
-            <a href="dots.html" class="headerButton dotsButton">D.O.T.S.</a>
-            <a href="" class="headerButton solutionsButton">Solutions</a>
-			<a href="aboutus.html" class="headerButton aboutUsButton">About us</a>
 
-			<hr>
-			
-        </div>
+		<!-- Header -->
+		<?php include '../../php/en/header.php'; ?>
 
 		<!-- Main Page -->
 		<div class="pageGrid">
@@ -133,7 +157,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 			<h2 class="subheadingNextSolution">Your next solution begins here. Let's talk.</h2>
 
-			<img class="verticalCircleSolutionsLogo" src="../../images/contactPage/verticalCircleSolutionsLogo.png" alt="Vertical Circle Solutions Logo">
+			<img class="verticalCircleSolutionsLogo" src="<?php echo htmlspecialchars($verticalCircleSolutionsLogoPath, ENT_QUOTES); ?>" alt="Logo van Vertical Circle Solutions">
 
 			<img src="../../images/contactPage/phone.png" class="phoneIconContact" alt="Phone Icon">
 			<div class="phoneIconText contactIconsText"><a href="tel:0565445421">0565445421</a></div>
