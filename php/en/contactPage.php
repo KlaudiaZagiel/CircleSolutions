@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+// Set light toggle
 if (isset($_POST['toggle'])) {
 	if (isset($_SESSION['light']) && $_SESSION['light'] === true) {
 		$_SESSION['light'] = false;
@@ -11,6 +11,14 @@ if (isset($_POST['toggle'])) {
 	exit();
 }
 
+// Configure mailer
+require_once __DIR__ . '/../../phpMailer/autoload.php';
+require_once __DIR__ . '/../../phpMailer/mailConfig.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+// Handle user form input
 $formErrorHtml = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	$firstName     = filter_input(INPUT_POST, 'firstName');
@@ -90,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			exit;
 		}
 		
-		//separator, enclosure and escape passed separately to avoid deprecation warnings
+		//separator, enclosure and escape are passed separately to avoid deprecation warnings
 		$sep = ',';
 		$enc = '"';
 		$esc = '\\';
@@ -109,6 +117,38 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 		$next = 'mainPage.php'; // your home page
 		header('Location: contactPageSuccess.php?next=' . urlencode($next));
+
+		// send email to client
+
+		$emailSubject = "We can't wait to meet you, " . $firstName . "!";
+		$emailMessage = "";
+		$emailMessage = wordwrap($emailMessage,70);
+
+		$mailer = new PHPMailer(true);
+
+		try {
+			$mailer->isSMTP();
+			$mailer->Host       = SMTP_HOST;
+			$mailer->Port       = SMTP_PORT;
+			$mailer->SMTPSecure = SMTP_ENCRYPTION;
+			$mailer->SMTPAuth   = true;
+			$mailer->Username   = SMTP_USERNAME;
+			$mailer->Password   = SMTP_PASSWORD;
+			$mailer->CharSet    = 'UTF-8';
+
+			$mailer->setFrom(SMTP_FROM_EMAIL, SMTP_FROM_NAME);
+			$mailer->addAddress($email, trim("$firstName $lastName"));
+			$mailer->addReplyTo(SMTP_REPLY_TO);
+
+			$mailer->Subject = "We can't wait to meet you, " . $firstName . "!";
+			$mailer->Body    = "";
+
+			$mailer->send();
+		} catch (Exception $e) {
+			error_log('Mailer error: ' . $mailer->ErrorInfo);
+			$formErrorHtml = '<div class="formErrorText">The confirmation email was not sent successfully. Your details have been saved.</div>';
+		}
+
 	}
 }
 ?>

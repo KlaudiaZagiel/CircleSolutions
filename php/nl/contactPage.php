@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+// Set light toggle
 if (isset($_POST['toggle'])) {
 	if (isset($_SESSION['light']) && $_SESSION['light'] === true) {
 		$_SESSION['light'] = false;
@@ -11,13 +11,21 @@ if (isset($_POST['toggle'])) {
 	exit();
 }
 
+// Configure mailer
+require_once __DIR__ . '/../../phpMailer/autoload.php';
+require_once __DIR__ . '/../../phpMailer/mailConfig.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+// Handle user form input
 $formErrorHtml = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-	$firstName   = filter_input(INPUT_POST, 'firstName');
-	$lastName    = filter_input(INPUT_POST, 'lastName');
-	$companyName = filter_input(INPUT_POST, 'companyName');
-	$email       = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-	$yourMessage = filter_input(INPUT_POST, 'yourMessage');
+	$firstName     = filter_input(INPUT_POST, 'firstName');
+	$lastName      = filter_input(INPUT_POST, 'lastName');
+	$companyName   = filter_input(INPUT_POST, 'companyName');
+	$email         = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+	$yourMessage   = filter_input(INPUT_POST, 'yourMessage');
 	$howDidYouHear = filter_input(INPUT_POST, 'howDidYouHear');
 
 	$errorMessages = array();
@@ -90,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			exit;
 		}
 		
-		//separator, enclosure and escape passed separately to avoid deprecation warnings
+		//separator, enclosure and escape are passed separately to avoid deprecation warnings
 		$sep = ',';
 		$enc = '"';
 		$esc = '\\';
@@ -108,7 +116,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		$sepchar = (strpos($referer, '?') === false) ? '?' : '&';
 
 		$next = 'mainPage.php'; // your home page
-			header('Location: contactPageSuccess.php?next=' . urlencode($next));
+		header('Location: contactPageSuccess.php?next=' . urlencode($next));
+
+		// Send email to client
+		// When finished with mailer in /en, add it here and dutch version
 	}
 }
 ?>

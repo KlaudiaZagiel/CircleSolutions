@@ -74,7 +74,7 @@ body {
 .pageGrid {
 	display: grid;
 	grid-template-columns: 1.80fr 0.65fr 1fr;
-	/* grid-template-rows: 1fr 1fr 1fr 0.5fr; */
+	/* grid-template-rows: 1fr 1fwr 1fr 0.5fr; */
 
 	align-items: left;
 	margin-inline: 5dvw;
@@ -238,7 +238,9 @@ h1 {
 }
 
 .contactFormHr {
-	color: white;
+	color: rgb(168, 168, 168);
+	grid-column: 1/8;
+	border: 1px solid;
 }
 
 .userMemberIcon {
@@ -325,6 +327,7 @@ h1 {
 	height: 70px;
 
 	color: rgb(65, 65, 65);
+	background-color: #ebebeb;
 	transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 

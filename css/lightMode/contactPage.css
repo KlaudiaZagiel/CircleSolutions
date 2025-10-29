@@ -288,6 +288,8 @@ h1 {
 
 .contactFormHr {
 	color: white;
+	grid-column: 1/8;
+	border: 1px solid;
 }
 
 .userMemberIcon {

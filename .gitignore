@@ -76,3 +76,10 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,linux
+
+
+# Ignore CSV files from contactFormSubmissions so that results from functionality testing don't get pushed to repo'
+contactFormSubmissions/*.csv
+
+# Ignore mailConfig.php as it contains an app password
+phpMailer/mailConfig.php
