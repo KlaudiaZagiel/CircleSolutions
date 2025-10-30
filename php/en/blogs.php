@@ -17,7 +17,6 @@ if (isset($_POST['toggle'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/lightMode/blogs.css">
     <title>Blogs</title>
     <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
 
@@ -34,8 +33,7 @@ if (isset($_POST['toggle'])) {
 </head>
 
 <body>
-    
-    <?php include '../../php/en/header.php'; ?>
+        <?php include '../../php/en/header.php'; ?>
 
     <div class="topText">
         <h1 class="intro">
@@ -46,7 +44,7 @@ if (isset($_POST['toggle'])) {
 
     <main>
         <div class="postLeft">
-            <img src="../../images/Code.jpg" alt="Code.jpg" class="imgLeft">
+            <img src="../../images/Code.jpg" alt="Code.jpg" class="imgLeft allImg">
             <h2>Security First: Our Approach to Safe Software</h2>
             <p class="description">Discover how our team prioritizes security at every stage of software development to deliver robust, resilient, and trustworthy solutions.</p>
             <p>Wedenesday, October 15 2025</p>
@@ -54,7 +52,7 @@ if (isset($_POST['toggle'])) {
         </div>
 
         <div class="postCenter">
-            <img src="../../images/Office 2.jpg" alt="Office 2.jpg" class="imgCenter">
+            <img src="../../images/Office 2.jpg" alt="Office 2.jpg" class="imgCenter allImg">
             <h2>A Day in the Life of a Developer at Circle Solutions</h2>
             <p>Step into the daily rhythm of a developer at Circle Solutions, where creativity, collaboration, and code come together to build impactful software.</p>
             <p>Wedenesday, October 15 2025</p>
@@ -62,7 +60,7 @@ if (isset($_POST['toggle'])) {
         </div>
 
         <div class="postRight">
-            <img src="../../images/Penguin-06-1.jpg" alt="Penguin-06-1.jpg" class="imgRight">
+            <img src="../../images/Penguin-06-1.jpg" alt="Penguin-06-1.jpg" class="imgRight allImg">
             <h2>Lessons Learned from Our Most Challenging Project</h2>
             <p>Discover the key insights, hard earned lessons, and growth we gained from navigating our most complex and demanding software project to date.</p>
             <p>Wedenesday, October 15 2025</p>

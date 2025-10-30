@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 @font-face {
   font-family: 'calibreR';
   src: url('../../fonts/Calibre-Regular.otf') format('opentype');
@@ -23,6 +29,11 @@ h1, h2, p, a{
   color: #f3f3f3;
 }
 
+h2, p{
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
 h1{
   font-size: 2.5rem;
   font-family: "calibreB";
@@ -42,21 +53,17 @@ a{
   text-decoration: none;
 }
 
-img{
+.allImg{
   box-shadow: 10px 10px hsla(197, 23%, 57%, 0.15);
 }
 
 body{ 
   color: black;
   margin: 30px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0,0,0,0) 90%), url(../../images/brian-cyan-K3qvZKTejS0-unsplash.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.0) 30%, rgba(0,0,0,0) 90%), url(../../images/brian-cyan-K3qvZKTejS0-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-}
-
-header{
-  border: 0;
 }
 
 main{
@@ -67,16 +74,16 @@ main{
 .topText{
   text-align: center;
   margin-top: 100px;
-}
-
-.intro{
-  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 hr{
   border: 2px solid white;
-  width: 100px;
-  margin-top: 0;
+  width: 10%;
+  margin-bottom: 40px;
 }
 
 .postLeft{
