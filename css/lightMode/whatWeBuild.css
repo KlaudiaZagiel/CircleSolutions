@@ -40,7 +40,7 @@
 body {
   font-family: var(--font-main);
   color: var(--color-dark);
-  background: url('../../images/Technology.png') center/cover no-repeat fixed ;
+  background: url('../../images/whatWeBuild/Technology.png') center/cover no-repeat fixed ;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;

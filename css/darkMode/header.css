@@ -1,3 +1,7 @@
+@font-face {
+	font-family: 'Calibre';
+	src: url('../../fonts/Calibre-Semibold.otf') format('opentype');
+}
 .headerdivmain {
 	position: fixed;
 	top: 0;
@@ -28,6 +32,7 @@
 }
 
 .headerbuttons a {
+	font-family: 'Calibre';
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 500;
