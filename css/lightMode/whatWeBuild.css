@@ -40,7 +40,7 @@
 body {
   font-family: var(--font-main);
   color: var(--color-dark);
-  background: url('../../images/Technology.png') center/cover no-repeat fixed;
+  background: url('../../images/Technology.png') center/cover no-repeat fixed ;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -108,7 +108,7 @@ header {
   grid-column: 1 / -1;
   grid-row: 1;
   text-align: center;
-  color: var(--color-primary);
+  color: var(--color-accent);
   font-size: 3rem;
   font-weight: 700;
   text-shadow: 0 6px 18px black;
