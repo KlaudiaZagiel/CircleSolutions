@@ -11,7 +11,7 @@
 
 body {
 	font-family: 'Calibre';
-	background-color: black;
+	background-color: #181a1b;
 }
 
 p {
@@ -25,7 +25,7 @@ a {
 	color: #FFFFFF;
 	margin: 0;
 	padding: 0;
-	font-size: 24px;
+	font-size: 1.5rem; /* 24px */
 	font-weight: bold;
 }
 
@@ -60,13 +60,13 @@ a {
 .solutiontext {
 	font-weight: 600;
 	margin-top: 7rem;
-	font-size: 75px;
+	font-size: 4.6875rem; /* 75px */
 }
 
 .headerlowertextposition {
 	font-weight: 600;
 	margin-top: 3rem;
-	font-size: 40px;
+	font-size: 2.5rem; /* 40px */
 }
 
 .dotsdiv {
@@ -99,7 +99,7 @@ a {
 	color: #FFFFFF;
 	padding-left: 2rem;
 	padding-right: 2rem;
-	font-size: 24px;
+	font-size: 1.5rem; /* 24px */
 }
 
 .headerbuttonsleftmargin {
@@ -107,7 +107,7 @@ a {
 }
 
 .solutionstext {
-	font-size: 24px;
+	font-size: 1.5rem; /* 24px */
 	padding-left: 2rem;
 	padding-right: 2rem;
 	color: white;
@@ -126,7 +126,7 @@ a {
 	place-items: center;
 	color: white;
 	font-weight: bold;
-	font-size: 64px;
+	font-size: 4rem; /* 64px */
 	align-items: center;
 }
 
@@ -156,12 +156,12 @@ hr {
 
 .bottomblocktext {
 	font-weight: 500;
-	font-size: 24px;
+	font-size: 1.5rem; /* 24px */
 	color: white;
 }
 
 .bottomtext {
-	font-size: 32px;
+	font-size: 2rem; /* 32px */
 	font-weight: 500;
 	display: grid;
 	place-items: center;
@@ -185,38 +185,36 @@ hr {
 	place-items: center;
 	color: #799DAB;
 	font-weight: 500;
-	font-size: 12px;
+	font-size: 0.75rem; /* 12px */
 }
 
-
+/* ---------- RESPONSIVE ---------- */
 
 @media (max-width: 800px) {
-	
 
 	.headerdivmain {
 		padding: 0 10px;
 		width: 100%;
 	}
 
-	
 	a {
-		font-size: 12px;
+		font-size: 0.75rem; /* 12px */
 	}
 
 	.copyrighttext {
-		font-size: 6px;
+		font-size: 0.375rem; /* 6px */
 	}
 
 	.bottomtext {
-		font-size: 16px;
+		font-size: 1rem; /* 16px */
 	}
 
 	.bottomblocktext {
-		font-size: 12px;
+		font-size: 0.75rem; /* 12px */
 	}
 
 	.introducingtext {
-		font-size: 32px;
+		font-size: 2rem; /* 32px */
 	}
 
 	.bottomblocksdiv {
@@ -229,7 +227,7 @@ hr {
 	}
 
 	.solutiontext {
-		font-size: 30px;
+		font-size: 1.875rem; /* 30px */
 		margin-top: 2rem;
 	}
 
@@ -252,13 +250,13 @@ hr {
 	}
 
 	.solutionstext {
-		font-size: 10px;
+		font-size: 0.625rem; /* 10px */
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
 
 	.dotstext {
-		font-size: 10px;
+		font-size: 0.625rem; /* 10px */
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
@@ -268,7 +266,7 @@ hr {
 	}
 
 	.headerlowertextposition {
-		font-size: 20px;
+		font-size: 1.25rem; /* 20px */
 		margin-top: 1rem;
 	}
 
@@ -290,14 +288,10 @@ hr {
 	}
 
 	.introducingtext {
-		font-size: 16px;
+		font-size: 1rem; /* 16px */
 	}
 
 	.copyrightimg {
 		width: 3%;
 	}
 }
-
-
-
-

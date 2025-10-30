@@ -3,13 +3,15 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 @font-face {
 	font-family: 'Calibre';
 	src: url('../../fonts/Calibre-Semibold.otf') format('opentype');
 }
+
 body {
 	font-family: 'Calibre';
-	background-color: black;
+	background-color: #181a1b;
 }
 
 p {
@@ -21,7 +23,7 @@ a {
 	text-decoration: none;
 	margin: 0;
 	padding: 0;
-	font-size: 24px;
+	font-size: 1.5rem; /* 24px */
 	font-weight: bold;
 }
 
@@ -49,14 +51,14 @@ a {
 
 .bigtextcircle {
 	font-weight: bold;
-	font-size: 128pt;
+	font-size: 10.625rem; /* 128pt ≈ 170px */
 	color: white;
 }
 
 .bigtextdots {
 	font-weight: bold;
 	color: #c7eaf8;
-	font-size: 128pt;
+	font-size: 10.625rem; /* 128pt ≈ 170px */
 }
 
 .headertext {
@@ -66,7 +68,7 @@ a {
 	grid-column: 2/4;
 	width: 58%;
 	font-weight: 500;
-	font-size: 32px;
+	font-size: 2rem; /* 32px */
 }
 
 .buttonsdiv {
@@ -89,7 +91,7 @@ a {
 
 .buttondarktext {
 	color: #799dab;
-	font-size: 32px;
+	font-size: 2rem; /* 32px */
 	font-weight: 500;
 	display: grid;
 	place-items: center;
@@ -97,7 +99,7 @@ a {
 
 .buttonlighttext {
 	color: #ffffff;
-	font-size: 32px;
+	font-size: 2rem; /* 32px */
 	font-weight: 500;
 	display: grid;
 	place-items: center;
@@ -121,7 +123,7 @@ a {
 .lasttext {
 	color: white;
 	font-weight: 500;
-	font-size: 24px;
+	font-size: 1.5rem; /* 24px */
 	display: grid;
 	place-items: center;
 }
@@ -162,7 +164,7 @@ a {
 	place-items: center;
 	color: #799dab;
 	font-weight: 500;
-	font-size: 12px;
+	font-size: 0.75rem; /* 12px */
 }
 
 .headerdivmain {
@@ -184,7 +186,7 @@ a {
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 500;
-	font-size: 1em;
+	font-size: 1rem; /* 16px */
 	transition: color 0.3s ease;
 }
 
@@ -206,7 +208,7 @@ a {
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 500;
-	font-size: 1em;
+	font-size: 1rem; /* 16px */
 	transition: color 0.3s ease;
 }
 
@@ -243,7 +245,7 @@ a {
 	}
 
 	.lasttext {
-		font-size: 12px;
+		font-size: 0.75rem; /* 12px */
 	}
 
 	.lastimg {
@@ -255,7 +257,7 @@ a {
 	}
 
 	.buttondarLight {
-		font-size: 12px;
+		font-size: 0.75rem; /* 12px */
 	}
 
 	.headerbuttons {
@@ -267,7 +269,7 @@ a {
 	}
 
 	.headerbuttons a {
-		font-size: 12px;
+		font-size: 0.75rem; /* 12px */
 	}
 
 	.headerdivmain {
@@ -280,7 +282,7 @@ a {
 	}
 
 	a {
-		font-size: 12px;
+		font-size: 0.75rem; /* 12px */
 	}
 
 	.headerdiv {
@@ -288,16 +290,16 @@ a {
 	}
 
 	.bigtextcircle {
-		font-size: 64pt;
+		font-size: 4rem; /* 64pt ≈ 85px */
 	}
 
 	.bigtextdots {
-		font-size: 64pt;
+		font-size: 4rem; /* 64pt ≈ 85px */
 	}
 
 	.headertext {
 		margin-top: 2rem;
-		font-size: 16px;
+		font-size: 1rem; /* 16px */
 	}
 
 	.buttonsdiv {
@@ -314,21 +316,21 @@ a {
 	}
 
 	.buttondarktext {
-		font-size: 16px;
+		font-size: 1rem; /* 16px */
 	}
 
 	.buttonlighttext {
-		font-size: 16px;
+		font-size: 1rem; /* 16px */
 	}
 }
 
 @media (max-width: 400px) {
 	.bigtextcircle {
-		font-size: 50px;
+		font-size: 3.125rem; /* 50px */
 	}
 
 	.bigtextdots {
-		font-size: 50px;
+		font-size: 3.125rem; /* 50px */
 	}
 
 	.maindiv {
