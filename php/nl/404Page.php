@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+
 if (isset($_POST['toggle']))
     {
     
@@ -24,8 +25,8 @@ if (isset($_POST['toggle']))
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
     <title>404 Not Found</title>
     <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
-    
-	<?php
+
+    	<?php
 	if (!empty($_SESSION['light'])) {
 		echo "<link rel='stylesheet' href='../../css/darkMode/404Page.css'>";
 		echo "<link rel='stylesheet' href='../../css/darkMode/header.css'>";
@@ -43,21 +44,20 @@ if (isset($_POST['toggle']))
 
     <!--Header-->
 
-    <?php include '../../php/en/header.php'; ?>
+    <?php include '../../php/nl/header.php'; ?>
     
     <!--404 Text-->
 
-    <div class="text-stack"> 
     <div class="text404">
             <h1>404</h1>
         <div class="notfound">
-            <h2>Page not found</h2>
+            <h2>Pagina niet gevonden</h2>
         </div>
     </div>
     </div>    
     <div class="homemessage">
-        <h3>Couldn't find the page your looking for</h3>
-        <p> <a href="./mainPage.php">Go to Homepage</a></p>
+        <h3>De pagina die u zoekt, kan niet worden gevonden.</h3>
+        <p> <a href="./mainPage.php">Ga naar de startpagina</a></p>
     </div>
 
 </body>
