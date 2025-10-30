@@ -168,6 +168,111 @@ header {
   line-height: 1.3;
   max-width: 80%;
 }
+.cyberSecurityServices {
+  grid-row: 2;
+}
+.mobileAppDevelopment {
+  grid-row: 3;
+}
+.maintainanceAndSupport {
+  grid-row: 4;
+}
+.customSoftware {
+  grid-row: 2;
+  grid-column: 3;
+}
+.cloudSolutions {
+  grid-row: 3;
+  grid-column: 3;
+}
+.webDevelopment {
+  grid-row: 4;
+  grid-column: 3;
+}
+
+/* Images container & animation */
+.gearIcons {
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+  grid-row: 2/5;
+  grid-column: 2;
+  z-index: 10;
+}
+
+.gear {
+  position: absolute;
+  opacity: 0;
+  transform-origin: center;
+  animation-fill-mode: forwards;
+  z-index: 10;
+}
+
+/* Different sizes and positions for each gear */
+.gear-1 {
+  width: 170px;
+  top: calc(50% - 40px);
+  left: calc(50% - 185px);
+  transform: translate(-50%, -50%) rotate(60deg);
+  animation: fadeInGear 1s ease-out 0.2s forwards,
+             slowRotateClockwiseGear1 15s linear 0.2s infinite;
+}
+
+.gear-2 {
+  width: 260px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeInGear 1s ease-out 0.4s forwards,
+             slowRotateCounterClockwiseGear2 15s linear 0.4s infinite;
+}
+
+.gear-3 {
+  width: 220px;
+  top: calc(50% - 60px);
+  left: calc(50% + 200px);
+  transform: translate(-50%, -50%);
+  animation: fadeInGear 1s ease-out 0.6s forwards,
+             slowRotateClockwiseGear3 15s linear 0.6s infinite;
+}
+
+/* Animation delays for staggered effect */
+@keyframes fadeInGear {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slowRotateClockwiseGear1 {
+	from { 
+		transform: translate(-50%, -50%) rotate(36deg); 
+	}
+	to { 
+		transform: translate(-50%, -50%) rotate(396deg); 
+	}
+}
+
+@keyframes slowRotateCounterClockwiseGear2 {
+	from {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+}
+
+@keyframes slowRotateClockwiseGear3 {
+	from {
+		transform: translate(-50%, -50%) rotate(4deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(364deg);
+	}
+}
 
 /* Footer CTA */
 .cta {
@@ -237,4 +342,88 @@ header {
   .buttonflag img {
     height: 20px;
   }
+  .cyberSecurityServices {
+    margin-top: 150px;
+    grid-row: 3;
+  }
+  .mobileAppDevelopment {
+    grid-row: 4;
+  }
+  .maintainanceAndSupport {
+    grid-row: 5;
+  }
+  .customSoftware {
+    grid-row: 6;
+    grid-column: 1;
+  }
+  .cloudSolutions {
+    grid-row: 7;
+    grid-column: 1;
+  }
+  .webDevelopment {
+    grid-row: 8;
+    grid-column: 1;
+  }
+  /* Images container & animation */
+  .gearIcons {
+    margin-top: 60px;
+    grid-row: 2;
+    grid-column: 1;
+    z-index: 10;
+  }
+  /* Different sizes and positions for each gear */
+  .gear-1 {
+    width: 85px;
+    top: calc(50% - 45px);
+    left: calc(50% - 90px);
+    transform: translate(-50%, -50%) rotate(60deg);
+    animation: fadeInGear 1s ease-out 0.2s forwards,
+               slowRotateClockwiseGear1 15s linear 0.2s infinite;
+  }
+  .gear-2 {
+    width: 130px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeInGear 1s ease-out 0.4s forwards,
+               slowRotateCounterClockwiseGear2 15s linear 0.4s infinite;
+  }
+  .gear-3 {
+    width: 110px;
+    top: calc(50% - 55px);
+    left: calc(50% + 95px);
+    transform: translate(-50%, -50%);
+    animation: fadeInGear 1s ease-out 0.6s forwards,
+               slowRotateClockwiseGear3 15s linear 0.6s infinite;
+  }
+  /* Animation delays for staggered effect */
+  @keyframes fadeInGear {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @keyframes slowRotateClockwiseGear1 {
+    from { 
+      transform: translate(-50%, -50%) rotate(36deg); 
+    }
+    to { 
+      transform: translate(-50%, -50%) rotate(396deg); 
+    }
+  }
+  @keyframes slowRotateCounterClockwiseGear2 {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(-360deg);
+    }
+  }
+  @keyframes slowRotateClockwiseGear3 {
+    from {
+      transform: translate(-50%, -50%) rotate(4deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(364deg);
+    }
+  }
+
 }

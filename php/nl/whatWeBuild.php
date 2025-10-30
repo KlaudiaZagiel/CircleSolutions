@@ -37,40 +37,47 @@ if (isset($_POST['toggle'])) {
     <main class="services" role="main">
         <h1 class="page-title">Wat We Bouwen</h1>
 
-        <div class="service-box">
-            <img src="../../images/lock.png" alt="" aria-hidden="true">
+        <div class="service-box cyberSecurityServices">
+            <img src="../../images/whatWeBuild/lock.png" alt="" aria-hidden="true">
             <h3>Cybersecuritydiensten</h3>
             <p>Beveiligingsaudits, tests en naleving.</p>
         </div>
 
-        <div class="service-box">
+        <div class="service-box mobileAppDevelopment">
             <img src="../../images/whatWeBuild/phone.png" alt="" aria-hidden="true">
             <h3>Mobiele app-ontwikkeling</h3>
             <p>Apps voor iOS, Android en meer.</p>
         </div>
 
-        <div class="service-box">
+        <div class="service-box maintainanceAndSupport">
             <img src="../../images/whatWeBuild/desktop.png" alt="" aria-hidden="true">
             <h3>Onderhoud & ondersteuning</h3>
             <p>Regelmatige updates, bugfixes en verbeteringen.</p>
         </div>
 
-        <div class="service-box">
+        <div class="service-box customSoftware">
             <img src="../../images/whatWeBuild/laptop1.png" alt="" aria-hidden="true">
             <h3>Maatwerksoftware</h3>
             <p>Oplossingen op maat voor jouw bedrijfsbehoeften.</p>
         </div>
 
-        <div class="service-box">
+        <div class="service-box cloudSolutions">
             <img src="../../images/whatWeBuild/cloud1.png" alt="" aria-hidden="true">
             <h3>Cloudoplossingen</h3>
             <p>Veilige, schaalbare en altijd beschikbare infrastructuur.</p>
         </div>
 
-        <div class="service-box">
+        <div class="service-box webDevelopment">
             <img src="../../images/whatWeBuild/table.png" alt="" aria-hidden="true">
             <h3>Webontwikkeling</h3>
             <p>Responsieve, moderne websites en apps voor jouw merk.</p>
+        </div>
+
+        <!-- animated gear icons -->
+        <div class="gearIcons" id="gearContainer">
+            <img class="gear gear-1" src="../../images/whatWeBuild/gear-icon.png" alt="Tandwiel">
+            <img class="gear gear-2" src="../../images/whatWeBuild/gear-icon.png" alt="Tandwiel">
+            <img class="gear gear-3" src="../../images/whatWeBuild/gear-icon.png" alt="Tandwiel">
         </div>
     </main>
 
@@ -79,5 +86,6 @@ if (isset($_POST['toggle'])) {
         <a class="cta-link" href="dots.php">Bekijk D.O.T.S</a>
         <a class="cta-primary" href="contactPage.php">Start jouw project</a>
     </footer>
+    
 </body>
 </html>
