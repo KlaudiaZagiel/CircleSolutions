@@ -18,7 +18,7 @@ if (isset($_POST['toggle'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/lightMode/whatWeBuild.css">
-    <title>Wat we bouwen</title>
+    <title>Wat We Bouwen</title>
     <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
 
     <?php
@@ -35,7 +35,7 @@ if (isset($_POST['toggle'])) {
     <?php include '../../php/nl/header.php'; ?>
 
     <main class="services" role="main">
-        <h1 class="page-title">Wat we bouwen</h1>
+        <h1 class="page-title">Wat We Bouwen</h1>
 
         <div class="service-box">
             <img src="../../images/lock.png" alt="" aria-hidden="true">
