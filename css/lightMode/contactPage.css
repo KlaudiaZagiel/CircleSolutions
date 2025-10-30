@@ -66,61 +66,7 @@
 	src: url("../../fonts/Calibre-BlackItalic.otf") format("opentype");
 }
 
-/* Header */
-/* 
-.header {
-	width: 95dvw;
-	height: 10dvh;
-	margin-inline: 5dvw;
-
-	display: grid;
-	grid-template-columns: repeat(24, 1fr);
-	align-items: center;
-	padding: 5px;
-}
-
-.headerButton {
-	appearance: none;
-	border: none;
-	text-decoration: none;
-
-	display: flex;
-	justify-content: center;
-
-	margin-top: 25px;
-
-	font-size: 1.5rem;
-	font-family: "CalibreBold";
-	color: black;
-
-}
-
-.homeButton {
-	grid-column: 15/17;
-}
-
-.dotsButton {
-	grid-column: 17/19;
-
-}
-
-.solutionsButton {
-	grid-column: 19/21;
-
-}
-
-.aboutUsButton {
-	grid-column: 21/23;
-}
-
-hr {
-	grid-column: 1/24;
-	border: 1px solid;
-	border-color: #D9D9D9;
-} */
-
 /* Main page contents */
-
 .pageGrid {
 	display: grid;
 	grid-template-columns: 1.80fr 0.65fr 1fr;
