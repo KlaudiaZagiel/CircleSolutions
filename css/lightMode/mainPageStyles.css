@@ -24,7 +24,8 @@ a {
 	color: black;
 	margin: 0;
 	padding: 0;
-	font-size: 1.5rem; /* 24px */
+	font-size: 1.5rem;
+	/* 24px */
 	font-weight: bold;
 }
 
@@ -65,13 +66,15 @@ a {
 .solutiontext {
 	font-weight: 600;
 	margin-top: 7rem;
-	font-size: 4.6875rem; /* 75px */
+	font-size: 4.6875rem;
+	/* 75px */
 }
 
 .headerlowertextposition {
 	font-weight: 600;
 	margin-top: 3rem;
-	font-size: 2.5rem; /* 40px */
+	font-size: 2.5rem;
+	/* 40px */
 }
 
 .dotsdiv {
@@ -104,7 +107,8 @@ a {
 	color: #63808b;
 	padding-left: 2rem;
 	padding-right: 2rem;
-	font-size: 1.5rem; /* 24px */
+	font-size: 1.5rem;
+	/* 24px */
 }
 
 .headerbuttonsleftmargin {
@@ -112,7 +116,8 @@ a {
 }
 
 .solutionstext {
-	font-size: 1.5rem; /* 24px */
+	font-size: 1.5rem;
+	/* 24px */
 	padding-left: 2rem;
 	padding-right: 2rem;
 	color: #000000;
@@ -131,7 +136,8 @@ a {
 	place-items: center;
 	color: #000000;
 	font-weight: bold;
-	font-size: 4rem; /* 64px */
+	font-size: 4rem;
+	/* 64px */
 	align-items: center;
 }
 
@@ -161,17 +167,16 @@ hr {
 
 .bottomblocktext {
 	font-weight: 500;
-<<<<<<< HEAD
 	font-size: 24px;
 	text-align: center;
 	margin-top: 10px;
-=======
-	font-size: 1.5rem; /* 24px */
->>>>>>> 54460735dfbdc190e728e7df2bcf273427a0acfa
+	font-size: 1.5rem;
+	/* 24px */
 }
 
 .bottomtext {
-	font-size: 2rem; /* 32px */
+	font-size: 2rem;
+	/* 32px */
 	font-weight: 500;
 	display: grid;
 	place-items: center;
@@ -195,51 +200,44 @@ hr {
 	place-items: center;
 	color: #799DAB;
 	font-weight: 500;
-<<<<<<< HEAD
 	font-size: 12px;
 	margin-top: 6px;
-=======
-	font-size: 0.75rem; /* 12px */
->>>>>>> 54460735dfbdc190e728e7df2bcf273427a0acfa
+	font-size: 0.75rem;
+	/* 12px */
 }
 
 
 /* ============ АДАПТИВ ============ */
 
 @media (max-width: 800px) {
-<<<<<<< HEAD
-
-=======
->>>>>>> 54460735dfbdc190e728e7df2bcf273427a0acfa
-
 	.headerdivmain {
 		padding: 0 10px;
 		width: 100%;
 	}
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 54460735dfbdc190e728e7df2bcf273427a0acfa
 	a {
-		font-size: 0.75rem; /* 12px */
+		font-size: 0.75rem;
+		/* 12px */
 	}
 
 	.copyrighttext {
-		font-size: 0.375rem; /* 6px */
+		font-size: 0.375rem;
+		/* 6px */
 	}
 
 	.bottomtext {
-		font-size: 1rem; /* 16px */
+		font-size: 1rem;
+		/* 16px */
 	}
 
 	.bottomblocktext {
-		font-size: 0.75rem; /* 12px */
+		font-size: 0.75rem;
+		/* 12px */
 	}
 
 	.introducingtext {
-		font-size: 2rem; /* 32px */
+		font-size: 2rem;
+		/* 32px */
 	}
 
 	.bottomblocksdiv {
@@ -252,7 +250,8 @@ hr {
 	}
 
 	.solutiontext {
-		font-size: 1.875rem; /* 30px */
+		font-size: 1.875rem;
+		/* 30px */
 		margin-top: 2rem;
 	}
 
@@ -275,13 +274,15 @@ hr {
 	}
 
 	.solutionstext {
-		font-size: 0.625rem; /* 10px */
+		font-size: 0.625rem;
+		/* 10px */
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
 
 	.dotstext {
-		font-size: 0.625rem; /* 10px */
+		font-size: 0.625rem;
+		/* 10px */
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
@@ -291,7 +292,8 @@ hr {
 	}
 
 	.headerlowertextposition {
-		font-size: 1.25rem; /* 20px */
+		font-size: 1.25rem;
+		/* 20px */
 		margin-top: 1rem;
 	}
 
@@ -313,14 +315,12 @@ hr {
 	}
 
 	.introducingtext {
-		font-size: 1rem; /* 16px */
+		font-size: 1rem;
+		/* 16px */
 	}
 
 	.copyrightimg {
 		width: 3%;
 	}
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> 54460735dfbdc190e728e7df2bcf273427a0acfa
