@@ -19,9 +19,14 @@
   font-style: normal;
 }
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Calibre';
+}
 
-  font-family: 'Calibre', Arial 'sans serif';
+body {
   color: black;
   margin: 30px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.90) 30%, rgba(0, 0, 0, 0.90) 100%), url(../images/faqimages/laptoptyping.jpg);
@@ -30,54 +35,16 @@ body {
   background-attachment: fixed;
 }
 
-.topheader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  background: rgba(34, 49, 63, 0.85);
-  /* Optional: semi-transparent background rgba*/
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  min-height: 70px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-}
-
-.flag {
-  width: 30px;
-  margin-right: 40px;
-}
-
-
-
-.links {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.links a {
-  font-family: 'Calibre';
-  color: white;
-  text-decoration: none;
-  font-weight: bolder;
-}
-
 .herotext {
-  font-family: 'Calibre';
-  font-weight: 40px;
+  font-weight: 400;
   text-align: center;
   padding-top: 60px;
   color: white;
 }
 
 
-p1 {
-  font-family: 'Calibre';
-  font-size: 20px;
+.findanswers {
+  font-size: 1rem;
   opacity: 80%;
   color: white;
 }
@@ -102,22 +69,20 @@ p1 {
 }
 
 .faq-qa summary {
-  /*expandable box when u press the chevron*/
+  /* expandable box when u press the chevron*/
   display: flex;
   justify-content: space-between;
-  font-size: 20px;
-  font-family: 'Calibre';
+  font-size: 1.2rem;
   font-weight: 500;
   cursor: pointer;
 }
 
 .chevron {
-  width: 30px;
-  height: 40px;
-  padding: 20px;
-  margin-right: 10px;
-  display: inline-block;
-  transition: transform .25s ease;
+  width: 24px;
+  height: 30px;
+  margin-right: 20px;
+  margin-top: 20px;
+  transition: transform 0.25s ease;
 }
 
 .faq-qa[open] .chevron {
@@ -125,10 +90,8 @@ p1 {
 }
 
 .answer {
-
   display: flex;
   background-color: lightgrey;
-  font-family: 'Calibre';
   color: white;
   font-size: 20px;
   margin-top: 10px;
@@ -154,26 +117,22 @@ p1 {
 
 .contactbox a {
   color: white;
-  font-family: 'Calibre';
   font-size: 20px;
 }
 
 .contactbox p {
   color: white;
-  font-family: 'Calibre';
   font-size: 20px;
 }
 
 h2 {
   color: white;
   font-weight: 600;
-  font-family: 'Calibre';
 }
 
-p2 {
-  font-size: 20px;
+.wijhelpen {
+  font-size: 1rem;
   font-weight: 400;
-  font-family: 'Calibre';
   color: white;
 }
 
@@ -183,13 +142,12 @@ p2 {
   justify-content: flex-end;
   gap: 5px;
   padding: 10px 20px;
-  font-size: 12px;
+  font-size: 0.5rem;
   margin-top: 60px;
-  font-family: 'Calibre';
   opacity: 50%;
 }
 
-p2 {
+.copytext {
   color: #799dab;
   font-size: 1rem;
   margin-bottom: 2px;
@@ -214,32 +172,6 @@ p2 {
     margin: 12px;
   }
 
-  .topheader {
-    padding: 0 10px;
-    min-height: 40px;
-    flex-wrap: wrap;
-    /*flex-wrap: wrap; if not enough space, move it to the next line*/
-  }
-
-  .logo {
-    height: 30px;
-  }
-
-  .flag {
-    width: 20px;
-    margin-right: 17px;
-  }
-
-  .links {
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .links a {
-    font-size: 12px;
-  }
-
   .herotext {
     padding-top: 70px;
   }
@@ -251,7 +183,7 @@ p2 {
   }
 
   .faq-qa summary {
-    font-size: 15px;
+    font-size: 0.6rem;
   }
 
   .faq-question {

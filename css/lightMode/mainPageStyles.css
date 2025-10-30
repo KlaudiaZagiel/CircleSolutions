@@ -30,11 +30,11 @@ a {
 
 .logomain {
 	width: 180px;
-    height: 60px;
+	height: 60px;
 }
 
 .buttonflag {
-    background: none;
+	background: none;
 	border: none;
 	cursor: pointer;
 	padding: 0;
@@ -42,7 +42,7 @@ a {
 
 .backroundimagemaindiv {
 	margin-top: 35px;
-	background-image: url(../../images/mainPage/backimagemain_light.png);
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0.3) 100%), url(../../images/mainPage/pic_i2.webp);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	display: grid;
@@ -101,7 +101,7 @@ a {
 }
 
 .dotstext {
-	color: #799dab;
+	color: #63808b;
 	padding-left: 2rem;
 	padding-right: 2rem;
 	font-size: 24px;
@@ -162,6 +162,8 @@ hr {
 .bottomblocktext {
 	font-weight: 500;
 	font-size: 24px;
+	text-align: center;
+	margin-top: 10px;
 }
 
 .bottomtext {
@@ -170,6 +172,7 @@ hr {
 	display: grid;
 	place-items: center;
 	grid-column: 2/3;
+	margin-top: 20px;
 }
 
 .bottomtextmargin {
@@ -189,19 +192,20 @@ hr {
 	color: #799DAB;
 	font-weight: 500;
 	font-size: 12px;
+	margin-top: 6px;
 }
 
 
 
 @media (max-width: 800px) {
-	
+
 
 	.headerdivmain {
 		padding: 0 10px;
 		width: 100%;
 	}
 
-	
+
 
 	a {
 		font-size: 12px;
@@ -301,7 +305,3 @@ hr {
 		width: 3%;
 	}
 }
-
-
-
-

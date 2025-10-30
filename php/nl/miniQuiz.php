@@ -1,4 +1,19 @@
 <?php
+session_start();
+
+if (isset($_POST['toggle'])) {
+    if (isset($_SESSION['light']) && $_SESSION['light'] === true) {
+        $_SESSION['light'] = false;
+    } else {
+        $_SESSION['light'] = true;
+    }
+    header("Location: " . $_SERVER['PHP_SELF']);
+    exit();
+}
+?>
+
+
+<?php
 
 $correctanswers = array("b", "d", "b", "a", "a", "c", "b", "c");
 
@@ -36,26 +51,22 @@ if ($score >= 7) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle Solutions MiniQuiz</title>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="../../css/lightMode/miniQuiz.css">
-=======
-    <link rel="stylesheet" href="../css/miniquizNL.css">
     <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
->>>>>>> c3e4f42552d94ef10b3894fdfa84169b003cd98b
+
+    <?php
+    if (!empty($_SESSION['light'])) {
+        echo "<link rel='stylesheet' href='../../css/darkMode/miniQuiz.css'>";
+        echo "<link rel='stylesheet' href='../../css/darkMode/header.css'>";
+    } else {
+        echo "<link rel='stylesheet' href='../../css/lightMode/miniQuiz.css'>";
+        echo "<link rel='stylesheet' href='../../css/lightMode/header.css'>";
+    }
+    ?>
+
 </head>
 
 <body>
-    <div class="topheader">
-        <img src="../../images/circleSolutionsLogo.png" alt="logo" class="logo">
-        <div class="links">
-            <a href="mainPage.html">Home</a>
-            <a href="contact.html">Contact</a>
-            <a href="aboutus.html">About</a>
-            <a href="whatwebuild.html">Solutions</a>
-            <a href="dots.html">D.O.T.S</a>
-            <img src="../../images/flag-niderlandov_b1.jpg" alt="flag" class="flag">
-        </div>
-    </div>
+    <?php include '../../php/nl/header.php'; ?>
     <div class="herotext">
         <h1>Ben je klaar om je korting te coderen?🧠</h1>
         <p class="solvequiz">Los onze quiz op en ontvang tot 15% korting op onze diensten!</p>

@@ -5,13 +5,13 @@
 }
 
 @font-face {
-  font-family: 'Calibre';
+	font-family: 'Calibre';
 	src: url('../../fonts/Calibre-Semibold.otf') format('opentype');
 }
 
 body {
 	font-family: 'Calibre';
-	background-color: black;
+	background-color: rgb(27, 27, 27);
 }
 
 p {
@@ -43,7 +43,7 @@ a {
 
 .backroundimagemaindiv {
 	margin-top: 35px;
-	background-image: url(../../images/mainPage/backimagemain.png);
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0.8) 100%), url(../../images/mainPage/pic_i2.webp);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	display: grid;
@@ -148,7 +148,7 @@ hr {
 .bottomblock {
 	width: 20%;
 	padding: 3rem;
-	background-color: #C7EAF8;
+	background-color: #799DAB;
 	display: grid;
 	place-items: center;
 	border-radius: 12px;
@@ -158,6 +158,7 @@ hr {
 	font-weight: 500;
 	font-size: 24px;
 	color: white;
+	text-align: center;
 }
 
 .bottomtext {
@@ -167,6 +168,7 @@ hr {
 	place-items: center;
 	grid-column: 2/3;
 	color: white;
+	margin-top: 20px;
 }
 
 .bottomtextmargin {
@@ -186,19 +188,20 @@ hr {
 	color: #799DAB;
 	font-weight: 500;
 	font-size: 12px;
+	margin-top: 6px;
 }
 
 
 
 @media (max-width: 800px) {
-	
+
 
 	.headerdivmain {
 		padding: 0 10px;
 		width: 100%;
 	}
 
-	
+
 	a {
 		font-size: 12px;
 	}
@@ -297,7 +300,3 @@ hr {
 		width: 3%;
 	}
 }
-
-
-
-
