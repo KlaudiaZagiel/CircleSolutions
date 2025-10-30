@@ -59,8 +59,12 @@ body{
   text-align: center;
 }
 
+main{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
 .topText{
-  grid-column: 2;
   text-align: center;
   margin-top: 100px;
 }
@@ -73,13 +77,6 @@ hr{
   border: 2px solid white;
   width: 100px;
   margin-top: 0;
-  margin-bottom: 2rem;
-  margin-left: 24.4rem;
-}
-
-main{
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
 }
 
 .mainFocus{

@@ -15,6 +15,7 @@
         </h1>
         <hr>
     </div>
+    
     <main>
         <div class="mainFocus">
             <div class="mainHeader">
