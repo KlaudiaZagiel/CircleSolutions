@@ -44,31 +44,31 @@ if (isset($_POST['toggle'])) {
         </div>
 
         <div class="service-box">
-            <img src="../../images/phone.png" alt="" aria-hidden="true">
+            <img src="../../images/whatWeBuild/phone.png" alt="" aria-hidden="true">
             <h3>Mobiele app-ontwikkeling</h3>
             <p>Apps voor iOS, Android en meer.</p>
         </div>
 
         <div class="service-box">
-            <img src="../../images/desktop.png" alt="" aria-hidden="true">
+            <img src="../../images/whatWeBuild/desktop.png" alt="" aria-hidden="true">
             <h3>Onderhoud & ondersteuning</h3>
             <p>Regelmatige updates, bugfixes en verbeteringen.</p>
         </div>
 
         <div class="service-box">
-            <img src="../../images/laptop1.png" alt="" aria-hidden="true">
+            <img src="../../images/whatWeBuild/laptop1.png" alt="" aria-hidden="true">
             <h3>Maatwerksoftware</h3>
             <p>Oplossingen op maat voor jouw bedrijfsbehoeften.</p>
         </div>
 
         <div class="service-box">
-            <img src="../../images/cloud1.png" alt="" aria-hidden="true">
+            <img src="../../images/whatWeBuild/cloud1.png" alt="" aria-hidden="true">
             <h3>Cloudoplossingen</h3>
             <p>Veilige, schaalbare en altijd beschikbare infrastructuur.</p>
         </div>
 
         <div class="service-box">
-            <img src="../../images/table.png" alt="" aria-hidden="true">
+            <img src="../../images/whatWeBuild/table.png" alt="" aria-hidden="true">
             <h3>Webontwikkeling</h3>
             <p>Responsieve, moderne websites en apps voor jouw merk.</p>
         </div>
