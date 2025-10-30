@@ -1,62 +1,39 @@
 <?php
 session_start();
 
-// Set default theme to light mode on first visit
-if (!isset($_SESSION['light'])) {
-    $_SESSION['light'] = true;
-}
-
-// Toggle theme if requested
 if (isset($_POST['toggle'])) {
-    $_SESSION['light'] = !$_SESSION['light'];
-    header("Location: " . $_SERVER['PHP_SELF']);
-    exit();
+	if (isset($_SESSION['light']) && $_SESSION['light'] === true) {
+		$_SESSION['light'] = false;
+	} else {
+		$_SESSION['light'] = true;
+	}
+	header("Location: " . $_SERVER['PHP_SELF']);
+	exit();
 }
-
-// Determine stylesheet
-$themeCss = $_SESSION['light']
-    ? '../../css/lightMode/whatWeBuild.css'
-    : '../../css/darkMode/whatWeBuild.css';
 ?>
+
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/lightMode/whatWeBuild.css">
     <title>What We Build</title>
-    <link rel="stylesheet" href="<?= htmlspecialchars($themeCss, ENT_QUOTES) ?>">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
+
+    <?php
+	if (!empty($_SESSION['light'])) {
+		echo "<link rel='stylesheet' href='../../css/darkMode/whatWeBuild.css'>";
+		echo "<link rel='stylesheet' href='../../css/darkMode/header.css'>";
+	} else {
+		echo "<link rel='stylesheet' href='../../css/lightmode/whatWeBuild.css'>";
+		echo "<link rel='stylesheet' href='../../css/lightMode/header.css'>";
+	}
+	?>
+  
 </head>
 <body>
-    <header>
-        <div class="backgroundimagemaindiv">
-            <div class="headerdivmain">
-                <a href="mainPage.php">
-                    <img class="headerImagedots" src="../../images/header/circleSolutionsLogo.png" alt="Circle Solutions logo">
-                </a>
-                <ul class="headerbuttons">
-                    <li><a href="dots.php">D.O.T.S</a></li>
-                    <li><a href="contactPage.php">Contact</a></li>
-                    <li><a href="aboutus.php">About Us</a></li>
-                    <li><a href="whatwebuild.php">Solutions</a></li>
-                    <li>
-                        <form method="POST" action="<?= htmlspecialchars($_SERVER['PHP_SELF'], ENT_QUOTES) ?>">
-                            <button name="toggle" class="buttonflag buttondarLight">
-                                <img src="<?= $_SESSION['light']
-                                    ? '../../images/header/lightModeToggle.png'
-                                    : '../../images/header/darkModeToggle.png' ?>" alt="Toggle theme">
-                            </button>
-                        </form>
-                    </li>
-                    <li>
-                        <a class="buttonflag" href="../nl/whatwebuild.php">
-                            <img src="../../images/header/flag.png" alt="english flag">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
+    <?php include '../../php/en/header.php'; ?>
     <main class="services" role="main">
         <h1 class="page-title">What we build</h1>
 
