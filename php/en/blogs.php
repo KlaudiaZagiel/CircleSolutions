@@ -33,7 +33,7 @@ if (isset($_POST['toggle'])) {
 </head>
 
 <body>
-        <?php include '../../php/en/header.php'; ?>
+    <?php include '../../php/en/header.php'; ?>
 
     <div class="topText">
         <h1 class="intro">
