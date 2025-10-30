@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+if (isset($_POST['toggle'])) {
+	if (isset($_SESSION['light']) && $_SESSION['light'] === true) {
+		$_SESSION['light'] = false;
+	} else {
+		$_SESSION['light'] = true;
+	}
+	header("Location: " . $_SERVER['PHP_SELF']);
+	exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +20,20 @@
     <title>Knowledge Base</title>
     <link rel="stylesheet" href="../../css/lightMode/knowledgeBases.css">
     <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
+    	<?php
+	if (!empty($_SESSION['light'])) {
+		echo "<link rel='stylesheet' href='../../css/darkMode/knowledgeBases.css'>";
+		echo "<link rel='stylesheet' href='../../css/darkMode/header.css'>";
+	} else {
+		echo "<link rel='stylesheet' href='../../css/lightMode/knowledgeBases.css'>";
+		echo "<link rel='stylesheet' href='../../css/lightMode/header.css'>";
+	}
+	?>
 </head>
 <body>
-    
+
+	<?php include '../../php/en/header.php'; ?>
+
  <div class="kb-hero">
     <div class="kb-hero-text">
       <h1>Knowledge Base</h1>
