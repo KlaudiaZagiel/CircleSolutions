@@ -3,13 +3,14 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: Calibre;
 }
 body {
     margin:0;
     padding:0;
     width: 100vw;
     height: 100vh;
-    background: #ffffff;
+    background: hsl(0, 0%, 0%);
     display: flex;
     overflow: hidden;
 }
@@ -35,76 +36,6 @@ body {
   font-style: normal;
 }
 
-/* Change the color functions to HSLA and remove repetition of lines of code! */
-
-.headerdivmain {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  background:#B7D0E3; /* Optional: semi-transparent background rgba*/
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  min-height: 70px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-}
-header
-{
-    grid-column: 1/4;
-}
-.logomain 
-{
-  height: 50px;
-}
-.headerbuttons 
-{
-  display: flex;
-  align-items: center;
-  gap: 30px; /* Adds consistent spacing between items */
-  margin-left: auto;
-  list-style-type: none; 
-  padding-left: 0;       
-  margin: 0; 
-}
-.buttondarLight
-{
-    color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1em;
-  transition: color 0.3s ease;
-}
-.headerbuttons a 
-{
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1em;
-  transition: color 0.3s ease;
-}
-
-.headerbuttons a:hover 
-{
-  color: #d0e6f7; /* Optional hover effect */
-}
-
-.buttonflag 
-{
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-
-.buttonflag img
-{
-  height: 24px;
-}
-
-
 .text404{
     display: flex;
     width: 581px;
@@ -114,8 +45,7 @@ header
     flex-shrink: 0;
     color: hsla(0, 0%, 59%, 0.5);
     text-align: center;
-    text-shadow: 0 4px 25px rgba(255, 255, 255, 0.507);
-    font-family: Calibre;
+    text-shadow: 0 4px 25px hsla(0, 0%, 100%, 0.507);
     font-size: 175px;
     font-style: normal;
     font-weight: 700;
@@ -133,7 +63,6 @@ header
     flex-shrink: 0;
     color: hsla(0, 0%, 59%, 0.5);
     text-align: center;
-    font-family: Calibre;
     font-size: 64px;
     font-style: normal;
     font-weight: 400;
@@ -150,8 +79,7 @@ header
     width: 650px;
     height: 60px;
     flex-shrink: 0;
-    color: #ffffff;
-    font-family: Calibre;
+    color: hsl(0, 0%, 100%);
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -162,7 +90,7 @@ header
 }
 
 .homemessage a {
-    color: #ffffff;
+    color: hsl(0, 0%, 100%);
     text-decoration: none;
     font-weight: 700;
     font-size: 2em;
@@ -170,21 +98,11 @@ header
 }
 
 .homemessage a:hover {
-    color: #799DAB;
+    color: hsl(197, 23%, 57%);
 }
 
 @media (max-width: 800px)
 {
-
-        .logomain{
-        width: 100px;
-        height: auto;
-    }
-
-    .headerbuttons{
-        font-size: 14px;
-        gap: 15px;
-    }
 
     .homemessage{
         font-size: 16px;
