@@ -29,7 +29,7 @@
 body {
   color: black;
   margin: 30px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.90) 30%, rgba(0, 0, 0, 0.90) 100%), url(../images/faqimages/laptoptyping.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0.9) 100%), url(../../images/faqimages/laptoptyping.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -84,6 +84,7 @@ body {
   margin-top: 20px;
   transition: transform 0.25s ease;
 }
+
 
 .faq-qa[open] .chevron {
   transform: rotate(180deg);
