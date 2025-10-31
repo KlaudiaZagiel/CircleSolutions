@@ -32,13 +32,16 @@ body {
     margin: 30px;
 }
 
-.herotext {
-    font-weight: 40px;
+.heroText {
+    display: flex;
     text-align: center;
     padding-top: 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.checkanswers {
+.checkAnswers {
     padding: 15px;
     border-radius: 8px;
     border-style: none;
@@ -58,8 +61,8 @@ body {
     margin-top: 40px;
 }
 
-.checkanswers:hover {
-    background-color: #ffffff;
+.checkAnswers:hover {
+    background-color: #afe4f8;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     transform: translateY(-3px);
     /* lift the button slightly */
@@ -72,7 +75,7 @@ h1 {
     text-align: center;
 }
 
-.solvequiz {
+.solveQuiz {
     font-size: 1.2rem;
     align-self: center;
     color: white;
@@ -152,8 +155,7 @@ input[type="radio"]:checked {
         margin: 12px;
     }
 
-    .herotext {
-        max-width: 250px;
+    .heroText {
         line-height: 1.1;
         margin: 0 auto;
     }
@@ -182,7 +184,7 @@ input[type="radio"]:checked {
         margin-left: 20px;
     }
 
-    .checkanswers {
+    .checkAnswers {
         padding: 15px;
     }
 }

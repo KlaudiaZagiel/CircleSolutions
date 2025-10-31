@@ -38,16 +38,16 @@ if (isset($_POST['toggle'])) {
 
     <?php include '../../php/en/header.php'; ?>
 
-    <div class="herotext">
+    <div class="heroText">
         <h1>FAQ-Frequently Asked Questions</h1>
-        <p class="findanswers">Find answers to common questions about our services and solutions.</p>
+        <p class="findAnswers">Find answers to common questions about our services and solutions.</p>
     </div>
 
-    <section class="faqboxes"> <!-- it wraps every individual FAQ block (each <details>). -->
-        <details class="faq-qa"> <!-- each faq  block (question and answer)-->
+    <section class="faqBoxes"> <!-- it wraps every individual FAQ block (each <details>). -->
+        <details class="faq-Qa"> <!-- each faq  block (question and answer)-->
 
             <summary> <!--what user clicks to expand content-->
-                <div class="faq-question">What kind of software solutions does Circle Solutions offer?</div>
+                <div class="faq-Question">What kind of software solutions does Circle Solutions offer?</div>
                 <img src="../../images/faqimages/chevrondown.png" alt="chevron" class="chevron">
             </summary>
             <div class="answer">We build custom software tailored to your business needs, including web, mobile, and
@@ -55,9 +55,9 @@ if (isset($_POST['toggle'])) {
             </div>
         </details>
 
-        <details class="faq-qa">
+        <details class="faq-Qa">
             <summary>
-                <div class="faq-question"> What makes Circle D.O.T.S. different?</div>
+                <div class="faq-Question"> What makes Circle D.O.T.S. different?</div>
                 <img src="../../images/faqimages/chevrondown.png" alt="chevron" class="chevron">
             </summary>
             <div class="answer"> Circle D.O.T.S. is our flagship platform designed to simplify
@@ -66,9 +66,9 @@ if (isset($_POST['toggle'])) {
             </div>
         </details>
 
-        <details class="faq-qa">
+        <details class="faq-Qa">
             <summary>
-                <div class="faq-question">Do you provide ongoing support after a project is completed?</div>
+                <div class="faq-Question">Do you provide ongoing support after a project is completed?</div>
                 <img src="../../images/faqimages/chevrondown.png" alt="chevron" class="chevron">
             </summary>
             <div class="answer">Yes. Our Maintenance & Support services include regular updates, bug fixes, and
@@ -76,9 +76,9 @@ if (isset($_POST['toggle'])) {
             </div>
         </details>
 
-        <details class="faq-qa">
+        <details class="faq-Qa">
             <summary>
-                <div class="faq-question">Can Circle Solutions integrate with our existing tools or platforms?</div>
+                <div class="faq-Question">Can Circle Solutions integrate with our existing tools or platforms?</div>
                 <img src="../../images/faqimages/chevrondown.png" alt="chevron" class="chevron">
             </summary>
             <div class="answer"> Absolutely. We design flexible, API-driven solutions that connect seamlesslywith
@@ -87,9 +87,9 @@ if (isset($_POST['toggle'])) {
             </div>
         </details>
 
-        <details class="faq-qa">
+        <details class="faq-Qa">
             <summary>
-                <div class="faq-question">How do you handle changes or new requirements during the project?</div>
+                <div class="faq-Question">How do you handle changes or new requirements during the project?</div>
                 <img src="../../images/faqimages/chevrondown.png" alt="chevron" class="chevron">
             </summary>
             <div class="answer">We discuss any new requests in detail and adjust the project scope or timeline as
@@ -97,9 +97,9 @@ if (isset($_POST['toggle'])) {
             </div>
         </details>
 
-        <details class="faq-qa">
+        <details class="faq-Qa">
             <summary>
-                <div class="faq-question">What are your response times for support requests?</div>
+                <div class="faq-Question">What are your response times for support requests?</div>
                 <img src="../../images/faqimages/chevrondown.png" alt="chevron" class="chevron">
             </summary>
             <div class="answer">We aim to respond to all support inquiries within 24 hours on business days. Critical
@@ -107,9 +107,9 @@ if (isset($_POST['toggle'])) {
             </div>
         </details>
 
-        <details class="faq-qa">
+        <details class="faq-Qa">
             <summary>
-                <div class="faq-question">Can I be involved in the design and development process?</div>
+                <div class="faq-Question">Can I be involved in the design and development process?</div>
                 <img src="../../images/faqimages/chevrondown.png" alt="chevron" class="chevron">
             </summary>
             <div class="answer">Yes, we encourage collaboration. Clients can review designs, test prototypes, and share
@@ -117,9 +117,9 @@ if (isset($_POST['toggle'])) {
             </div>
         </details>
 
-        <details class="faq-qa">
+        <details class="faq-Qa">
             <summary>
-                <div class="faq-question">Do you offer training or documentation for using your software?</div>
+                <div class="faq-Question">Do you offer training or documentation for using your software?</div>
                 <img src="../../images/faqimages/chevrondown.png" alt="chevron" class="chevron">
             </summary>
             <div class="answer">Yes. Every project includes clear user documentation, and we can also provide virtual or
@@ -127,16 +127,16 @@ if (isset($_POST['toggle'])) {
         </details>
     </section>
 
-    <div class="contactbox">
+    <div class="contactBox">
         <h2>Didn't find your answer?</h2>
-        <p class="wijhelpen">
+        <p class="wijHelpen">
             <a href="../../php/en/contactPage.php">Contact us</a>
             - we're happy to help.
         </p>
 
-        <div class="copyrightbox">
+        <div class="copyrightBox">
             <img src="../../images/Copyright.png" alt="copyright" class="copyright">
-            <p class="copytext">circlesolutions2025</p>
+            <p class="copyText">circlesolutions2025</p>
         </div>
     </div>
 </body>

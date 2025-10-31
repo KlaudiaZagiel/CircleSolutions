@@ -35,16 +35,16 @@ if (isset($_POST['toggle'])) {
 
 <body>
     <?php include '../../php/nl/header.php'; ?>
-    <div class="herotext">
+    <div class="heroText">
         <h1>FAQ-Frequently Asked Questions</h1>
-        <p class="findanswers">Vind antwoorden op veelgestelde vragen over onze diensten en oplossingen.</p>
+        <p class="findAnswers">Vind antwoorden op veelgestelde vragen over onze diensten en oplossingen.</p>
     </div>
 
-    <section class="faqboxes"> <!-- it wraps every individual FAQ block (each <details>). -->
-        <details class="faq-qa"> <!-- each faq  block (question and answer)-->
+    <section class="faqBoxes"> <!-- it wraps every individual FAQ block (each <details>). -->
+        <details class="faq-Qa"> <!-- each faq  block (question and answer)-->
 
             <summary> <!--what user clicks to expand content-->
-                <div class="faq-question">Wat voor software oplossingen biedt Circle Solutions aan?</div>
+                <div class="faq-Question">Wat voor software oplossingen biedt Circle Solutions aan?</div>
                 <img src="../../images/faqimages/chevrondown.png" alt="chevron" class="chevron">
             </summary>
             <div class="answer">Wij bouwen op maat gemaakte software die is afgestemd op de behoeften van uw bedrijf,
@@ -52,9 +52,9 @@ if (isset($_POST['toggle'])) {
             </div>
         </details>
 
-        <details class="faq-qa">
+        <details class="faq-Qa">
             <summary>
-                <div class="faq-question"> Wat maakt Circle D.O.T.S. anders?</div>
+                <div class="faq-Question"> Wat maakt Circle D.O.T.S. anders?</div>
                 <img src="../../images/faqimages/chevrondown.png" alt="chevron" class="chevron">
             </summary>
             <div class="answer"> Circle D.O.T.S. is ons toonaangevende platform, ontworpen om communicatie te
@@ -63,9 +63,9 @@ if (isset($_POST['toggle'])) {
             </div>
         </details>
 
-        <details class="faq-qa">
+        <details class="faq-Qa">
             <summary>
-                <div class="faq-question">Bieden jullie doorlopende ondersteuning nadat een project is afgerond? </div>
+                <div class="faq-Question">Bieden jullie doorlopende ondersteuning nadat een project is afgerond? </div>
                 <img src="../../images/faqimages/chevrondown.png" alt="chevron" class="chevron">
             </summary>
             <div class="answer">Ja. Onze onderhouds- en ondersteuningsdiensten omvatten regelmatige updates, bugfixes en
@@ -73,9 +73,9 @@ if (isset($_POST['toggle'])) {
             </div>
         </details>
 
-        <details class="faq-qa">
+        <details class="faq-Qa">
             <summary>
-                <div class="faq-question">Kan Circle Solutions integreren met onze bestaande tools of platforms?</div>
+                <div class="faq-Question">Kan Circle Solutions integreren met onze bestaande tools of platforms?</div>
                 <img src="../../images/faqimages/chevrondown.png" alt="chevron" class="chevron">
             </summary>
             <div class="answer"> Zeker! Wij ontwerpen flexibele, API-gestuurde oplossingen die naadloos aansluiten op uw
@@ -83,9 +83,9 @@ if (isset($_POST['toggle'])) {
             </div>
         </details>
 
-        <details class="faq-qa">
+        <details class="faq-Qa">
             <summary>
-                <div class="faq-question">Hoe gaan jullie
+                <div class="faq-Question">Hoe gaan jullie
                     om met wijzigingen of nieuwe eisen tijdens het project?</div>
                 <img src="../../images/faqimages/chevrondown.png" alt="chevron" class="chevron">
             </summary>
@@ -94,9 +94,9 @@ if (isset($_POST['toggle'])) {
             </div>
         </details>
 
-        <details class="faq-qa">
+        <details class="faq-Qa">
             <summary>
-                <div class="faq-question">Wat zijn de responstijden voor ondersteuningsverzoeken?</div>
+                <div class="faq-Question">Wat zijn de responstijden voor ondersteuningsverzoeken?</div>
                 <img src="../../images/faqimages/chevrondown.png" alt="chevron" class="chevron">
             </summary>
             <div class="answer">Wij streven ernaar om op werkdagen binnen 24 uur te reageren op alle
@@ -104,9 +104,9 @@ if (isset($_POST['toggle'])) {
             </div>
         </details>
 
-        <details class="faq-qa">
+        <details class="faq-Qa">
             <summary>
-                <div class="faq-question">Kan ik betrokken worden bij het ontwerpproces en de ontwikkelingsfase?</div>
+                <div class="faq-Question">Kan ik betrokken worden bij het ontwerpproces en de ontwikkelingsfase?</div>
                 <img src="../../images/faqimages/chevrondown.png" alt="chevron" class="chevron">
             </summary>
             <div class="answer">Ja, wij moedigen samenwerking aan. Klanten kunnen ontwerpen beoordelen, prototypes
@@ -115,9 +115,9 @@ if (isset($_POST['toggle'])) {
             </div>
         </details>
 
-        <details class="faq-qa">
+        <details class="faq-Qa">
             <summary>
-                <div class="faq-question">Bieden jullie training of documentatie aan voor het gebruik van de software?
+                <div class="faq-Question">Bieden jullie training of documentatie aan voor het gebruik van de software?
                 </div>
                 <img src="../../images/faqimages/chevrondown.png" alt="chevron" class="chevron">
             </summary>
@@ -126,16 +126,16 @@ if (isset($_POST['toggle'])) {
         </details>
     </section>
 
-    <div class="contactbox">
+    <div class="contactBox">
         <h2>Uw antwoord niet gevonden?</h2>
-        <p class="wijhelpen">
+        <p class="wijHelpen">
             <a href="../../php/nl/contactPage.php">Neem contact met ons op</a>
             - wij helpen u graag.
         </p>
 
-        <div class="copyrightbox">
+        <div class="copyrightBox">
             <img src="../../images/Copyright.png" alt="copyright" class="copyright">
-            <p class="copytext">circlesolutions2025</p>
+            <p class="copyText">circlesolutions2025</p>
         </div>
     </div>
 </body>
