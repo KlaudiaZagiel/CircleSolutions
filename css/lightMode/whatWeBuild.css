@@ -292,7 +292,7 @@ header {
   display: inline-block;
   margin: 8px;
   padding: 10px 18px;
-  border-radius: 6px;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
   text-decoration: none;
@@ -301,18 +301,15 @@ header {
 .cta-link {
   background: var(--color-primary);
   color: #333;
-  border: 1px solid var(--color-dark);
 }
 .cta-primary {
   background: var(--color-accent);
   color: #fff;
-  border: 1px solid var(--color-dark);
 }
 .cta-link:hover {
   transform: scale(1.05);
   background: var(--color-accent);
   color: #fff;
-  border: 1px solid var(--color-dark);
 }
 
 /* Responsive Tweaks */
