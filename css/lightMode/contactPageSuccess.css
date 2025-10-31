@@ -76,7 +76,6 @@ body {
 }
 
 /* Main page grid */
-
 .pageGrid {
 	display: grid;
 	grid-template-columns: 2fr 0.45fr 0.8fr;
@@ -87,7 +86,6 @@ body {
 }
 
 /* Animation */
-
 .animationGrid {
     grid-row: 5/10;
     grid-column: 1;
@@ -336,7 +334,6 @@ body {
 	text-align: end;
 	align-self: center;
 }
-
 
 /* Responsive design @800px*/
 @media only screen and (max-width: 800px) {

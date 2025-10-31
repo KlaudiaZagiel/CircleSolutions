@@ -88,7 +88,6 @@ body {
 }
 
 /* Animation */
-
 .animationGrid {
     grid-row: 5/10;
     grid-column: 1;
@@ -117,7 +116,7 @@ body {
     margin-bottom: 20px;
     grid-column: 1;
     grid-row: 1;
-	color: rgb(235, 235, 235);
+	color: #ebebeb;
 }
 
 .circleSolutionsLogoMediumText {
@@ -150,7 +149,7 @@ body {
     font-size: 1.5rem;
     font-family: "CalibresemiBold";
     line-height: 3rem;
-	color: rgb(235, 235, 235);
+	color: #ebebeb;
 
     margin-top: 40px;
 	padding: 20px 30px 15px 30px;
@@ -171,7 +170,7 @@ body {
     font-family: "CalibreRegular";
 
     line-height: 3rem;
-    color: #799DAB;
+    color: #789cab;
 }
 
 .radialProgress {
@@ -217,7 +216,6 @@ body {
 }
 
 /* Contact icons and text */
-
 .contactIconsText a, .phoneIconText a, .emailIconText a {
 	color: inherit;
 	text-decoration: none;
@@ -413,7 +411,6 @@ body {
 		margin-left: 30px;
 	}
 
-	
 	/* Copyright tag */
 	.circleSolutionsCopyrightImage {
 		margin-right: 110px;

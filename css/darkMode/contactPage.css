@@ -74,7 +74,6 @@ body {
 .pageGrid {
 	display: grid;
 	grid-template-columns: 1.80fr 0.65fr 1fr;
-	/* grid-template-rows: 1fr 1fwr 1fr 0.5fr; */
 
 	align-items: left;
 	margin-inline: 5dvw;
@@ -90,7 +89,7 @@ h1 {
 	margin-top: 100px;
 	grid-column: 1;
 	grid-row: 1;
-	color: rgb(235, 235, 235);
+	color: #ebebeb;
 }
 
 .heroGetStarted {
@@ -108,7 +107,7 @@ h1 {
 	justify-self: start;
 	font-size: 1.5rem;
 	font-family: "CalibreSemiBold";
-	color: rgb(235, 235, 235);
+	color: #ebebeb;
 	margin-top: 40px;
 
 	padding: 20px 30px 15px 30px;
@@ -119,7 +118,6 @@ h1 {
 .verticalCircleSolutionsLogo {
 	grid-column: 3;
 	grid-row: 2/6;
-	/* height: 100%; */
 
 	margin-top: 30px;
 }
@@ -187,7 +185,6 @@ h1 {
 }
 
 /* Contact details form */
-
 .contactFormGrid {
 	margin-top: 80px;
 	margin-bottom: 70px;
@@ -221,14 +218,14 @@ h1 {
 	font-size: 1.2rem;
 	padding-top: 5px;
 
-	background-color: rgb(235, 235, 235);;
-	color: rgb(65, 65, 65);
+	background-color: #ebebeb;;
+	color: #414141;
 	transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .contactFormInput:focus{
 	outline: none;
-	box-shadow: 0 0 0 5px rgba(69, 97, 108, 0.22); 
+	box-shadow: 0 0 0 5px #45616c38; 
 	border-color: transparent; 
 }
 
@@ -238,7 +235,7 @@ h1 {
 }
 
 .contactFormHr {
-	color: rgb(168, 168, 168);
+	color: #a8a8a8;
 	grid-column: 1/8;
 	border: 1px solid;
 }
@@ -326,7 +323,7 @@ h1 {
 
 	height: 70px;
 
-	color: rgb(65, 65, 65);
+	color: #414141;
 	background-color: #ebebeb;
 	transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
@@ -341,7 +338,7 @@ h1 {
 
 .sendMessageButton:hover{
 	outline: none;
-	box-shadow: 0 0 0 5px rgba(69, 97, 108, 0.22); 
+	box-shadow: 0 0 0 5px #45616c38; 
 	border-color: transparent;
 }
 
@@ -369,7 +366,7 @@ h1 {
 	align-self: center;
 	justify-self: center;
 
-	color: rgb(142, 42, 42);
+	color: #8e2a2a;
 }
 
 /* Social media icons at the bottom */

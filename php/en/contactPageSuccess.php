@@ -46,22 +46,22 @@ $seconds = 5;
 		<!-- Main Page -->
 		<div class="pageGrid">
 
-      <div class="circleSolutionsWellBeInTouchText circleSolutionsLogoLargeText circleSolutionsText black">We'll be in touch!</div>
-      <div class="circleSolutionsLogoMediumText circleSolutionsText">You're one step closer to closing the circle</div>
-    
-      <div class="circleSolutionsSmallText circleSolutionsText black subheadingNextSolution">You will be redirected to the home page shortly</div>
+			<div class="circleSolutionsWellBeInTouchText circleSolutionsLogoLargeText circleSolutionsText black">We'll be in touch!</div>
+			<div class="circleSolutionsLogoMediumText circleSolutionsText">You're one step closer to closing the circle</div>
+		
+			<div class="circleSolutionsSmallText circleSolutionsText black subheadingNextSolution">You will be redirected to the home page shortly</div>
 
-      <div class="animationGrid">
+			<div class="animationGrid">
 
-        <div class="circleSolutionsLogoCircle circleSolutionsLogoLargeText circleSolutionsText">circle</div>
-        <div class="circleSolutionsLogoSolutions circleSolutionsLogoLargeText circleSolutionsText">solutions</div>
-        <div class="circleSolutionsLogoJustConnectTheDots">just connect the dots</div>
+				<div class="circleSolutionsLogoCircle circleSolutionsLogoLargeText circleSolutionsText">circle</div>
+				<div class="circleSolutionsLogoSolutions circleSolutionsLogoLargeText circleSolutionsText">solutions</div>
+				<div class="circleSolutionsLogoJustConnectTheDots">just connect the dots</div>
 
-        <div class="radialProgress"></div>
+				<div class="radialProgress"></div>
 
-      </div>
+			</div>
 
-      <!-- Contact tags -->
+			<!-- Contact tags -->
 			<img src="../../images/contactPage/phone.png" class="phoneIconContact" alt="Phone Icon">
 			<div class="phoneIconText contactIconsText"><a href="tel:0565445421">0565445421</a></div>
 
@@ -79,7 +79,7 @@ $seconds = 5;
 			<div class="circleSolutionsInstagramTag">@circlesolutions</div>
 
 			<!-- Copyright tag -->
-      <img src="../../images/contactPage/copyright.png" class="circleSolutionsCopyrightImage" alt="Copyright Icon">
+			<img src="../../images/contactPage/copyright.png" class="circleSolutionsCopyrightImage" alt="Copyright Icon">
 			<div class="circleSolutionsCopyrightTag">Circle Solutions 2025</div>
 
 		</div>

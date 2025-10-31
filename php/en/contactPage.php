@@ -119,10 +119,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		header('Location: contactPageSuccess.php?next=' . urlencode($next));
 
 		// send email to client
-
 		// use this if long email messages cause issues
 		// $emailMessage = wordwrap($emailMessage,70);
-
 		$mailer = new PHPMailer(true);
 
 		try {
