@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		}
 		//else both
 		else {
-			$errorMessage = "Voer het volgende in: " . implode(", ", $errorMessages) . "<br>" . $emailInvalid;
+			$errorMessage = "<p>Voer het volgende in: " . implode(", ", $errorMessages) . "<br>" . $emailInvalid . "</p>";
 		}
 
 		//gets printed at the form section
