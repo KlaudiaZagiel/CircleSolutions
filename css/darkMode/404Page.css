@@ -6,6 +6,8 @@
     font-family: 'Calibre';
 }
 body {
+    margin:0;
+    padding:0;
     width: 100vw;
     height: 100vh;
     background: #000000;
@@ -44,7 +46,7 @@ body {
     color: #96969680;
     text-align: center;
     text-shadow: 0 4px 25px #ffffff81;
-    font-size: 175px;
+    font-size: 11rem;
     font-style: normal;
     font-weight: 700;
     line-height: 12px;
@@ -53,7 +55,7 @@ body {
     right: 10px;
 }
 
-.notfound{
+.notFound{
     display: flex;
     justify-content: flex-end;
     width: 650px;
@@ -61,7 +63,7 @@ body {
     flex-shrink: 0;
     color: #96969680;
     text-align: center;
-    font-size: 64px;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1;
@@ -70,7 +72,7 @@ body {
     right: 30px;
 }
 
-.homemessage{
+.homeMessage{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,7 +80,7 @@ body {
     height: 60px;
     flex-shrink: 0;
     color: #ffffff;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1;
@@ -87,7 +89,7 @@ body {
     bottom: 100px;
 }
 
-.homemessage a {
+.homeMessage a {
     color: #ffffff;
     text-decoration: none;
     font-weight: 700;
@@ -95,24 +97,24 @@ body {
     transition: color 0.3s ease;
 }
 
-.homemessage a:hover {
+.homeMessage a:hover {
     color: #789cab;
 }
 
 @media (max-width: 800px)
 {
 
-    .homemessage{
-        font-size: 16px;
+    .homeMessage{
+        font-size: 1rem;
         width: 300px;
         height: 40px;
         left: 10px;
     }
 
-    .notfound{
+    .notFound{
         width: 300px;
         height: 60px;
-        font-size: 32px;
+        font-size: 2rem;
         top: 150px;
         right: 0;
     }
@@ -120,7 +122,7 @@ body {
     .text404{
         width: 300px;
         height: 200px;
-        font-size: 96px;
+        font-size: 6rem;
         top: 125px;
         right: 0;
     }

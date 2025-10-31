@@ -37,6 +37,7 @@ if (isset($_POST['toggle']))
 
 </head>
 <body>
+    
     <!-- Star background -->
 
     <script src="../../js/404page.js"></script>
@@ -47,15 +48,14 @@ if (isset($_POST['toggle']))
     
     <!--404 Text-->
 
-    <div class="text-stack"> 
     <div class="text404">
             <h1>404</h1>
-        <div class="notfound">
+        <div class="notFound">
             <h2>Page not found</h2>
         </div>
     </div>
     </div>    
-    <div class="homemessage">
+    <div class="homeMessage">
         <h3>Couldn't find the page your looking for</h3>
         <p> <a href="./mainPage.php">Go to Homepage</a></p>
     </div>

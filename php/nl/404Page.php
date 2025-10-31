@@ -38,6 +38,7 @@ if (isset($_POST['toggle']))
 
 </head>
 <body>
+    
     <!-- Star background -->
 
     <script src="../../js/404page.js"></script>
@@ -50,12 +51,12 @@ if (isset($_POST['toggle']))
 
     <div class="text404">
             <h1>404</h1>
-        <div class="notfound">
+        <div class="notFound">
             <h2>Pagina niet gevonden</h2>
         </div>
     </div>
     </div>    
-    <div class="homemessage">
+    <div class="homeMessage">
         <h3>De pagina die u zoekt, kan niet worden gevonden.</h3>
         <p> <a href="./mainPage.php">Ga naar de startpagina</a></p>
     </div>
