@@ -44,7 +44,7 @@ a {
 
 .backroundimagemaindiv {
 	margin-top: 35px;
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0.8) 100%), url(../../images/mainPage/pic_i2.webp);
+	background: linear-gradient(to bottom, #000000cc 0%, #000000cc 30%, #000000cc 100%), url(../../images/mainPage/pic_i2.webp);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	display: grid;
@@ -111,7 +111,7 @@ a {
 	font-size: 1.5rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
-	color: white;
+	color: #ffffff;
 }
 
 .bottomdiv {
@@ -125,14 +125,14 @@ a {
 	grid-column: 2/3;
 	display: grid;
 	place-items: center;
-	color: white;
+	color: #ffffff;
 	font-weight: bold;
 	font-size: 4rem;
 	align-items: center;
 }
 
 hr {
-	background-color: white;
+	background-color: #ffffff;
 	width: 100%;
 	height: 2px;
 	grid-column: 2/3;
@@ -158,7 +158,7 @@ hr {
 .bottomblocktext {
 	font-weight: 500;
 	font-size: 1.5rem;
-	color: white;
+	color: #ffffff;
 	text-align: center;
 }
 
@@ -168,7 +168,7 @@ hr {
 	display: grid;
 	place-items: center;
 	grid-column: 2/3;
-	color: white;
+	color: #ffffff;
 	margin-top: 20px;
 }
 
@@ -206,10 +206,7 @@ hr {
 }
 
 @media (max-width: 800px) {
-	.headerdivmain {
-		padding: 0 10px;
-		width: 100%;
-	}
+	
 
 	a {
 		font-size: 0.75rem;

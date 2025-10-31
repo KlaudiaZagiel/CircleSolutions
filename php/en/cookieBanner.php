@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+if (isset($_POST['toggle'])) {
+	if (isset($_SESSION['light']) && $_SESSION['light'] === true) {
+		$_SESSION['light'] = false;
+	} else {
+		$_SESSION['light'] = true;
+	}
+	header("Location: " . $_SERVER['PHP_SELF']);
+	exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +20,13 @@
     <title>Cookie banner</title>
     <link rel="stylesheet" href="../../css/lightMode/cookieBanner.css">
     <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
+        <?php
+	if (!empty($_SESSION['light'])) {
+		echo "<link rel='stylesheet' href='../../css/darkMode/cookieBanner.css'>";
+	} else {
+		echo "<link rel='stylesheet' href='../../css/lightMode/cookieBanner.css'>";
+	}
+	?>
 </head>
 <body>
 
@@ -23,3 +44,4 @@
 
 </body>
 </html>
+
