@@ -83,10 +83,10 @@ if (isset($_POST['toggle'])) {
 
     <footer class="cta" role="contentinfo">
         <h2>Discover D.O.T.S, Explore the Blog, Take the Quiz or Get Started Now .</h2>
-        <a class="cta-link" href="../../php/en/dots.php">Check D.O.T.S</a>
-        <a class="cta-link" href="../../php/en/blogs.php"> Our Blogs</a>
-        <a class="cta-link" href="../../php/en/miniQuiz.php"> Take the Quiz</a>
-        <a class="cta-link" href="../../php/en/contactPage.php">Start your project</a>
+        <a class="cta-primary" href="../../php/en/dots.php">Check D.O.T.S</a>
+        <a class="cta-primary" href="../../php/en/blogs.php"> Our Blogs</a>
+        <a class="cta-primary" href="../../php/en/miniQuiz.php"> Take the Quiz</a>
+        <a class="cta-primary" href="../../php/en/contactPage.php">Start your project</a>
     </footer>
 </body>
 </html>

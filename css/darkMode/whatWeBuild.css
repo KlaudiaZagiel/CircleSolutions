@@ -23,7 +23,7 @@
 
 /* CSS Variables */
 :root {
-  --color-primary: rgba(34, 49, 63);
+  --color-primary: #22313f;
   --color-accent: #799DAB;
   --color-dark: #222;
   --font-main: 'Calibre', sans-serif;
@@ -67,7 +67,7 @@ body {
   align-items: center;
   padding: 0 20px;
   min-height: 70px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 8px #0000000a;
 }
 header {
   grid-column: 1 / 4;
@@ -137,7 +137,7 @@ header {
   color: var(--color-accent);
   border-radius: 50%;
   padding: 18px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 18px #0000001f;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,7 +147,7 @@ header {
 }
 .service-box:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px #00000033;
 }
 .service-box img {
   width: 48px;
@@ -276,7 +276,7 @@ header {
 
 /* Footer CTA */
 .cta {
-  background-color: white;
+  background-color: #ffffff;
   padding: 24px 16px;
   text-align: center;
   box-shadow: 0 -2px 8px var(--color-dark);
@@ -299,11 +299,17 @@ header {
   font-weight: 600;
 }
 .cta-link {
-  background: transparent;
+  background: var(--color-accent);
   color: #333;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-dark);
 }
 .cta-primary {
+  background: var(--color-accent);
+  color: #fff;
+  border: 1px solid var(--color-dark);
+}
+.cta-link:hover {
+  transform: scale(1.05);
   background: var(--color-accent);
   color: #fff;
   border: 1px solid var(--color-dark);
