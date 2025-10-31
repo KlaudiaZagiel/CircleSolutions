@@ -8,6 +8,10 @@
 	font-family: 'Calibre';
 	src: url('../../fonts/Calibre-Semibold.otf') format('opentype');
 }
+@font-face {
+	font-family: 'CalibreMedium';
+	src: url('../../fonts/Calibre-Medium.otf') format('opentype');
+}
 
 body {
 	font-family: 'Calibre';
@@ -125,6 +129,7 @@ a {
 }
 
 .lasttext {
+	font-family: 'CalibreMedium';
 	color: #000000;
 	font-weight: 500;
 	font-size: 1.5rem;
