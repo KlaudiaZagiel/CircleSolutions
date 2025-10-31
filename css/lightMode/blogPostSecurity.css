@@ -52,7 +52,7 @@ ul{
 body{
   color: black;
   margin: 30px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0,0,0,0) 90%), url(../../images/brian-cyan-K3qvZKTejS0-unsplash.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.0) 30%, rgba(0,0,0,0) 90%), url(../../images/brian-cyan-K3qvZKTejS0-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -61,7 +61,7 @@ body{
 
 main{
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: repeat 1fr 3fr 1fr;
 }
 
 .topText{
@@ -69,18 +69,12 @@ main{
   margin-top: 100px;
 }
 
-.intro{
-  margin-bottom: 0;
-}
-
 hr{
   border: 2px solid white;
-  width: 100px;
-  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .mainFocus{
-  margin-top: 50px;
   margin-bottom: 100px;
   background-color: #799DAB;
   grid-column: 2;

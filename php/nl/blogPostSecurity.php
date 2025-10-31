@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+if (isset($_POST['toggle'])) {
+	if (isset($_SESSION['light']) && $_SESSION['light'] === true) {
+		$_SESSION['light'] = false;
+	} else {
+		$_SESSION['light'] = true;
+	}
+	header("Location: " . $_SERVER['PHP_SELF']);
+	exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,9 +18,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/lightMode/blogPostSecurity.css">
     <title>Veiligheid voorop: onze aanpak voor veilige software</title>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
+
+    <?php
+	if (!empty($_SESSION['light'])) {
+		echo "<link rel='stylesheet' href='../../css/darkMode/blogs.css'>";
+		echo "<link rel='stylesheet' href='../../css/darkMode/header.css'>";
+	} else {
+		echo "<link rel='stylesheet' href='../../css/lightMode/blogs.css'>";
+		echo "<link rel='stylesheet' href='../../css/lightMode/header.css'>";
+	}
+	?>
 </head>
 
 <body>
+    <?php include '../../php/nl/header.php'; ?>
+
     <div class="topText">
         <h1 class="Intro">
             Onze Blogs

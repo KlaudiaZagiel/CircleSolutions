@@ -11,7 +11,6 @@ if (isset($_POST['toggle'])) {
 	exit();
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +28,6 @@ if (isset($_POST['toggle'])) {
 		echo "<link rel='stylesheet' href='../../css/lightMode/header.css'>";
 	}
 	?>
-
 </head>
 
 <body>
