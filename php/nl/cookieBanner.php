@@ -1,17 +1,3 @@
-<?php
-session_start();
-
-if (isset($_POST['toggle'])) {
-	if (isset($_SESSION['light']) && $_SESSION['light'] === true) {
-		$_SESSION['light'] = false;
-	} else {
-		$_SESSION['light'] = true;
-	}
-	header("Location: " . $_SERVER['PHP_SELF']);
-	exit();
-}
-?>
-
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -20,25 +6,18 @@ if (isset($_POST['toggle'])) {
     <title>Cookie banner</title>
     <link rel="stylesheet" href="../../css/lightMode/cookieBanner.css">
     <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
-    <?php
-	if (!empty($_SESSION['light'])) {
-		echo "<link rel='stylesheet' href='../../css/darkMode/cookieBanner.css'>";
-	} else {
-		echo "<link rel='stylesheet' href='../../css/lightMode/cookieBanner.css'>";
-	}
-	?>
 </head>
 <body>
 
-    <div class="Main">
-        <div class="Second">
-            <img class="cookie" src="../../images/cookie.png">
+    <div class="main">
+        <div class="second">
+            <img class="cookie" src="../../images/cookieBanner/cookie.png">
             <p class="text">We gebruiken cookies om uw surfervaring te verbeteren, het siteverkeer te analyseren en de inhoud te personaliseren.</p>
         </div>
-        <div class="Buttons">
-            <p class="But">Accepteer alles</p>
-            <p class="But">Weiger alles</p> 
-            <p class="But">Beheer voorkeuren</p>
+        <div class="buttons">
+            <p class="but">Accepteer alles</p>
+            <p class="but">Weiger alles</p> 
+            <p class="but">Beheer voorkeuren</p>
         </div>
     </div>
 
