@@ -23,7 +23,7 @@ a {
 	color: #000000;
 	margin: 0;
 	padding: 0;
-	font-size: 1.5rem; /* 24px */
+	font-size: 1.5rem; 
 	font-weight: bold;
 }
 
@@ -38,7 +38,7 @@ a {
 .headertext {
 	margin-top: 10rem;
 	color: #799dab;
-	font-size: 6rem; /* 96px */
+	font-size: 6rem; 
 	font-weight: bold;
 	display: grid;
 	place-items: center;
@@ -90,7 +90,7 @@ a {
 }
 
 .centralblocktext {
-	font-size: 1.5rem; /* 24px */
+	font-size: 1.5rem; 
 	font-weight: bold;
 	color: #ffffff;
 	display: grid;
@@ -119,7 +119,7 @@ a {
 
 .centralblockbottomtext {
 	font-weight: 500;
-	font-size: 2rem; /* 32px */
+	font-size: 2rem; 
 	color: #ffffff;
 	display: grid;
 	place-items: center;
@@ -149,7 +149,7 @@ a {
 .bottombluetext {
 	color: #799dab;
 	font-weight: bold;
-	font-size: 2.25rem; /* 36px */
+	font-size: 2.25rem; 
 	display: grid;
 	place-items: center;
 }
@@ -162,7 +162,7 @@ a {
 	place-items: center;
 	color: #000000;
 	font-weight: 500;
-	font-size: 1.75rem; /* 28px */
+	font-size: 1.75rem; 
 }
 
 .copyrightabout {
@@ -176,7 +176,7 @@ a {
 	place-items: center;
 	color: #799dab;
 	font-weight: 500;
-	font-size: 0.75rem; /* 12px */
+	font-size: 0.75rem; 
 }
 
 .headerdivmain {
@@ -212,7 +212,7 @@ a {
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 500;
-	font-size: 1rem; /* 16px */
+	font-size: 1rem; 
 	transition: color 0.3s ease;
 }
 
@@ -220,7 +220,7 @@ a {
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 500;
-	font-size: 1rem; /* 16px */
+	font-size: 1rem; 
 	transition: color 0.3s ease;
 }
 
@@ -232,7 +232,7 @@ a {
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 500;
-	font-size: 1rem; /* 16px */
+	font-size: 1rem; 
 	transition: color 0.3s ease;
 }
 
@@ -247,10 +247,10 @@ a {
 	height: 24px;
 }
 
-/* ---------- Адаптив ---------- */
+
 @media (max-width: 800px) {
 	.buttondarLight {
-		font-size: 0.75rem; /* 12px */
+		font-size: 0.75rem; 
 	}
 
 	.headerImagedots {
@@ -269,11 +269,11 @@ a {
 	}
 
 	.headerbuttons a {
-		font-size: 0.75rem; /* 12px */
+		font-size: 0.75rem; 
 	}
 
 	.headertext {
-		font-size: 3rem; /* 48px */
+		font-size: 3rem;
 	}
 
 	.centralblock {
@@ -304,7 +304,7 @@ a {
 	}
 
 	.centralblocktext {
-		font-size: 0.75rem; /* 12px */
+		font-size: 0.75rem; 
 	}
 
 	.centralblocktextlowermargin {
@@ -312,7 +312,7 @@ a {
 	}
 
 	.centralblockbottomtext {
-		font-size: 1rem; /* 16px */
+		font-size: 1rem; 
 		margin-top: 0;
 	}
 
@@ -325,10 +325,10 @@ a {
 	}
 
 	.bottombluetext {
-		font-size: 1.125rem; /* 18px */
+		font-size: 1.125rem; 
 	}
 
 	.bottomtext {
-		font-size: 0.875rem; /* 14px */
+		font-size: 0.875rem; 
 	}
 }

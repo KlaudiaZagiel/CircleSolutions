@@ -25,7 +25,6 @@ a {
 	margin: 0;
 	padding: 0;
 	font-size: 1.5rem;
-	/* 24px */
 	font-weight: bold;
 }
 
@@ -66,15 +65,13 @@ a {
 .solutiontext {
 	font-weight: 600;
 	margin-top: 7rem;
-	font-size: 4.6875rem;
-	/* 75px */
+	font-size: 4.68rem;
 }
 
 .headerlowertextposition {
 	font-weight: 600;
 	margin-top: 3rem;
 	font-size: 2.5rem;
-	/* 40px */
 }
 
 .dotsdiv {
@@ -108,7 +105,6 @@ a {
 	padding-left: 2rem;
 	padding-right: 2rem;
 	font-size: 1.5rem;
-	/* 24px */
 }
 
 .headerbuttonsleftmargin {
@@ -117,7 +113,6 @@ a {
 
 .solutionstext {
 	font-size: 1.5rem;
-	/* 24px */
 	padding-left: 2rem;
 	padding-right: 2rem;
 	color: #000000;
@@ -137,7 +132,6 @@ a {
 	color: #000000;
 	font-weight: bold;
 	font-size: 4rem;
-	/* 64px */
 	align-items: center;
 }
 
@@ -171,12 +165,10 @@ hr {
 	text-align: center;
 	margin-top: 10px;
 	font-size: 1.5rem;
-	/* 24px */
 }
 
 .bottomtext {
 	font-size: 2rem;
-	/* 32px */
 	font-weight: 500;
 	display: grid;
 	place-items: center;
@@ -203,11 +195,10 @@ hr {
 	font-size: 12px;
 	margin-top: 6px;
 	font-size: 0.75rem;
-	/* 12px */
 }
 
 
-/* ============ АДАПТИВ ============ */
+
 
 @media (max-width: 800px) {
 	.headerdivmain {
@@ -217,27 +208,22 @@ hr {
 
 	a {
 		font-size: 0.75rem;
-		/* 12px */
 	}
 
 	.copyrighttext {
 		font-size: 0.375rem;
-		/* 6px */
 	}
 
 	.bottomtext {
 		font-size: 1rem;
-		/* 16px */
 	}
 
 	.bottomblocktext {
 		font-size: 0.75rem;
-		/* 12px */
 	}
 
 	.introducingtext {
 		font-size: 2rem;
-		/* 32px */
 	}
 
 	.bottomblocksdiv {
@@ -251,7 +237,6 @@ hr {
 
 	.solutiontext {
 		font-size: 1.875rem;
-		/* 30px */
 		margin-top: 2rem;
 	}
 
@@ -275,14 +260,12 @@ hr {
 
 	.solutionstext {
 		font-size: 0.625rem;
-		/* 10px */
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
 
 	.dotstext {
 		font-size: 0.625rem;
-		/* 10px */
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
@@ -293,7 +276,6 @@ hr {
 
 	.headerlowertextposition {
 		font-size: 1.25rem;
-		/* 20px */
 		margin-top: 1rem;
 	}
 
@@ -316,7 +298,6 @@ hr {
 
 	.introducingtext {
 		font-size: 1rem;
-		/* 16px */
 	}
 
 	.copyrightimg {

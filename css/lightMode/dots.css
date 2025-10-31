@@ -23,7 +23,7 @@ a {
 	color: #000000;
 	margin: 0;
 	padding: 0;
-	font-size: 1.5rem; /* 24px */
+	font-size: 1.5rem;
 	font-weight: bold;
 }
 
@@ -56,14 +56,14 @@ a {
 
 .bigtextcircle {
 	font-weight: bold;
-	font-size: 10.625rem; /* 128pt ≈ 170px */
+	font-size: 10.625rem; 
 	color: #000000;
 }
 
 .bigtextdots {
 	font-weight: bold;
 	color: #799DAB;
-	font-size: 10.625rem; /* 128pt ≈ 170px */
+	font-size: 10.625rem;
 }
 
 .headertext {
@@ -72,7 +72,7 @@ a {
 	grid-column: 2/4;
 	width: 58%;
 	font-weight: 500;
-	font-size: 2rem; /* 32px */
+	font-size: 2rem; 
 }
 
 .buttonsdiv {
@@ -95,7 +95,7 @@ a {
 
 .buttondarktext {
 	color: #000000;
-	font-size: 2rem; /* 32px */
+	font-size: 2rem; 
 	font-weight: 500;
 	display: grid;
 	place-items: center;
@@ -103,7 +103,7 @@ a {
 
 .buttonlighttext {
 	color: #FFFFFF;
-	font-size: 2rem; /* 32px */
+	font-size: 2rem; 
 	font-weight: 500;
 	display: grid;
 	place-items: center;
@@ -127,7 +127,7 @@ a {
 .lasttext {
 	color: #000000;
 	font-weight: 500;
-	font-size: 1.5rem; /* 24px */
+	font-size: 1.5rem;
 	display: grid;
 	place-items: center;
 }
@@ -168,7 +168,7 @@ a {
 	place-items: center;
 	color: #799DAB;
 	font-weight: 500;
-	font-size: 0.75rem; /* 12px */
+	font-size: 0.75rem; 
 }
 
 .headerdivmain {
@@ -190,7 +190,7 @@ a {
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 500;
-	font-size: 1rem; /* 16px */
+	font-size: 1rem; 
 	transition: color 0.3s ease;
 }
 
@@ -212,7 +212,7 @@ a {
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 500;
-	font-size: 1rem; /* 16px */
+	font-size: 1rem; 
 	transition: color 0.3s ease;
 }
 
@@ -231,7 +231,7 @@ a {
 	height: 24px;
 }
 
-/* ============  Адаптив  ============ */
+
 @media (max-width: 800px) {
 	.lastdivgrid {
 		padding-top: 3rem;
@@ -245,7 +245,7 @@ a {
 	}
 
 	.lasttext {
-		font-size: 0.75rem; /* 12px */
+		font-size: 0.75rem;
 	}
 
 	.lastimg {
@@ -257,7 +257,7 @@ a {
 	}
 
 	.buttondarLight {
-		font-size: 0.75rem; /* 12px */
+		font-size: 0.75rem; 
 	}
 
 	.headerbuttons {
@@ -269,7 +269,7 @@ a {
 	}
 
 	.headerbuttons a {
-		font-size: 0.75rem; /* 12px */
+		font-size: 0.75rem; 
 	}
 
 	.headerdivmain {
@@ -282,7 +282,7 @@ a {
 	}
 
 	a {
-		font-size: 0.75rem; /* 12px */
+		font-size: 0.75rem; 
 	}
 
 	.headerdiv {
@@ -290,16 +290,16 @@ a {
 	}
 
 	.bigtextcircle {
-		font-size: 4rem; /* 64pt ≈ 85px */
+		font-size: 4rem; 
 	}
 
 	.bigtextdots {
-		font-size: 4rem; /* 64pt ≈ 85px */
+		font-size: 4rem;
 	}
 
 	.headertext {
 		margin-top: 2rem;
-		font-size: 1rem; /* 16px */
+		font-size: 1rem; 
 	}
 
 	.buttonsdiv {
@@ -316,21 +316,21 @@ a {
 	}
 
 	.buttondarktext {
-		font-size: 1rem; /* 16px */
+		font-size: 1rem; 
 	}
 
 	.buttonlighttext {
-		font-size: 1rem; /* 16px */
+		font-size: 1rem; 
 	}
 }
 
 @media (max-width: 400px) {
 	.bigtextcircle {
-		font-size: 3.125rem; /* 50px */
+		font-size: 3.125rem; 
 	}
 
 	.bigtextdots {
-		font-size: 3.125rem; /* 50px */
+		font-size: 3.125rem; 
 	}
 
 	.maindiv {
