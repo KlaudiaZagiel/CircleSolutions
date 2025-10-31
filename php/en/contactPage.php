@@ -137,9 +137,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			$mailer->addAddress($email, trim("$firstName $lastName"));
 			$mailer->addReplyTo(SMTP_REPLY_TO);
 
-			$mailer->Subject = "We can't wait to meet you, " . $firstName . "!";
-			$mailer->Body    = "";
-
+			$mailer->Subject = "Thanks for reaching out to Circle Solutions!";
+			$mailer->Body    = "Thanks for getting in touch with us," ." ".$firstName."!"." "."This is the information you have provided to us:"." ".$firstName." ".$lastName.", ".$companyName.", ".$email.", ".$yourMessage.", ".$howDidYouHear.". "."We've received your message and a member of our team will respond within, 1-4 business days. If your inquiry is urgent, feel free to call us directly at +31 12345678. We appreciate your interest in Circule Solutions and look forward to connecting with you soon. Best regards, The Circule Solutions Team.";
 			$mailer->send();
 		} catch (Exception $e) {
 			error_log('Mailer error: ' . $mailer->ErrorInfo);
