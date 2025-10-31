@@ -34,53 +34,39 @@ if (isset($_POST['toggle'])) {
 <body>
     <?php include '../../php/en/header.php'; ?>
 
-<<<<<<< HEAD:html/en/blogs.html
-    <header>
-
-    </header>
-
-    <div class="allPage">
-        <div class="topText">
-            <h1 class="intro">
-                Our Blogs
-            </h1>
-            <hr>
-        </div>
-=======
     <div class="topText">
-        <h1 class="intro">
+        <h1 class="Intro">
             Our Blogs
         </h1>
         <hr>
     </div>
->>>>>>> 54460735dfbdc190e728e7df2bcf273427a0acfa:php/en/blogs.php
 
     <main>
         <div class="postLeft">
-            <img src="../../images/Code.jpg" alt="Code.jpg" class="imgLeft allImg">
+            <img src="../../images/blogs/Code.jpg" alt="Code.jpg" class="imgLeft allImg">
             <h2>Security First: Our Approach to Safe Software</h2>
             <p class="description">Discover how our team prioritizes security at every stage of software development to
                 deliver robust, resilient, and trustworthy solutions.</p>
             <p>Wedenesday, October 15 2025</p>
-            <div class="squareLeft"> <a href="../../html/en/blogPostSecurity.html">Read more</a> </div>
+            <div class="squareLeft"> <a href="../../php/en/blogPostSecurity.php">Read more</a> </div>
         </div>
 
         <div class="postCenter">
-            <img src="../../images/Office 2.jpg" alt="Office 2.jpg" class="imgCenter allImg">
+            <img src="../../images/blogs/Office 2.jpg" alt="Office 2.jpg" class="imgCenter allImg">
             <h2>A Day in the Life of a Developer at Circle Solutions</h2>
             <p>Step into the daily rhythm of a developer at Circle Solutions, where creativity, collaboration, and code
                 come together to build impactful software.</p>
             <p>Wedenesday, October 15 2025</p>
-            <div class="squareCenter"> <a href="">Read more</a> </div>
+            <div class="squareCenter"> <a href="#">Read more</a> </div>
         </div>
 
         <div class="postRight">
-            <img src="../../images/Penguin-06-1.jpg" alt="Penguin-06-1.jpg" class="imgRight allImg">
+            <img src="../../images/blogs/Penguin-06-1.jpg" alt="Penguin-06-1.jpg" class="imgRight allImg">
             <h2>Lessons Learned from Our Most Challenging Project</h2>
             <p>Discover the key insights, hard earned lessons, and growth we gained from navigating our most complex and
                 demanding software project to date.</p>
             <p>Wedenesday, October 15 2025</p>
-            <div class="squareRight"> <a href="">Read more</a> </div>
+            <div class="squareRight"> <a href="#">Read more</a> </div>
         </div>
     </main>
 

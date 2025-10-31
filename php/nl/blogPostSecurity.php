@@ -16,16 +16,15 @@ if (isset($_POST['toggle'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/lightMode/blogPostSecurity.css">
     <title>Veiligheid voorop: onze aanpak voor veilige software</title>
     <link rel="icon" type="image/x-icon" href="../../images/favicon/favicon.ico">
 
     <?php
 	if (!empty($_SESSION['light'])) {
-		echo "<link rel='stylesheet' href='../../css/darkMode/blogs.css'>";
+		echo "<link rel='stylesheet' href='../../css/darkMode/blogPostSecurity.css'>";
 		echo "<link rel='stylesheet' href='../../css/darkMode/header.css'>";
 	} else {
-		echo "<link rel='stylesheet' href='../../css/lightMode/blogs.css'>";
+		echo "<link rel='stylesheet' href='../../css/lightMode/blogPostSecurity.css'>";
 		echo "<link rel='stylesheet' href='../../css/lightMode/header.css'>";
 	}
 	?>
