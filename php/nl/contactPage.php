@@ -119,8 +119,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		header('Location: contactPageSuccess.php?next=' . urlencode($next));
 
 		// Send email to client
-		// When finished with mailer in /en, add it here and dutch version
-
 		$mailer = new PHPMailer(true);
 
 		try {
