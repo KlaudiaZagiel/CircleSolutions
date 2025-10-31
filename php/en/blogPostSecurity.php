@@ -47,32 +47,32 @@ if (isset($_POST['toggle'])) {
                 <h1>Security First: Our Approach to Safe Software</h1>
             </div>
             <div class="mainContent">
-                <p class="text">
+                <p>
                     Security is a product requirement, not an add-on. We design every feature with the goal of protecting users, data, and service availability.
                 </p>
                 
-                <h2 class="text h2">Core principles</h2>
-                <ul class="text ul">
-                    <li class="li">
+                <h2>Core principles</h2>
+                <ul>
+                    <li>
                         Secure by Design: threat modeling and least-privilege architecture guide decisions from day one
                     </li>
-                    <li class="li">
+                    <li>
                         Secure by Default: strong settings ship enabled so secure behavior is the path of least resistance.
                     </li>
-                    <li class="li">
+                    <li>
                         Continuous Improvement: automated checks, telemetry, and regular exercises keep risk declining over time.
                     </li>
                 </ul>
-                <h2 class="text h2">How we build</h2>
-                    <p class="text p">
+                <h2>How we build</h2>
+                    <p>
                         We shift security left by embedding linters, SAST, dependency scanning, and secrets detection into developer workflows. We validate releases with dynamic testing and focused pen tests, gate deployments on security criteria, and enforce immutable, auditable infrastructure in production.
                     </p>
-                <h2 class="text h2">Culture and governance</h2>
-                    <p class="text p">
+                <h2>Culture and governance</h2>
+                    <p>
                         Security is a shared responsibility across product, engineering, and operations. Decisions are reviewed cross-functionally, prioritization is threat-informed, and incidents are treated as learning opportunities through blameless postmortems.
                     </p>
-                <h2 class="text h2">Outcomes</h2>
-                    <p class="text p">
+                <h2>Outcomes</h2>
+                    <p>
                         The result is faster remediation, fewer critical incidents, maintained developer velocity, and stronger customer trust. Security-first practices deliver resilient, trustworthy software that scales with confidence.
                     </p>
             </div>
