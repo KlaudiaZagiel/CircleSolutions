@@ -198,7 +198,17 @@ hr {
 }
 
 
-
+@media (max-width: 1200px) {
+	.bottomblock{
+		padding: 1rem;
+	}
+	.bottomblocktext{
+		font-size: 1rem;
+	}
+	.bottomimg{
+		width: 40%;
+	}
+}
 
 @media (max-width: 800px) {
 	.headerdivmain {
