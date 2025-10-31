@@ -82,9 +82,11 @@ if (isset($_POST['toggle'])) {
     </main>
 
     <footer class="cta" role="contentinfo">
-        <h2>Bekijk D.O.T.S of laten we aan de slag gaan.</h2>
-        <a class="cta-link" href="dots.php">Bekijk D.O.T.S</a>
-        <a class="cta-primary" href="contactPage.php">Start jouw project</a>
+        <h2>Ontdek D.O.T.S, Verken onze Blog, Doe de Quiz of Begin Nu.</h2>
+        <a class="cta-link" href="../../php/nl/dots.php">Bekijk D.O.T.S</a>
+        <a class="cta-link" href="../../php/nl/blogs.php">Onze Blog</a>
+        <a class="cta-link" href="../../php/nl/miniQuiz.php">Doe de Quiz</a>
+        <a class="cta-link" href="../../php/nl/contactPage.php">Start je project</a>
     </footer>
     
 </body>
