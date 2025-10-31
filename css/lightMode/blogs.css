@@ -25,53 +25,87 @@
   font-style: normal;
 }
 
-h1, h2, p, a{
+h1,
+h2,
+p,
+a {
   color: #f3f3f3;
 }
 
+<<<<<<< HEAD
+h1 {
+=======
 h2, p{
   padding-bottom: 1rem;
   padding-top: 1rem;
 }
 
 h1{
+>>>>>>> 54460735dfbdc190e728e7df2bcf273427a0acfa
   font-size: 2.5rem;
   font-family: "calibreB";
 }
 
-h2{
+h2 {
   font-size: 2rem;
   font-family: "calibreR";
 }
 
-p, a{ 
+p,
+a {
   font-family: "calibreL";
   font-size: 1.5rem;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
+img {
+=======
 .allImg{
+>>>>>>> 54460735dfbdc190e728e7df2bcf273427a0acfa
   box-shadow: 10px 10px hsla(197, 23%, 57%, 0.15);
 }
 
-body{ 
+body {
   color: black;
   margin: 30px;
+<<<<<<< HEAD
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0) 90%), url(../../images/brian-cyan-K3qvZKTejS0-unsplash.jpg);
+=======
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.0) 30%, rgba(0,0,0,0) 90%), url(../../images/brian-cyan-K3qvZKTejS0-unsplash.jpg);
+>>>>>>> 54460735dfbdc190e728e7df2bcf273427a0acfa
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   text-align: center;
 }
 
-main{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+<<<<<<< HEAD
+header {
+  border: 0;
 }
 
+.allPage {
+=======
+main{
+>>>>>>> 54460735dfbdc190e728e7df2bcf273427a0acfa
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+<<<<<<< HEAD
+.topText {
+  grid-column: 2;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.intro {
+  margin-bottom: 0;
+=======
 .topText{
   text-align: center;
   margin-top: 100px;
@@ -79,15 +113,16 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+>>>>>>> 54460735dfbdc190e728e7df2bcf273427a0acfa
 }
 
-hr{
+hr {
   border: 2px solid white;
   width: 10%;
   margin-bottom: 40px;
 }
 
-.postLeft{
+.postLeft {
   grid-column: 1;
   padding: 1rem;
   border-radius: 12px;
@@ -96,14 +131,27 @@ hr{
   flex-direction: column;
 }
 
-.imgLeft{
-  max-width: 70%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover; 
+<<<<<<< HEAD
+.description {
+  padding-bottom: 1.3rem;
 }
 
+.imgLeft {
+=======
+.imgLeft{
+>>>>>>> 54460735dfbdc190e728e7df2bcf273427a0acfa
+  max-width: 70%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+<<<<<<< HEAD
+.squareLeft {
+  background-color: #1f3c47;
+=======
 .squareLeft{
   background-color: #557c8c;
+>>>>>>> 54460735dfbdc190e728e7df2bcf273427a0acfa
   min-height: 50px;
   min-width: 150px;
   border-radius: 12px;
@@ -112,12 +160,12 @@ hr{
   align-items: center;
 }
 
-.postLeft:hover{
+.postLeft:hover {
   background-color: #799DAB;
   transition: all 0.1s ease-in-out;
 }
 
-.postCenter{
+.postCenter {
   grid-column: 2;
   padding: 1rem;
   border-radius: 12px;
@@ -126,14 +174,19 @@ hr{
   flex-direction: column;
 }
 
-.imgCenter{
+.imgCenter {
   max-width: 70%;
   aspect-ratio: 1 / 1;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
+<<<<<<< HEAD
+.squareCenter {
+  background-color: #1f3c47;
+=======
 .squareCenter{
   background-color: #557c8c;
+>>>>>>> 54460735dfbdc190e728e7df2bcf273427a0acfa
   min-height: 50px;
   min-width: 150px;
   border-radius: 12px;
@@ -142,12 +195,12 @@ hr{
   justify-content: center;
 }
 
-.postCenter:hover{
+.postCenter:hover {
   background-color: #799DAB;
   transition: all 0.1s ease-in-out;
 }
 
-.postRight{
+.postRight {
   grid-column: 3;
   padding: 1rem;
   border-radius: 12px;
@@ -156,14 +209,19 @@ hr{
   flex-direction: column;
 }
 
-.imgRight{
+.imgRight {
   max-width: 70%;
   aspect-ratio: 1 / 1;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
+<<<<<<< HEAD
+.squareRight {
+  background-color: #1f3c47;
+=======
 .squareRight{
   background-color: #557c8c;
+>>>>>>> 54460735dfbdc190e728e7df2bcf273427a0acfa
   min-height: 50px;
   min-width: 150px;
   border-radius: 12px;
@@ -172,7 +230,23 @@ hr{
   justify-content: center;
 }
 
-.postRight:hover{
+.postRight:hover {
   background-color: #799DAB;
   transition: all 0.1s ease-in-out;
+<<<<<<< HEAD
+}
+
+@media (max-width: 800px) {
+  img {
+    max-width: 60%;
+  }
+
+  h1,
+  h2,
+  p,
+  a {
+    font-size: 1.5rem;
+  }
+=======
+>>>>>>> 54460735dfbdc190e728e7df2bcf273427a0acfa
 }

@@ -5,13 +5,14 @@
 }
 
 @font-face {
-  font-family: 'Calibre';
+	font-family: 'Calibre';
 	src: url('../../fonts/Calibre-Semibold.otf') format('opentype');
 }
 
 body {
 	font-family: 'Calibre';
 	background-color: #181a1b;
+
 }
 
 p {
@@ -25,7 +26,7 @@ a {
 	color: #FFFFFF;
 	margin: 0;
 	padding: 0;
-	font-size: 1.5rem; /* 24px */
+	font-size: 1.5rem;
 	font-weight: bold;
 }
 
@@ -43,7 +44,7 @@ a {
 
 .backroundimagemaindiv {
 	margin-top: 35px;
-	background-image: url(../../images/mainPage/backimagemain.png);
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0.8) 100%), url(../../images/mainPage/pic_i2.webp);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	display: grid;
@@ -60,18 +61,18 @@ a {
 .solutiontext {
 	font-weight: 600;
 	margin-top: 7rem;
-	font-size: 4.6875rem; /* 75px */
+	font-size: 4.6875rem;
 }
 
 .headerlowertextposition {
 	font-weight: 600;
 	margin-top: 3rem;
-	font-size: 2.5rem; /* 40px */
+	font-size: 2.5rem;
 }
 
 .dotsdiv {
 	border-radius: 12px;
-	background-color: #799DAB;
+	background-color: #678895;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -99,7 +100,7 @@ a {
 	color: #FFFFFF;
 	padding-left: 2rem;
 	padding-right: 2rem;
-	font-size: 1.5rem; /* 24px */
+	font-size: 1.5rem;
 }
 
 .headerbuttonsleftmargin {
@@ -107,7 +108,7 @@ a {
 }
 
 .solutionstext {
-	font-size: 1.5rem; /* 24px */
+	font-size: 1.5rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
 	color: white;
@@ -126,7 +127,7 @@ a {
 	place-items: center;
 	color: white;
 	font-weight: bold;
-	font-size: 4rem; /* 64px */
+	font-size: 4rem;
 	align-items: center;
 }
 
@@ -148,7 +149,7 @@ hr {
 .bottomblock {
 	width: 20%;
 	padding: 3rem;
-	background-color: #C7EAF8;
+	background-color: #799DAB;
 	display: grid;
 	place-items: center;
 	border-radius: 12px;
@@ -156,17 +157,19 @@ hr {
 
 .bottomblocktext {
 	font-weight: 500;
-	font-size: 1.5rem; /* 24px */
+	font-size: 1.5rem;
 	color: white;
+	text-align: center;
 }
 
 .bottomtext {
-	font-size: 2rem; /* 32px */
+	font-size: 2rem;
 	font-weight: 500;
 	display: grid;
 	place-items: center;
 	grid-column: 2/3;
 	color: white;
+	margin-top: 20px;
 }
 
 .bottomtextmargin {
@@ -185,36 +188,47 @@ hr {
 	place-items: center;
 	color: #799DAB;
 	font-weight: 500;
-	font-size: 0.75rem; /* 12px */
+	font-size: 12px;
+	margin-top: 6px;
+	font-size: 0.75rem;
 }
 
-/* ---------- RESPONSIVE ---------- */
+@media (max-width: 1200px) {
+	.bottomblock{
+		padding: 1rem;
+	}
+	.bottomblocktext{
+		font-size: 1rem;
+	}
+	.bottomimg{
+		width: 40%;
+	}
+}
 
 @media (max-width: 800px) {
-
 	.headerdivmain {
 		padding: 0 10px;
 		width: 100%;
 	}
 
 	a {
-		font-size: 0.75rem; /* 12px */
+		font-size: 0.75rem;
 	}
 
 	.copyrighttext {
-		font-size: 0.375rem; /* 6px */
+		font-size: 0.375rem;
 	}
 
 	.bottomtext {
-		font-size: 1rem; /* 16px */
+		font-size: 1rem;
 	}
 
 	.bottomblocktext {
-		font-size: 0.75rem; /* 12px */
+		font-size: 0.75rem;
 	}
 
 	.introducingtext {
-		font-size: 2rem; /* 32px */
+		font-size: 2rem;
 	}
 
 	.bottomblocksdiv {
@@ -227,7 +241,7 @@ hr {
 	}
 
 	.solutiontext {
-		font-size: 1.875rem; /* 30px */
+		font-size: 1.875rem;
 		margin-top: 2rem;
 	}
 
@@ -250,13 +264,13 @@ hr {
 	}
 
 	.solutionstext {
-		font-size: 0.625rem; /* 10px */
+		font-size: 0.625rem;
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
 
 	.dotstext {
-		font-size: 0.625rem; /* 10px */
+		font-size: 0.625rem;
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
@@ -266,7 +280,7 @@ hr {
 	}
 
 	.headerlowertextposition {
-		font-size: 1.25rem; /* 20px */
+		font-size: 1.25rem;
 		margin-top: 1rem;
 	}
 
@@ -288,7 +302,7 @@ hr {
 	}
 
 	.introducingtext {
-		font-size: 1rem; /* 16px */
+		font-size: 1rem;
 	}
 
 	.copyrightimg {

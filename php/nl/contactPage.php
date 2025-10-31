@@ -120,6 +120,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 		// Send email to client
 		// When finished with mailer in /en, add it here and dutch version
+
+		$mailer = new PHPMailer(true);
+
+		try {
+			$mailer->isSMTP();
+			$mailer->Host       = SMTP_HOST;
+			$mailer->Port       = SMTP_PORT;
+			$mailer->SMTPSecure = SMTP_ENCRYPTION;
+			$mailer->SMTPAuth   = true;
+			$mailer->Username   = SMTP_USERNAME;
+			$mailer->Password   = SMTP_PASSWORD;
+			$mailer->CharSet    = 'UTF-8';
+
+			$mailer->setFrom(SMTP_FROM_EMAIL, SMTP_FROM_NAME);
+			$mailer->addAddress($email, trim("$firstName $lastName"));
+			$mailer->addReplyTo(SMTP_REPLY_TO);
+
+			$mailer->Subject = "We kunnen niet wachten om je te ontmoeten, " . $firstName . "!";
+			$mailer->Body    = "";
+
+			$mailer->send();
+		} catch (Exception $e) {
+			error_log('Mailer error: ' . $mailer->ErrorInfo);
+			$formErrorHtml = '<div class="formErrorText">De bevestigingsmail is niet succesvol verzonden. Uw gegevens zijn opgeslagen.</div>';
+		}
+
 	}
 }
 ?>

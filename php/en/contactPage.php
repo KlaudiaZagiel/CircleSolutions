@@ -120,9 +120,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 		// send email to client
 
-		$emailSubject = "We can't wait to meet you, " . $firstName . "!";
-		$emailMessage = "";
-		$emailMessage = wordwrap($emailMessage,70);
+		// use this if long email messages cause issues
+		// $emailMessage = wordwrap($emailMessage,70);
 
 		$mailer = new PHPMailer(true);
 

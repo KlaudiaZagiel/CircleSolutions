@@ -19,53 +19,22 @@
     font-style: normal;
 }
 
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Calibre';
-    background-color: white;
-    margin: 30px;
 }
 
-.topheader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    background: rgba(34, 49, 63, 0.85);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    min-height: 70px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+body {
+    background-color: white;
+    margin: 30px;
 }
 
 .herotext {
     font-weight: 40px;
     text-align: center;
     padding-top: 60px;
-}
-
-.logo {
-    height: 45px;
-}
-
-.links {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.links a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.flag {
-    width: 30px;
-    margin-right: 40px;
 }
 
 .checkanswers {
@@ -180,37 +149,6 @@ input[type="radio"]:checked {
 @media (max-width: 800px) {
     body {
         margin: 12px;
-    }
-
-
-    .logo {
-        height: 30px;
-    }
-
-    .topheader {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 8px 16px;
-        min-height: auto;
-        flex-wrap: wrap;
-    }
-
-    .flag {
-        width: 20px;
-        margin-left: 8px;
-    }
-
-    .links {
-        flex-wrap: nowrap;
-        display: flex;
-        gap: 6px;
-    }
-
-    .links a {
-        font-size: 0.9rem;
-        margin-top: 10px;
-        flex-wrap: wrap;
     }
 
     .herotext {

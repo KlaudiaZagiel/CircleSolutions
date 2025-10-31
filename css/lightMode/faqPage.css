@@ -19,9 +19,14 @@
   font-style: normal;
 }
 
-body {
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Calibre';
+}
+
+body {
   color: black;
   margin: 30px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.5) 90%), url(../../images/faqimages/laptoptyping.jpg);
@@ -29,22 +34,6 @@ body {
   background-position: center;
   background-attachment: fixed;
   font-size: 1rem;
-}
-
-.topheader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  background: rgba(34, 49, 63, 0.85);
-  /* Optional: semi-transparent background rgba*/
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  min-height: 70px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .herotext {
@@ -57,28 +46,6 @@ body {
 .findanswers {
   font-size: 1.2rem;
   opacity: 80%;
-}
-
-.logo {
-  height: 45px;
-}
-
-.flag {
-  width: 30px;
-  margin-right: 40px;
-}
-
-
-.links {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bolder;
 }
 
 .faqboxes {
@@ -111,12 +78,11 @@ body {
 }
 
 .chevron {
-  width: 30px;
-  height: 40px;
-  padding: 20px;
-  margin-right: 10px;
-  display: inline-block;
-  transition: transform .25s ease;
+  width: 24px;
+  height: 30px;
+  margin-right: 20px;
+  margin-top: 20px;
+  transition: transform 0.25s ease;
 }
 
 .faq-qa[open] .chevron {
@@ -124,7 +90,6 @@ body {
 }
 
 .answer {
-
   display: flex;
   background-color: lightgrey;
   color: white;
@@ -201,32 +166,6 @@ h2 {
     margin: 12px;
   }
 
-  .topheader {
-    padding: 0 10px;
-    min-height: 40px;
-    flex-wrap: wrap;
-    /*flex-wrap: wrap; if not enough space, move it to the next line*/
-  }
-
-  .logo {
-    height: 30px;
-  }
-
-  .flag {
-    width: 20px;
-    margin-right: 17px;
-  }
-
-  .links {
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .links a {
-    font-size: 0.7rem;
-  }
-
   .herotext {
     padding-top: 70px;
     font-size: 1rem;
@@ -242,9 +181,9 @@ h2 {
     gap: 12px;
   }
 
-  /* .faq-qa summary {
+  .faq-qa summary {
     font-size: 1rem;
-  } */
+  }
 
   .faq-question {
     padding: 12px;

@@ -37,47 +37,56 @@ if (isset($_POST['toggle'])) {
     <main class="services" role="main">
         <h1 class="page-title">What we build</h1>
 
-        <div class="service-box">
+        <div class="service-box cyberSecurityServices">
             <img src="../../images/whatWeBuild/lock.png" alt="" aria-hidden="true">
             <h3>Cybersecurity Services</h3>
             <p>Security audits, testing, and compliance.</p>
         </div>
 
-        <div class="service-box">
+        <div class="service-box mobileAppDevelopment">
             <img src="../../images/whatWeBuild/phone.png" alt="" aria-hidden="true">
             <h3>Mobile App Development</h3>
             <p>Apps for iOS, Android, and beyond.</p>
         </div>
 
-        <div class="service-box">
+        <div class="service-box maintainanceAndSupport">
             <img src="../../images/whatWeBuild/desktop.png" alt="" aria-hidden="true">
             <h3>Maintenance & Support</h3>
             <p>Regular updates, bug fixes, and feature improvements.</p>
         </div>
 
-        <div class="service-box">
+        <div class="service-box customSoftware">
             <img src="../../images/whatWeBuild/laptop1.png" alt="" aria-hidden="true">
             <h3>Custom Software</h3>
             <p>Tailored solutions built around your business needs.</p>
         </div>
 
-        <div class="service-box">
+        <div class="service-box cloudSolutions">
             <img src="../../images/whatWeBuild/cloud1.png" alt="" aria-hidden="true">
             <h3>Cloud Solutions</h3>
             <p>Secure, scalable, and always-on infrastructure.</p>
         </div>
 
-        <div class="service-box">
-            <img src="../../images/whatWebuild/table.png" alt="" aria-hidden="true">
+        <div class="service-box webDevelopment">
+            <img src="../../images/whatWeBuild/table.png" alt="" aria-hidden="true">
             <h3>Web Development</h3>
             <p>Responsive, modern websites and apps for your brand.</p>
+        </div>
+
+        <!-- animated gear icons -->
+        <div class="gearIcons" id="gearContainer">
+            <img class="gear gear-1" src="../../images/whatWeBuild/gear-icon.png" alt="Gear icon">
+            <img class="gear gear-2" src="../../images/whatWeBuild/gear-icon.png" alt="Gear icon">
+            <img class="gear gear-3" src="../../images/whatWeBuild/gear-icon.png" alt="Gear icon">
         </div>
     </main>
 
     <footer class="cta" role="contentinfo">
-        <h2>Check out D.O.T.S or let’s get to work.</h2>
-        <a class="cta-link" href="dots.php">Check D.O.T.S</a>
-        <a class="cta-primary" href="contactPage.php">Start your project</a>
+        <h2>Discover D.O.T.S, Explore the Blog, Take the Quiz or Get Started Now .</h2>
+        <a class="cta-link" href="../../php/en/dots.php">Check D.O.T.S</a>
+        <a class="cta-link" href="../../php/en/blogs.php"> Our Blogs</a>
+        <a class="cta-link" href="../../php/en/miniQuiz.php"> Take the Quiz</a>
+        <a class="cta-link" href="../../php/en/contactPage.php">Start your project</a>
     </footer>
 </body>
 </html>

@@ -2,6 +2,7 @@
 	font-family: 'Calibre';
 	src: url('../../fonts/Calibre-Semibold.otf') format('opentype');
 }
+
 .headerdivmain {
 	position: fixed;
 	top: 0;
@@ -39,7 +40,7 @@ header {
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 500;
-	font-size: 1em;
+	font-size: 1rem;
 	transition: color 0.3s ease;
 }
 
@@ -48,7 +49,7 @@ header {
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 500;
-	font-size: 1em;
+	font-size: 1rem;
 	transition: color 0.3s ease;
 }
 
@@ -66,15 +67,17 @@ header {
 .buttonflag img {
 	height: 24px;
 }
+
 @media (max-width: 800px) {
-    .buttondarLight {
-		font-size: 12px;
+	.buttondarLight {
+		font-size: 0.75rem;
 	}
 
 	.headerImagedots {
 		height: 50px;
 	}
-    .buttonflag img {
+
+	.buttonflag img {
 		height: 20px;
 	}
 
@@ -86,9 +89,10 @@ header {
 	}
 
 	.headerbuttons a {
-		font-size: 12px;
+		font-size: 0.75rem;
 	}
 }
+
 @media (max-width: 560px) {
 	.headerImagedots {
 		width: 100px;
@@ -98,13 +102,14 @@ header {
 		gap: 10px;
 	}
 }
+
 @media (max-width: 400px) {
 	.headerImagedots {
 		width: 70px;
 	}
 
 	.headerbuttons a {
-		font-size: 10px;
+		font-size: 0.625rem;
 	}
 
 	.buttonflag img {
