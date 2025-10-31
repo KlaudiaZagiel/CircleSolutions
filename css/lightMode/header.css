@@ -2,7 +2,9 @@
 	font-family: 'Calibre';
 	src: url('../../fonts/Calibre-Semibold.otf') format('opentype');
 }
-
+.headerImagedots{
+	padding-top: 5px;
+}
 .headerdivmain {
 	position: fixed;
 	top: 0;
