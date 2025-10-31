@@ -11,13 +11,13 @@
 	left: 0;
 	width: 100%;
 	z-index: 100;
-	background: rgba(34, 49, 63);
+	background: #22313f;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 20px;
 	min-height: 70px;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+	box-shadow: 0 2px 8px #0000000a;
 }
 
 .logomain {

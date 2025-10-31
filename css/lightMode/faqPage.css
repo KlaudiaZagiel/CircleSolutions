@@ -36,19 +36,19 @@ body {
   font-size: 1rem;
 }
 
-.herotext {
+.heroText {
   font-weight: 400;
   text-align: center;
   padding-top: 60px;
   color: white;
 }
 
-.findanswers {
+.findAnswers {
   font-size: 1.2rem;
   opacity: 80%;
 }
 
-.faqboxes {
+.faqBoxes {
   max-width: 900px;
   display: grid;
   grid-template-columns: 1;
@@ -57,7 +57,7 @@ body {
   padding: 50px;
 }
 
-.faq-qa {
+.faq-Qa {
   /*the whole box question+answer*/
   background-color: #799dab;
   /*this does nothing*/
@@ -68,7 +68,7 @@ body {
   /*same background color but lower opacity*/
 }
 
-.faq-qa summary {
+.faq-Qa Summary {
   /*expandable box when u press the chevron*/
   display: flex;
   justify-content: space-between;
@@ -85,7 +85,7 @@ body {
   transition: transform 0.25s ease;
 }
 
-.faq-qa[open] .chevron {
+.faq-Qa[open] .chevron {
   transform: rotate(180deg);
 }
 
@@ -103,7 +103,7 @@ body {
   opacity: 88%;
 }
 
-.faq-question {
+.faq-Question {
   padding: 20px;
   margin: 10px;
   color: white;
@@ -111,7 +111,7 @@ body {
   font-size: 1.2rem;
 }
 
-.contactbox {
+.contactBox {
   display: block;
   text-align: center;
 }
@@ -121,13 +121,13 @@ h2 {
   font-weight: 600;
 }
 
-.copytext {
+.copyText {
   font-size: 1rem;
   font-weight: 400;
   color: white;
 }
 
-.copyrightbox {
+.copyrightBox {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -138,24 +138,24 @@ h2 {
   opacity: 50%;
 }
 
-.copyright {
+.copyRight {
   gap: 5px;
   margin-bottom: 10px;
 }
 
-.wijhelpen {
+.wijHelpen {
   font-size: 1.2rem;
   color: white;
 }
 
-.wijhelpen a {
+.wijHelpen a {
   color: white;
   font-size: 1.2rem;
 }
 
 /*desktop*/
 @media (min-width: 1400px) {
-  .faqboxes {
+  .faqBoxes {
     max-width: 1100px;
   }
 }
@@ -166,35 +166,37 @@ h2 {
     margin: 12px;
   }
 
-  .herotext {
+  .heroText {
     padding-top: 70px;
     font-size: 1rem;
   }
 
-  .findanswers {
+  .findAnswers {
     font-size: 1.1rem;
   }
 
-  .faqboxes {
+  .faqBoxes {
     max-width: 100%;
     padding: 16px;
     gap: 12px;
   }
 
-  .faq-qa summary {
-    font-size: 1rem;
+  .faq-Qa Summary {
+    font-size: 1.5rem;
   }
 
-  .faq-question {
+  .faq-Question {
     padding: 12px;
     margin: 5px;
     font-size: 1.2rem;
   }
 
   .chevron {
-    width: 20px;
+    width: 24px;
     height: 30px;
-    padding: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    transition: transform 0.25s ease;
   }
 
   .answer {
@@ -202,15 +204,15 @@ h2 {
     padding: 16px;
   }
 
-  .wijhelpen {
+  .wijHelpen {
     font-size: 1.2rem;
   }
 
-  .wijhelpen a {
+  .wijHelpen a {
     font-size: 1.2rem;
   }
 
-  .copytext {
+  .copyText {
     font-size: 0.9rem;
   }
 }

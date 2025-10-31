@@ -12,7 +12,6 @@ if (isset($_POST['toggle'])) {
 }
 ?>
 
-
 <?php
 
 $correctanswers = array("b", "d", "b", "a", "a", "c", "b", "c");
@@ -43,8 +42,6 @@ if ($score >= 7) {
 
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,9 +64,9 @@ if ($score >= 7) {
 
 <body>
     <?php include '../../php/en/header.php'; ?>
-    <div class="herotext">
+    <div class="heroText">
         <h1>Are you ready to code your discount?🧠</h1>
-        <p class="solvequiz">Solve our quiz and get up to 15% off on our services!</p>
+        <p class="solveQuiz">Solve our quiz and get up to 15% off on our services!</p>
     </div>
 
     <?php
@@ -115,7 +112,6 @@ if ($score >= 7) {
             <label><input type="radio" name="q4" value="d">Make the passwords look cute.</label>
         </div>
 
-
         <div class="question">
             <h3>☁️Why do companies love the cloud so much?</h3>
             <label><input type="radio" name="q5" value="a" required>Because they can access data easily from
@@ -149,9 +145,8 @@ if ($score >= 7) {
             <label><input type="radio" name="q8" value="d">Mobile has no friends.</label>
         </div>
         <div class="button">
-            <button class="checkanswers" type="submit">Check your answers</button>
+            <button class="checkAnswers" type="submit">Check your answers</button>
         </div>
-
 
     </form>
 

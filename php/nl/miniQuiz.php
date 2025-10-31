@@ -67,9 +67,9 @@ if ($score >= 7) {
 
 <body>
     <?php include '../../php/nl/header.php'; ?>
-    <div class="herotext">
+    <div class="heroText">
         <h1>Ben je klaar om je korting te coderen?🧠</h1>
-        <p class="solvequiz">Los onze quiz op en ontvang tot 15% korting op onze diensten!</p>
+        <p class="solveQuiz">Los onze quiz op en ontvang tot 15% korting op onze diensten!</p>
     </div>
 
     <?php
@@ -78,7 +78,7 @@ if ($score >= 7) {
     }
     ?>
 
-    <form method=" post">
+    <form method="post">
         <div class="question">
             <h3>🎯Wanneer je een nieuw project start, wat is dan het eerste dat een goede software engineer zou moeten doen?</h3>
             <label><input type="radio" name="q1" value="a" required>De computer uitzetten.</label>
@@ -144,7 +144,7 @@ if ($score >= 7) {
             <label><input type="radio" name="q8" value="d">Mobiel heeft geen vrienden.</label>
         </div>
         <div class="button">
-            <button class="checkanswers" type="submit">Controleer je aantworden</button>
+            <button class="checkAnswers" type="submit">Controleer je aantworden</button>
         </div>
 
 
