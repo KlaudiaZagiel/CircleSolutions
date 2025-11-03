@@ -60,5 +60,10 @@ if (isset($_POST['toggle']))
         <p> <a href="./mainPage.php">Go to Homepage</a></p>
     </div>
 
+    <div class="copyRightDots">
+        <img class="copyRightImg" src="../../images/Copyright.png" alt="Copyright">
+        <p class="copyRightText">circlesolutions2025</p>
+    </div>
+
 </body>
 </html>
