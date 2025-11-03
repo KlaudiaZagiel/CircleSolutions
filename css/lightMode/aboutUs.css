@@ -187,12 +187,12 @@ a {
 	place-items: center;
 	color: #799dab;
 	font-weight: 500;
-<<<<<<< HEAD
-	font-size: 0.75rem;
-=======
+
+	
+
 	font-size: 0.75rem; 
 	padding-top: 10px;
->>>>>>> 85da9c30bb67522e827b3d58175009b45f4e4617
+
 }
 
 @media (max-width: 800px) {
