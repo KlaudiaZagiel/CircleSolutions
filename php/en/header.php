@@ -25,7 +25,7 @@ if ($script !== '') {
 			<ul class="headerbuttons">
 				<li><a href="../../php/en/dots.php">D.O.T.S</a></li>
 				<li><a href="../../php/en/contactPage.php">Contact</a></li>
-				<li><a href="../../php/en/aboutus.php">About Us</a></li>
+				<li><a href="../../php/en/aboutUs.php">About Us</a></li>
 				<li><a href="../../php/en/whatwebuild.php">Solution</a></li>
 				<li>
 					<form action="<?= $_SERVER['PHP_SELF'] ?>" method="POST">
