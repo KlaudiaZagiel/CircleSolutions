@@ -154,7 +154,6 @@ $theme = !empty($_SESSION['light']) ? 'dark' : 'light';
 ?>
 <body data-theme="<?= htmlspecialchars($theme, ENT_QUOTES) ?>">
 
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -263,7 +262,7 @@ $theme = !empty($_SESSION['light']) ? 'dark' : 'light';
 			<div class="circleSolutionsInstagramTag">@circlesolutions</div>
 
 			<!-- Copyright tag -->
-			 <img src="../../images/contactPage/copyright.png" class="circleSolutionsCopyrightImage" alt="Copyright Icon">
+			<img src="../../images/contactPage/copyright.png" class="circleSolutionsCopyrightImage" alt="Copyright Icon">
 			<div class="circleSolutionsCopyrightTag">Circle Solutions 2025</div>
 
 		</div>
