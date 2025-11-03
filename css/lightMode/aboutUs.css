@@ -56,7 +56,7 @@ a {
 }
 
 .centraldiv {
-	background-image: url(../../images/aboutus/backimageaboutus.png);
+	background-image: url(../../images/aboutUs/backimageaboutus.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	height: 580px;
@@ -169,6 +169,7 @@ a {
 	grid-column: 4/5;
 	display: flex;
 	justify-content: end;
+	
 }
 
 .copyrighttext {
@@ -177,6 +178,7 @@ a {
 	color: #799dab;
 	font-weight: 500;
 	font-size: 0.75rem; 
+	padding-top: 10px;
 }
 
 @media (max-width: 800px) {
