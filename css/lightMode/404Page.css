@@ -93,12 +93,35 @@ body {
     color: #ffffff;
     text-decoration: none;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 3rem;
     transition: color 0.3s ease;
 }
 
 .homeMessage a:hover {
     color: #789cab;
+}
+
+.copyRightDots{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 110;
+}
+
+.copyRightImg {
+    height: 32px;
+    width: auto;
+}
+
+.copyRightText{
+    margin: 0;
+    color: #22313f;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
 }
 
 @media (max-width: 800px)
