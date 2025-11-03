@@ -13,6 +13,7 @@ if (isset($_POST['toggle'])) {
 ?>
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,12 +30,15 @@ if (isset($_POST['toggle'])) {
     ?>
     <title>Over ons</title>
 </head>
+
 <body>
     <?php include '../../php/nl/header.php'; ?>
 
     <hr class="headerhr">
     <p class="headertext">Wij maken software eenvoudig.</p>
-
+    <div class="faqbutton">
+        <a href="../en/faqPage.php" class="faq-button">Go to FAQ</a>
+    </div>
     <div class="maindiv">
         <div class="centraldiv">
             <div class="centralblock">
@@ -79,9 +83,10 @@ if (isset($_POST['toggle'])) {
             </p>
         </div>
         <div class="copyrightabout">
-			<img class="copyrightimg" src="../../images/Copyright.png" alt="Copyright">
-			<p class="copyrighttext">circlesolutions2025</p>
-		</div>
+            <img class="copyrightimg" src="../../images/Copyright.png" alt="Copyright">
+            <p class="copyrighttext">circlesolutions2025</p>
+        </div>
     </div>
 </body>
+
 </html>

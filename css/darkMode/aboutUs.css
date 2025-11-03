@@ -5,7 +5,7 @@
 }
 
 @font-face {
-  font-family: 'Calibre';
+	font-family: 'Calibre';
 	src: url('../../fonts/Calibre-Semibold.otf') format('opentype');
 }
 
@@ -39,7 +39,7 @@ a {
 .headertext {
 	margin-top: 10rem;
 	color: #c7eaf8;
-	font-size: 6rem; 
+	font-size: 6rem;
 	font-weight: bold;
 	display: grid;
 	place-items: center;
@@ -63,6 +63,18 @@ a {
 	height: 580px;
 	grid-column: 2/5;
 	z-index: 2;
+}
+
+.faq-button {
+	display: flex;
+	color: white;
+	background-color: #799dab;
+	width: 150px;
+	margin: 0 auto;
+	border-radius: 6px;
+	height: 40px;
+	justify-content: center;
+	padding-top: 9px;
 }
 
 .centralblock {
@@ -107,7 +119,7 @@ a {
 }
 
 .centralblockimg3 {
-  width: 45%;
+	width: 45%;
 }
 
 .centralblocktexthighermargin {
@@ -150,7 +162,7 @@ a {
 .bottombluetext {
 	color: #c7eaf8;
 	font-weight: bold;
-	font-size: 2.25rem; 
+	font-size: 2.25rem;
 	display: grid;
 	place-items: center;
 }
@@ -163,7 +175,7 @@ a {
 	place-items: center;
 	color: #ffffff;
 	font-weight: 500;
-	font-size: 1.75rem; 
+	font-size: 1.75rem;
 }
 
 .copyrightabout {
@@ -178,11 +190,11 @@ a {
 	color: #799dab;
 	font-weight: 500;
 	font-size: 0.75rem;
-	padding-top: 10px; 
+	padding-top: 10px;
 }
 
 @media (max-width: 800px) {
-	
+
 	.centralblock {
 		margin-top: 1rem;
 		flex-direction: column;
@@ -219,7 +231,7 @@ a {
 	}
 
 	.centralblockbottomtext {
-		font-size: 1rem; 
+		font-size: 1rem;
 		margin-top: 0;
 	}
 
@@ -232,10 +244,10 @@ a {
 	}
 
 	.bottombluetext {
-		font-size: 1.125rem; 
+		font-size: 1.125rem;
 	}
 
 	.bottomtext {
-		font-size: 0.875rem; 
+		font-size: 0.875rem;
 	}
 }

@@ -1,20 +1,20 @@
 @font-face {
-    font-family: 'Calibre';
-    src: url('../fonts/Calibre-Regular.otf') format('opentype');
+    font-family: 'Calibre - Regular';
+    src: url('../../fonts/Calibre-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Calibre';
-    src: url('../fonts/Calibre-Bold.otf') format('opentype');
+    font-family: 'Calibre - Bold';
+    src: url('../../fonts/Calibre-Bold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Calibre';
-    src: url('../fonts/Calibre-Light.otf') format('opentype');
+    font-family: 'Calibre - Light';
+    src: url('../../fonts/Calibre-Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
 }

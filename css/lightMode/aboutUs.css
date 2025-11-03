@@ -68,10 +68,12 @@ a {
 	display: flex;
 	color: white;
 	background-color: #799dab;
-	width: 100px;
+	width: 150px;
 	margin: 0 auto;
 	border-radius: 6px;
-	height: 40px;
+	height: 45px;
+	justify-content: center;
+	padding-top: 9px;
 }
 
 .centralblock {
@@ -179,7 +181,7 @@ a {
 	grid-column: 4/5;
 	display: flex;
 	justify-content: end;
-	
+
 }
 
 .copyrighttext {
@@ -187,12 +189,6 @@ a {
 	place-items: center;
 	color: #799dab;
 	font-weight: 500;
-<<<<<<< HEAD
-	font-size: 0.75rem;
-=======
-	font-size: 0.75rem; 
-	padding-top: 10px;
->>>>>>> 85da9c30bb67522e827b3d58175009b45f4e4617
 }
 
 @media (max-width: 800px) {
