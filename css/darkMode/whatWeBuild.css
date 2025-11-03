@@ -37,13 +37,32 @@
 }
 
 /* Base Styles */
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: var(--font-main);
   color: var(--color-dark);
-  background: url('../../images/whatWeBuild/TechnologyDark.png') center/cover no-repeat fixed ;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('../../images/whatWeBuild/TechnologyDark.png') center/cover;  /* removed 'fixed' */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ensure main content takes available space */
+main {
+  flex: 1 0 auto;
+}
+
+/* ensure footer stays at bottom */
+footer {
+  flex-shrink: 0;
 }
 
 /* Page Wrapper */
@@ -108,7 +127,7 @@ header {
   grid-column: 1 / -1;
   grid-row: 1;
   text-align: center;
-  color: var(--color-accent);
+  color: #c7eaf8;
   font-size: 3rem;
   font-weight: 700;
   text-shadow: 0 6px 18px black;
@@ -275,8 +294,9 @@ header {
 }
 
 /* Footer CTA */
+
 .cta {
-  background-color: #ffffff;
+  background-color: var(--color-primary);
   padding: 24px 16px;
   text-align: center;
   box-shadow: 0 -2px 8px var(--color-dark);
@@ -285,7 +305,7 @@ header {
 .cta h2 {
   font-size: 1.25rem;
   margin-bottom: 12px;
-  color: var(--color-dark);
+  color: var(--color-accent);
 }
 .cta-link,
 .cta-primary {
@@ -303,10 +323,15 @@ header {
   color: #333;
 }
 .cta-primary {
+  background: #c7eaf8;
+  color: var(--color-dark);
+}
+.cta-link:hover {
+  transform: scale(1.05);
   background: var(--color-accent);
   color: #fff;
 }
-.cta-link:hover {
+.cta-primary:hover {
   transform: scale(1.05);
   background: var(--color-accent);
   color: #fff;
