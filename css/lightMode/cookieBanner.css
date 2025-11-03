@@ -24,7 +24,6 @@ body{
     justify-content: center;
     font-family: 'Calibre';
     background-color: lightblue;
-    
 }
 
 .main{
@@ -34,7 +33,6 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 200px;
-    
 }
 
 .second{
@@ -61,7 +59,6 @@ body{
     justify-content:space-around;
     width: 1100px;
     align-items: center;
-
 }
 
 .but{
@@ -71,7 +68,6 @@ body{
     padding-bottom: 12px;
     border-radius: 12px;
     transition: background-color 0.8s, opacity 0.5s;
-    
 }
 
 .but:hover{
