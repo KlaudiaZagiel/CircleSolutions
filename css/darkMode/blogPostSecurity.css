@@ -90,3 +90,19 @@ hr{
 .mainHeader{
   margin-bottom: 30px;
 }
+
+.copyRightDots{
+	grid-column: 3;
+	display: flex;
+  flex-direction: row;
+	justify-content: end;
+}
+
+.copyRightText{
+	display: grid;
+	place-items: center;
+	color: #799dab;
+	font-weight: 500;
+	font-size: 1rem;
+  padding-top: 30px;
+}

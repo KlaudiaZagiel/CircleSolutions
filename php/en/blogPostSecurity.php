@@ -77,5 +77,10 @@ if (isset($_POST['toggle'])) {
             </div>
         </div>
     </main>
+    
+    <div class="copyRightDots">
+        <img class="copyRightImg" src="../../images/Copyright.png" alt="Copyright">
+        <p class="copyRightText">circlesolutions2025</p>
+    </div>
 </body>
 </html>
