@@ -37,7 +37,8 @@ if (isset($_POST['toggle'])) {
     <hr class="headerhr">
     <p class="headertext">Wij maken software eenvoudig.</p>
     <div class="faqbutton">
-        <a href="../en/faqPage.php" class="faq-button">Go to FAQ</a>
+        <a href="../en/faqPage.php" class="faq-button">Ga na FAQ</a>
+        <a href="../en/knowledgeBases.php" class="faq-button">Ga naar KennisBasis</a>
     </div>
     <div class="maindiv">
         <div class="centraldiv">

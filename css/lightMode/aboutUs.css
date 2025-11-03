@@ -64,16 +64,19 @@ a {
 	z-index: 2;
 }
 
-.faq-button {
+.faqbutton{
+	margin-top: 2rem;
 	display: flex;
+	justify-content: center;
+	gap: 1rem;
+
+}
+
+.faq-button {
 	color: white;
 	background-color: #799dab;
-	width: 150px;
-	margin: 0 auto;
 	border-radius: 6px;
-	height: 45px;
-	justify-content: center;
-	padding-top: 9px;
+	padding: 12px 14px;
 }
 
 .centralblock {
