@@ -110,7 +110,7 @@ body {
 }
 
 .circleSolutionsWellBeInTouchText {
-    margin-top: 40px;
+	margin-top: 100px;
     margin-bottom: 20px;
     grid-column: 1;
     grid-row: 1;
@@ -351,7 +351,6 @@ body {
 	}
 	
 	.circleSolutionsWellBeInTouchText {
-		margin-top: 40px;
 		margin-bottom: 20px;
 	}
 	
