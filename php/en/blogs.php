@@ -68,8 +68,12 @@ if (isset($_POST['toggle'])) {
             <p>Wedenesday, October 15 2025</p>
             <div class="square"> <a href="#">Read more</a> </div>
         </div>
-    </main>
 
+        <div class="copyRightDots">
+			<img class="copyRightImg" src="../../images/Copyright.png" alt="Copyright">
+			<p class="copyRightText">circlesolutions2025</p>
+		</div>
+    </main>
 </body>
 
 </html>

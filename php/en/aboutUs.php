@@ -40,6 +40,7 @@ if (isset($_POST['toggle'])) {
 	<p class="headertext">We make software simple.</p>
 	<div class="faqbutton">
 		<a href="../en/faqPage.php" class="faq-button">Go to FAQ</a>
+		<a href="../en/knowledgeBases.php" class="faq-button">Go to KnowledgeBase</a>
 	</div>
 
 	<div class="maindiv">
