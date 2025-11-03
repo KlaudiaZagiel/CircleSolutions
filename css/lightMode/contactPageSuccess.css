@@ -179,7 +179,6 @@ body {
     justify-self: end;
 
     --holesize: 52.5%;
-    --track-bg: #ffffff;
 
     /* vmin takes the smallest viewport size and it's very useful for applications such as this */
     height: 100%;
@@ -417,7 +416,6 @@ body {
 		margin-left: 30px;
 	}
 
-	
 	/* Copyright tag */
 	.circleSolutionsCopyrightImage {
 		margin-right: 110px;

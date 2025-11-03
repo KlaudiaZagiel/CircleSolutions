@@ -250,13 +250,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			</form>
 
 			<!-- Social media tags -->
-				<img src="../../images/contactPage/instagram.png" class="instagramIcon socialMediaIcons" alt="Instagram-pictogram">
-				<img src="../../images/contactPage/x.png" class="xLogoIcon socialMediaIcons" alt="X-logo pictogram">
-				<img src="../../images/contactPage/linkedIn.png" class="linkedInIcon socialMediaIcons" alt="LinkedIn-pictogram">
+			<img src="../../images/contactPage/instagram.png" class="instagramIcon socialMediaIcons" alt="Instagram-pictogram">
+			<img src="../../images/contactPage/x.png" class="xLogoIcon socialMediaIcons" alt="X-logo pictogram">
+			<img src="../../images/contactPage/linkedIn.png" class="linkedInIcon socialMediaIcons" alt="LinkedIn-pictogram">
 			<div class="circleSolutionsInstagramTag">@circlesolutions</div>
 
 			<!-- Copyright tag -->
-				 <img src="../../images/contactPage/copyright.png" class="circleSolutionsCopyrightImage" alt="Copyrightpictogram">
+			<img src="../../images/contactPage/copyright.png" class="circleSolutionsCopyrightImage" alt="Copyrightpictogram">
 			<div class="circleSolutionsCopyrightTag">Circle Solutions 2025</div>
 
 		</div>

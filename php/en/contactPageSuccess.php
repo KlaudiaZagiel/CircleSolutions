@@ -71,7 +71,6 @@ $seconds = 5;
 			<img src="../../images/contactPage/home.png" class="addressIconContact" alt="Address Icon">
 			<div class="addressIconText contactIconsText"><a href="https://maps.app.goo.gl/xbBmqjwVYxFGVoxU6" target="_blank" rel="noopener">Circle Street 76, Emmen</a></div>
 
-
 			<!-- Social media tags -->
 			<img src="../../images/contactPage/instagram.png" class="instagramIcon socialMediaIcons" alt="Instagram Icon">
 			<img src="../../images/contactPage/x.png" class="xLogoIcon socialMediaIcons" alt="X logo Icon">
