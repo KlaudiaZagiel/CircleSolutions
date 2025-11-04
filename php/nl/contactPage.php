@@ -135,8 +135,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			$mailer->addAddress($email, trim("$firstName $lastName"));
 			$mailer->addReplyTo(SMTP_REPLY_TO);
 
-			$mailer->Subject = "We kunnen niet wachten om je te ontmoeten, " . $firstName . "!";
-			$mailer->Body    = "";
+			$mailer->Subject = "Vielen Dank, dass Sie sich an Circle Solutions gewandt haben!";
+			$mailer->Body    = "Bedankt voor uw bericht," ." ".$firstName."!"." "."Dit is de informatie die u ons heeft verstrekt:"." ".$firstName." ".$lastName.", ".$companyName.", ".$email.", ".$yourMessage.", ".$howDidYouHear.". "."We hebben uw bericht ontvangen en een medewerker van ons team zal binnen 1-4 werkdagen reageren. Als uw vraag dringend is, kunt u ons rechtstreeks bellen op +31 12345678. Wij stellen uw interesse in Circule Solutions zeer op prijs en kijken ernaar uit om binnenkort contact met u op te nemen. Met vriendelijke groet, Het Circule Solutions Team.";
 
 			$mailer->send();
 		} catch (Exception $e) {
